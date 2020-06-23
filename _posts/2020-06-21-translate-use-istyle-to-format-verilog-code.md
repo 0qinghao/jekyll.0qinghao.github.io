@@ -1,9 +1,9 @@
 ---
 layout: post
 title: 译 - 使用iStyle格式化Verilog代码
-categories: [cate1, cate2]
-description: some word here
-keywords: keyword1, keyword2
+categories: [Verilog]
+description: 给出Windows x86_64架构下编译好的iStyle可执行程序
+keywords: iStyle, 格式化代码
 ---
 
 > 原文：[Verilogでコード整形](https://qiita.com/kkumt93/items/70766645c07c298d19c3)
