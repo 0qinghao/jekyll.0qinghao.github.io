@@ -8,6 +8,11 @@
       - Verilog
       - Synopsys前端系列
 
+- name: 其他
+  keywords:
+      - 日语
+      - 服务器运维
+
 # - name: Windows Developer Keywords
 #   keywords:
 #       - Win32 SDK

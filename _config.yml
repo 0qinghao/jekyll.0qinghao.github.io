@@ -5,7 +5,7 @@ baseurl:
 url: https://0qinghao.github.io
 date_format: "ordinal"
 title: 林间
-subtitle: ""
+subtitle: "若非琐事相牵绊 即起行 遍览天下众山河"
 description: "林庆毫的个人空间"
 keywords: 博客, 个人空间
 timezone: Asia/Shanghai
@@ -15,7 +15,7 @@ repository: 0qinghao/0qinghao.github.io
 # 对 css 和 js 资源的 cdn 加速配置
 cdn:
     jsdelivr:
-        enabled: true
+        enabled: false
 # 组件配置
 components:
     # 分享
@@ -139,7 +139,7 @@ simple_jekyll_search:
     # 是否支持全文搜索
     fulltext: true
     # 最多显示多少条搜索结果
-    limit: 100
+    limit: 20
 
 # ---------------- #
 #      Google      #
