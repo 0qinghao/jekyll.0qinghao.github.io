@@ -4,9 +4,12 @@ title: 译 - 使用iStyle格式化Verilog代码
 categories: [Verilog]
 description: 给出Windows x86_64架构下编译好的iStyle可执行程序
 keywords: iStyle, 格式化代码
+furigana: true
 ---
 
 > 原文：[Verilogでコード整形](https://qiita.com/kkumt93/items/70766645c07c298d19c3)
+
+(何遍:なんべん)か(催促:さいそく)したが、(梨:なし)の(礫:つぶて)だ。
 
 # 安装
 
