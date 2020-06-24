@@ -1,0 +1,83 @@
+
+
+[
+  
+  
+    {
+      "title"    : "页面没有找到",
+      "url"      : "https://0qinghao.github.io/404.html"
+    } ,
+  
+  
+  
+    {
+      "title"    : "About",
+      "url"      : "https://0qinghao.github.io/about/"
+    } ,
+  
+  
+  
+    {
+      "title"    : "归档",
+      "url"      : "https://0qinghao.github.io/archives/"
+    } ,
+  
+  
+  
+    {
+      "title"    : "Categories",
+      "url"      : "https://0qinghao.github.io/categories/"
+    } ,
+  
+  
+  
+  
+  
+    {
+      "title"    : "Links",
+      "url"      : "https://0qinghao.github.io/links/"
+    } ,
+  
+  
+  
+    {
+      "title"    : "Open Source Projects",
+      "url"      : "https://0qinghao.github.io/open-source/"
+    } ,
+  
+  
+  
+  
+  
+    {
+      "title"    : "Wiki",
+      "url"      : "https://0qinghao.github.io/wiki/"
+    } ,
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  
+    {
+      "title"    : "译 - 使用iStyle格式化Verilog代码",
+      "category" : "Verilog",
+      "content": " 原文：Verilogでコード整形 推测是需要文章内容发生变化才会触发githubpage编译静态页面。 (何遍:なんべん)か(催促:さいそく)したが、(梨:なし)の(礫:つぶて)だ。 安装 iStyle可以从GitHub上clone、make自行编译出可执行文件，也可以直接下载已编译好的可执行文件。这里都给出来。 Github https://github.com/thomasrussellmurphy/istyle-verilog-formatter 可执行文件 https://github.com/HayasiKei/istyle-verilog-formatter/releases/tag/v1.21_x86_64 格式化选项 以下是一些格式化时常用的选项及效果示例。 待格式化代码 reg [3:0] cnt; always @(posedge clk or posedge rst) begin if(rst) begin cnt&lt;=4'h0; end else begin cnt&lt;=cnt+4'h1; end end –style ANSI style ./iStyle --style=ansi test.v reg [3:0] cnt; always @(posedge clk or posedge rst) begin  if(rst)  begin  cnt&lt;=4'h0;  end  else  begin  cnt&lt;=cnt+4'h1;  end end  Kernighan&amp;Ritchie style ./iStyle --style=kr test.v reg [3:0] cnt; always @(posedge clk or posedge rst) begin  if(rst) begin  cnt&lt;=4'h0;  end  else begin  cnt&lt;=cnt+4'h1;  end end  GNU style ./iStyle --style=gnu test.v reg [3:0] cnt; always @(posedge clk or posedge rst) begin  if(rst)  begin  cnt&lt;=4'h0;  end  else  begin  cnt&lt;=cnt+4'h1;  end end -s ./iStyle -s2 test.v 该选项指定缩进时的空格数量，-s2表示每次缩进使用2个空格（如果是-s4则表示每次用4个空格缩进）。 reg [3:0] cnt; always @(posedge clk or posedge rst) begin if(rst) begin  cnt&lt;=4'h0; end else begin  cnt&lt;=cnt+4'h1; end end -p -p选项指定在运算符两侧插入空格。 reg [3: 0] cnt; always @(posedge clk or posedge rst) begin  if (rst)  begin  cnt &lt;= 4'h0;  end else  begin  cnt &lt;= cnt + 4'h1;  end end -P -P选项指定在运算符和括号周围插入空格。 reg [ 3: 0 ] cnt; always @( posedge clk or posedge rst ) begin  if ( rst )  begin  cnt &lt;= 4'h0;  end else  begin  cnt &lt;= cnt + 4'h1;  end end 小结 虽然文中没有写，module声明的缩进感觉并不是很好。verilog有各种各样的代码风格，因此有一个强大的格式化程序是很有用的。 ",
+      "url"      : "https://0qinghao.github.io/2020/06/21/translate-use-istyle-to-format-verilog-code/"
+    } ,
+  
+    {
+      "title"    : "Wiki Template",
+      "category" : "cate1",
+      "content": "Content here ",
+      "url"      : "https://0qinghao.github.io/wiki/template/"
+    } 
+  
+]
+
