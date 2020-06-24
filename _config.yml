@@ -100,14 +100,13 @@ plugins:
     - jekyll-sitemap
     - jekyll-feed
     - jemoji
+    - jekyll-furigana
 #     - jekyll-mentions
 collections:
     wiki:
         output: true
         permalink: /wiki/:path/
-gems:
-    plugins:
-        - jekyll-furigana
+
 # ---------------- #
 #      Comments    #
 # ---------------- #
