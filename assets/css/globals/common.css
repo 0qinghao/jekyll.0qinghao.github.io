@@ -5,7 +5,7 @@
 
 .markdown-body,
 body {
-    font-family                : -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+    font-family                : -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
     font-size                  : 16px;
     line-height                : 1.6;
     word-wrap                  : break-word;
@@ -26,8 +26,8 @@ body {
 }
 
 .pagination a.active {
-    background  : #4a6a40;
-    border-color: #4a6a40;
+    background  : #337abc;
+    border-color: #337ab7;
     z-index     : 2;
     color       : #fff;
     cursor      : default
