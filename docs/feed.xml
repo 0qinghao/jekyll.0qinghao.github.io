@@ -1,153 +1,144 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.7">Jekyll</generator><link href="https://0qinghao.github.io/InForest/feed.xml" rel="self" type="application/atom+xml" /><link href="https://0qinghao.github.io/InForest/" rel="alternate" type="text/html" /><updated>2020-06-24T20:39:08+08:00</updated><id>https://0qinghao.github.io/InForest/feed.xml</id><title type="html">林间</title><subtitle>林庆毫的个人空间</subtitle><author><name>Qinghao Lin</name></author><entry><title type="html">译 - 使用iStyle格式化Verilog代码</title><link href="https://0qinghao.github.io/InForest/2020/06/21/translate-use-istyle-to-format-verilog-code/" rel="alternate" type="text/html" title="译 - 使用iStyle格式化Verilog代码" /><published>2020-06-21T00:00:00+08:00</published><updated>2020-06-21T00:00:00+08:00</updated><id>https://0qinghao.github.io/InForest/2020/06/21/translate-use-istyle-to-format-verilog-code</id><content type="html" xml:base="https://0qinghao.github.io/InForest/2020/06/21/translate-use-istyle-to-format-verilog-code/">&gt; 原文：[Verilogでコード整形](https://qiita.com/kkumt93/items/70766645c07c298d19c3)
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.7">Jekyll</generator><link href="https://0qinghao.github.io/InForest/feed.xml" rel="self" type="application/atom+xml" /><link href="https://0qinghao.github.io/InForest/" rel="alternate" type="text/html" /><updated>2020-06-24T21:56:54+08:00</updated><id>https://0qinghao.github.io/InForest/feed.xml</id><title type="html">林间</title><subtitle>林庆毫的个人空间</subtitle><author><name>Qinghao Lin</name></author><entry><title type="html">译 - 使用iStyle格式化Verilog代码</title><link href="https://0qinghao.github.io/InForest/2020/06/21/translate-use-istyle-to-format-verilog-code/" rel="alternate" type="text/html" title="译 - 使用iStyle格式化Verilog代码" /><published>2020-06-21T00:00:00+08:00</published><updated>2020-06-21T00:00:00+08:00</updated><id>https://0qinghao.github.io/InForest/2020/06/21/translate-use-istyle-to-format-verilog-code</id><content type="html" xml:base="https://0qinghao.github.io/InForest/2020/06/21/translate-use-istyle-to-format-verilog-code/">&lt;blockquote&gt;
+  &lt;p&gt;原文：&lt;a href=&quot;https://qiita.com/kkumt93/items/70766645c07c298d19c3&quot;&gt;Verilogでコード整形&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
 
-# 安装
+&lt;h1 id=&quot;安装&quot;&gt;安装&lt;/h1&gt;
 
-iStyle可以从GitHub上clone、make自行编译出可执行文件，也可以直接下载已编译好的可执行文件。这里都给出来。
+&lt;p&gt;iStyle可以从GitHub上clone、make自行编译出可执行文件，也可以直接下载已编译好的可执行文件。这里都给出来。&lt;/p&gt;
 
-**Github**
+&lt;p&gt;&lt;strong&gt;Github&lt;/strong&gt;&lt;/p&gt;
 
-https://github.com/thomasrussellmurphy/istyle-verilog-formatter
+&lt;p&gt;https://github.com/thomasrussellmurphy/istyle-verilog-formatter&lt;/p&gt;
 
-**可执行文件**
+&lt;p&gt;&lt;strong&gt;可执行文件&lt;/strong&gt;&lt;/p&gt;
 
-https://github.com/HayasiKei/istyle-verilog-formatter/releases/tag/v1.21_x86_64
+&lt;p&gt;https://github.com/HayasiKei/istyle-verilog-formatter/releases/tag/v1.21_x86_64&lt;/p&gt;
 
-# 格式化选项
+&lt;h1 id=&quot;格式化选项&quot;&gt;格式化选项&lt;/h1&gt;
 
-以下是一些格式化时常用的选项及效果示例。
+&lt;p&gt;以下是一些格式化时常用的选项及效果示例。&lt;/p&gt;
 
-**待格式化代码**
+&lt;p&gt;&lt;strong&gt;待格式化代码&lt;/strong&gt;&lt;/p&gt;
 
-``` verilog
-reg [3:0] cnt;
-always @(posedge clk or posedge rst) begin
-if(rst) begin
-cnt&lt;=4'h0;
-end else begin
-cnt&lt;=cnt+4'h1;
-end
-end
-```
+&lt;div class=&quot;language-verilog highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kt&quot;&gt;reg&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cnt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;always&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;@&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;posedge&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;clk&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;or&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;posedge&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;rst&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;begin&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rst&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;begin&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;cnt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;=&lt;/span&gt;&lt;span class=&quot;mh&quot;&gt;4'h0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;begin&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;cnt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cnt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;mh&quot;&gt;4'h1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-## **--style**
+&lt;h2 id=&quot;style&quot;&gt;&lt;strong&gt;–style&lt;/strong&gt;&lt;/h2&gt;
 
-**ANSI style**
+&lt;p&gt;&lt;strong&gt;ANSI style&lt;/strong&gt;&lt;/p&gt;
 
-``` 
-./iStyle --style=ansi test.v
-```
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;./iStyle --style=ansi test.v
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-``` verilog
-reg [3:0] cnt;
-always @(posedge clk or posedge rst)
-begin
-    if(rst)
-    begin
-        cnt&lt;=4'h0;
-    end
-    else
-    begin
-        cnt&lt;=cnt+4'h1;
-    end
-end
-```
+&lt;div class=&quot;language-verilog highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kt&quot;&gt;reg&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cnt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;always&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;@&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;posedge&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;clk&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;or&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;posedge&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;rst&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;begin&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rst&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;begin&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;cnt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;=&lt;/span&gt;&lt;span class=&quot;mh&quot;&gt;4'h0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;begin&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;cnt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cnt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;mh&quot;&gt;4'h1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
----
+&lt;hr /&gt;
 
-**Kernighan&amp;Ritchie style**
+&lt;p&gt;&lt;strong&gt;Kernighan&amp;amp;Ritchie style&lt;/strong&gt;&lt;/p&gt;
 
-``` 
-./iStyle --style=kr test.v
-```
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;./iStyle --style=kr test.v
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-``` verilog
-reg [3:0] cnt;
-always @(posedge clk or posedge rst) begin
-    if(rst) begin
-        cnt&lt;=4'h0;
-    end
-    else begin
-        cnt&lt;=cnt+4'h1;
-    end
-end
-```
+&lt;div class=&quot;language-verilog highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kt&quot;&gt;reg&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cnt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;always&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;@&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;posedge&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;clk&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;or&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;posedge&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;rst&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;begin&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rst&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;begin&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;cnt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;=&lt;/span&gt;&lt;span class=&quot;mh&quot;&gt;4'h0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;begin&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;cnt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cnt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;mh&quot;&gt;4'h1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
----
+&lt;hr /&gt;
 
-**GNU style**
+&lt;p&gt;&lt;strong&gt;GNU style&lt;/strong&gt;&lt;/p&gt;
 
-``` 
-./iStyle --style=gnu test.v
-```
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;./iStyle --style=gnu test.v
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-``` verilog
-reg [3:0] cnt;
-always @(posedge clk or posedge rst)
-  begin
-    if(rst)
-      begin
-        cnt&lt;=4'h0;
-      end
-    else
-      begin
-        cnt&lt;=cnt+4'h1;
-      end
-  end
-```
+&lt;div class=&quot;language-verilog highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kt&quot;&gt;reg&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cnt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;always&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;@&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;posedge&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;clk&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;or&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;posedge&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;rst&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;begin&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rst&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+      &lt;span class=&quot;k&quot;&gt;begin&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;cnt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;=&lt;/span&gt;&lt;span class=&quot;mh&quot;&gt;4'h0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;
+      &lt;span class=&quot;k&quot;&gt;begin&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;cnt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cnt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;mh&quot;&gt;4'h1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-## -s
+&lt;h2 id=&quot;-s&quot;&gt;-s&lt;/h2&gt;
 
-``` 
-./iStyle -s2 test.v
-```
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;./iStyle -s2 test.v
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-该选项指定缩进时的空格数量，-s2表示每次缩进使用2个空格（如果是-s4则表示每次用4个空格缩进）。
+&lt;p&gt;该选项指定缩进时的空格数量，-s2表示每次缩进使用2个空格（如果是-s4则表示每次用4个空格缩进）。&lt;/p&gt;
 
-``` verilog
-reg [3:0] cnt;
-always @(posedge clk or posedge rst) begin
-  if(rst) begin
-    cnt&lt;=4'h0;
-  end else begin
-    cnt&lt;=cnt+4'h1;
-  end
-end
-```
+&lt;div class=&quot;language-verilog highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kt&quot;&gt;reg&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cnt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;always&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;@&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;posedge&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;clk&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;or&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;posedge&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;rst&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;begin&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rst&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;begin&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;cnt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;=&lt;/span&gt;&lt;span class=&quot;mh&quot;&gt;4'h0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;begin&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;cnt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cnt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;mh&quot;&gt;4'h1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-## -p
+&lt;h2 id=&quot;-p&quot;&gt;-p&lt;/h2&gt;
 
--p选项指定在运算符两侧插入空格。
+&lt;p&gt;-p选项指定在运算符两侧插入空格。&lt;/p&gt;
 
-``` verilog
-reg [3: 0] cnt;
-always @(posedge clk or posedge rst) begin
-    if (rst)
-    begin
-        cnt &lt;= 4'h0;
-    end else
-    begin
-        cnt &lt;= cnt + 4'h1;
-    end
-end
-```
+&lt;div class=&quot;language-verilog highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kt&quot;&gt;reg&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cnt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;always&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;@&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;posedge&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;clk&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;or&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;posedge&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;rst&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;begin&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rst&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;begin&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;cnt&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;=&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;4'h0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;begin&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;cnt&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cnt&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;4'h1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-## -P
+&lt;h2 id=&quot;-p-1&quot;&gt;-P&lt;/h2&gt;
 
--P选项指定在运算符和括号周围插入空格。
+&lt;p&gt;-P选项指定在运算符和括号周围插入空格。&lt;/p&gt;
 
-``` verilog
-reg [ 3: 0 ] cnt;
-always @( posedge clk or posedge rst ) begin
-    if ( rst )
-    begin
-        cnt &lt;= 4'h0;
-    end else
-    begin
-        cnt &lt;= cnt + 4'h1;
-    end
-end
-```
+&lt;div class=&quot;language-verilog highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kt&quot;&gt;reg&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cnt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;always&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;@&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;posedge&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;clk&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;or&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;posedge&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;rst&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;begin&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;rst&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;begin&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;cnt&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;=&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;4'h0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;begin&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;cnt&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cnt&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;4'h1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-# 小结
+&lt;h1 id=&quot;小结&quot;&gt;小结&lt;/h1&gt;
 
-虽然文中没有写，**module**声明的缩进感觉并不是很好。verilog有各种各样的代码风格，因此有一个强大的格式化程序是很有用的。</content><author><name>Qinghao Lin</name></author><summary type="html">原文：Verilogでコード整形</summary></entry></feed>
+&lt;p&gt;虽然文中没有写，&lt;strong&gt;module&lt;/strong&gt;声明的缩进感觉并不是很好。verilog有各种各样的代码风格，因此有一个强大的格式化程序是很有用的。&lt;/p&gt;</content><author><name>Qinghao Lin</name></author><summary type="html">原文：Verilogでコード整形</summary></entry></feed>
