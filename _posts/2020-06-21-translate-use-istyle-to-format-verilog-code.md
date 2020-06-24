@@ -9,6 +9,7 @@ furigana: true
 
 > 原文：[Verilogでコード整形](https://qiita.com/kkumt93/items/70766645c07c298d19c3)
 
+推测是需要文章内容发生变化才会触发githubpage编译静态页面。
 (何遍:なんべん)か(催促:さいそく)したが、(梨:なし)の(礫:つぶて)だ。
 
 # 安装
