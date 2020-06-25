@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 译 - 使用iStyle格式化Verilog代码
-categories: [Verilog]
+categories: [verilog]
 description: 给出Windows x86_64架构下编译好的iStyle可执行程序
 keywords: iStyle, 格式化代码
 furigana: true
