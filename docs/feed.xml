@@ -1,194 +1,208 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.7">Jekyll</generator><link href="https://0qinghao.github.io/inforest/feed.xml" rel="self" type="application/atom+xml" /><link href="https://0qinghao.github.io/inforest/" rel="alternate" type="text/html" /><updated>2020-06-26T02:52:04+08:00</updated><id>https://0qinghao.github.io/inforest/feed.xml</id><title type="html">林间</title><subtitle>林庆毫的个人空间</subtitle><author><name>Qinghao Lin</name></author><entry><title type="html">译 - 使用iStyle格式化Verilog代码</title><link href="https://0qinghao.github.io/inforest/2019/08/09/translate-use-istyle-to-format-verilog-code/" rel="alternate" type="text/html" title="译 - 使用iStyle格式化Verilog代码" /><published>2019-08-09T00:00:00+08:00</published><updated>2019-08-09T00:00:00+08:00</updated><id>https://0qinghao.github.io/inforest/2019/08/09/translate-use-istyle-to-format-verilog-code</id><content type="html" xml:base="https://0qinghao.github.io/inforest/2019/08/09/translate-use-istyle-to-format-verilog-code/">&lt;blockquote&gt;
-  &lt;p&gt;原文：&lt;a href=&quot;https://qiita.com/kkumt93/items/70766645c07c298d19c3&quot;&gt;Verilogでコード整形&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.7">Jekyll</generator><link href="https://0qinghao.github.io/inforest/feed.xml" rel="self" type="application/atom+xml" /><link href="https://0qinghao.github.io/inforest/" rel="alternate" type="text/html" /><updated>2020-06-28T21:53:34+08:00</updated><id>https://0qinghao.github.io/inforest/feed.xml</id><title type="html">林间</title><subtitle>林庆毫的个人空间</subtitle><author><name>Qinghao Lin</name></author><entry><title type="html">译 - 使用iStyle格式化Verilog代码</title><link href="https://0qinghao.github.io/inforest/2019/08/09/translate-use-istyle-to-format-verilog-code/" rel="alternate" type="text/html" title="译 - 使用iStyle格式化Verilog代码" /><published>2019-08-09T00:00:00+08:00</published><updated>2019-08-09T00:00:00+08:00</updated><id>https://0qinghao.github.io/inforest/2019/08/09/translate-use-istyle-to-format-verilog-code</id><content type="html" xml:base="https://0qinghao.github.io/inforest/2019/08/09/translate-use-istyle-to-format-verilog-code/">&gt; 原文：[Verilogでコード整形](https://qiita.com/kkumt93/items/70766645c07c298d19c3)
 
-&lt;h1 id=&quot;安装&quot;&gt;安装&lt;/h1&gt;
+# 安装
 
-&lt;p&gt;iStyle可以从GitHub上clone、make自行编译出可执行文件，也可以直接下载已编译好的可执行文件。这里都给出来。&lt;/p&gt;
+iStyle可以从GitHub上clone、make自行编译出可执行文件，也可以直接下载已编译好的可执行文件。这里都给出来。
 
-&lt;p&gt;&lt;strong&gt;Github&lt;/strong&gt;&lt;/p&gt;
+**Github**
 
-&lt;p&gt;https://github.com/thomasrussellmurphy/istyle-verilog-formatter&lt;/p&gt;
+https://github.com/thomasrussellmurphy/istyle-verilog-formatter
 
-&lt;p&gt;&lt;strong&gt;可执行文件&lt;/strong&gt;&lt;/p&gt;
+**可执行文件**
 
-&lt;p&gt;https://github.com/HayasiKei/istyle-verilog-formatter/releases/tag/v1.21_x86_64&lt;/p&gt;
+https://github.com/HayasiKei/istyle-verilog-formatter/releases/tag/v1.21_x86_64
 
-&lt;h1 id=&quot;格式化选项&quot;&gt;格式化选项&lt;/h1&gt;
+# 格式化选项
 
-&lt;p&gt;以下是一些格式化时常用的选项及效果示例。&lt;/p&gt;
+以下是一些格式化时常用的选项及效果示例。
 
-&lt;p&gt;&lt;strong&gt;待格式化代码&lt;/strong&gt;&lt;/p&gt;
+**待格式化代码**
 
-&lt;div class=&quot;language-verilog highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kt&quot;&gt;reg&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cnt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;always&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;@&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;posedge&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;clk&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;or&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;posedge&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;rst&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;begin&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rst&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;begin&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;cnt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;=&lt;/span&gt;&lt;span class=&quot;mh&quot;&gt;4'h0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;begin&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;cnt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cnt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;mh&quot;&gt;4'h1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+``` verilog
+reg [3:0] cnt;
+always @(posedge clk or posedge rst) begin
+if(rst) begin
+cnt&lt;=4'h0;
+end else begin
+cnt&lt;=cnt+4'h1;
+end
+end
+```
 
-&lt;h2 id=&quot;style&quot;&gt;&lt;strong&gt;–style&lt;/strong&gt;&lt;/h2&gt;
+## **--style**
 
-&lt;p&gt;&lt;strong&gt;ANSI style&lt;/strong&gt;&lt;/p&gt;
+**ANSI style**
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;./iStyle --style=ansi test.v
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+``` 
+./iStyle --style=ansi test.v
+```
 
-&lt;div class=&quot;language-verilog highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kt&quot;&gt;reg&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cnt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;always&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;@&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;posedge&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;clk&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;or&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;posedge&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;rst&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;begin&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rst&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;begin&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;cnt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;=&lt;/span&gt;&lt;span class=&quot;mh&quot;&gt;4'h0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;begin&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;cnt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cnt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;mh&quot;&gt;4'h1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+``` verilog
+reg [3:0] cnt;
+always @(posedge clk or posedge rst)
+begin
+    if(rst)
+    begin
+        cnt&lt;=4'h0;
+    end
+    else
+    begin
+        cnt&lt;=cnt+4'h1;
+    end
+end
+```
 
-&lt;hr /&gt;
+---
 
-&lt;p&gt;&lt;strong&gt;Kernighan&amp;amp;Ritchie style&lt;/strong&gt;&lt;/p&gt;
+**Kernighan&amp;Ritchie style**
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;./iStyle --style=kr test.v
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+``` 
+./iStyle --style=kr test.v
+```
 
-&lt;div class=&quot;language-verilog highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kt&quot;&gt;reg&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cnt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;always&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;@&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;posedge&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;clk&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;or&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;posedge&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;rst&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;begin&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rst&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;begin&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;cnt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;=&lt;/span&gt;&lt;span class=&quot;mh&quot;&gt;4'h0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;begin&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;cnt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cnt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;mh&quot;&gt;4'h1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+``` verilog
+reg [3:0] cnt;
+always @(posedge clk or posedge rst) begin
+    if(rst) begin
+        cnt&lt;=4'h0;
+    end
+    else begin
+        cnt&lt;=cnt+4'h1;
+    end
+end
+```
 
-&lt;hr /&gt;
+---
 
-&lt;p&gt;&lt;strong&gt;GNU style&lt;/strong&gt;&lt;/p&gt;
+**GNU style**
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;./iStyle --style=gnu test.v
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+``` 
+./iStyle --style=gnu test.v
+```
 
-&lt;div class=&quot;language-verilog highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kt&quot;&gt;reg&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cnt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;always&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;@&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;posedge&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;clk&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;or&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;posedge&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;rst&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;begin&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rst&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-      &lt;span class=&quot;k&quot;&gt;begin&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;cnt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;=&lt;/span&gt;&lt;span class=&quot;mh&quot;&gt;4'h0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-      &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;
-      &lt;span class=&quot;k&quot;&gt;begin&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;cnt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cnt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;mh&quot;&gt;4'h1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-      &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+``` verilog
+reg [3:0] cnt;
+always @(posedge clk or posedge rst)
+  begin
+    if(rst)
+      begin
+        cnt&lt;=4'h0;
+      end
+    else
+      begin
+        cnt&lt;=cnt+4'h1;
+      end
+  end
+```
 
-&lt;h2 id=&quot;-s&quot;&gt;-s&lt;/h2&gt;
+## -s
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;./iStyle -s2 test.v
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+``` 
+./iStyle -s2 test.v
+```
 
-&lt;p&gt;该选项指定缩进时的空格数量，-s2表示每次缩进使用2个空格（如果是-s4则表示每次用4个空格缩进）。&lt;/p&gt;
+该选项指定缩进时的空格数量，-s2表示每次缩进使用2个空格（如果是-s4则表示每次用4个空格缩进）。
 
-&lt;div class=&quot;language-verilog highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kt&quot;&gt;reg&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cnt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;always&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;@&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;posedge&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;clk&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;or&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;posedge&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;rst&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;begin&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rst&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;begin&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;cnt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;=&lt;/span&gt;&lt;span class=&quot;mh&quot;&gt;4'h0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;begin&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;cnt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cnt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;mh&quot;&gt;4'h1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+``` verilog
+reg [3:0] cnt;
+always @(posedge clk or posedge rst) begin
+  if(rst) begin
+    cnt&lt;=4'h0;
+  end else begin
+    cnt&lt;=cnt+4'h1;
+  end
+end
+```
 
-&lt;h2 id=&quot;-p&quot;&gt;-p&lt;/h2&gt;
+## -p
 
-&lt;p&gt;-p选项指定在运算符两侧插入空格。&lt;/p&gt;
+-p选项指定在运算符两侧插入空格。
 
-&lt;div class=&quot;language-verilog highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kt&quot;&gt;reg&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cnt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;always&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;@&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;posedge&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;clk&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;or&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;posedge&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;rst&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;begin&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rst&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;begin&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;cnt&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;=&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;4'h0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;begin&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;cnt&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cnt&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;4'h1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+``` verilog
+reg [3: 0] cnt;
+always @(posedge clk or posedge rst) begin
+    if (rst)
+    begin
+        cnt &lt;= 4'h0;
+    end else
+    begin
+        cnt &lt;= cnt + 4'h1;
+    end
+end
+```
 
-&lt;h2 id=&quot;-p-1&quot;&gt;-P&lt;/h2&gt;
+## -P
 
-&lt;p&gt;-P选项指定在运算符和括号周围插入空格。&lt;/p&gt;
+-P选项指定在运算符和括号周围插入空格。
 
-&lt;div class=&quot;language-verilog highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kt&quot;&gt;reg&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cnt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;always&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;@&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;posedge&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;clk&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;or&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;posedge&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;rst&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;begin&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;rst&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;begin&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;cnt&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;=&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;4'h0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;begin&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;cnt&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cnt&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;4'h1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+``` verilog
+reg [ 3: 0 ] cnt;
+always @( posedge clk or posedge rst ) begin
+    if ( rst )
+    begin
+        cnt &lt;= 4'h0;
+    end else
+    begin
+        cnt &lt;= cnt + 4'h1;
+    end
+end
+```
 
-&lt;h1 id=&quot;小结&quot;&gt;小结&lt;/h1&gt;
+# 小结
 
-&lt;p&gt;虽然文中没有写，&lt;strong&gt;module&lt;/strong&gt;声明的缩进感觉并不是很好。verilog有各种各样的代码风格，因此有一个强大的格式化程序是很有用的。&lt;/p&gt;</content><author><name>Qinghao Lin</name></author><summary type="html">原文：Verilogでコード整形</summary></entry><entry><title type="html">在Windows命令行、Linux终端使用代理</title><link href="https://0qinghao.github.io/inforest/2018/09/19/proxy-set-in-windows-and-linux/" rel="alternate" type="text/html" title="在Windows命令行、Linux终端使用代理" /><published>2018-09-19T00:00:00+08:00</published><updated>2018-09-19T00:00:00+08:00</updated><id>https://0qinghao.github.io/inforest/2018/09/19/proxy-set-in-windows-and-linux</id><content type="html" xml:base="https://0qinghao.github.io/inforest/2018/09/19/proxy-set-in-windows-and-linux/">&lt;p&gt;在之前的博文中分享了如何&lt;a href=&quot;https://segmentfault.com/a/1190000013399064&quot;&gt;使用Google云计算引擎搭建SS服务器&lt;/a&gt;，如何&lt;a href=&quot;https://segmentfault.com/a/1190000013539547&quot;&gt;使用SS客户端&lt;/a&gt;，已经满足了科学上网的基本需求。这次将要总结在Windows的 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;CMD&lt;/code&gt; 窗口和Linux的 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;LX终端&lt;/code&gt; 中，让 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;wget&lt;/code&gt;  &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;curl&lt;/code&gt; 等命令使用代理需要进行的一些配置。&lt;/p&gt;
+虽然文中没有写，**module**声明的缩进感觉并不是很好。verilog有各种各样的代码风格，因此有一个强大的格式化程序是很有用的。</content><author><name>Qinghao Lin</name></author><summary type="html">原文：Verilogでコード整形</summary></entry><entry><title type="html">在Windows命令行、Linux终端使用代理</title><link href="https://0qinghao.github.io/inforest/2018/09/19/proxy-set-in-windows-and-linux/" rel="alternate" type="text/html" title="在Windows命令行、Linux终端使用代理" /><published>2018-09-19T00:00:00+08:00</published><updated>2018-09-19T00:00:00+08:00</updated><id>https://0qinghao.github.io/inforest/2018/09/19/proxy-set-in-windows-and-linux</id><content type="html" xml:base="https://0qinghao.github.io/inforest/2018/09/19/proxy-set-in-windows-and-linux/">在之前的博文中分享了如何[使用Google云计算引擎搭建SS服务器](https://segmentfault.com/a/1190000013399064)，如何[使用SS客户端](https://segmentfault.com/a/1190000013539547)，已经满足了科学上网的基本需求。这次将要总结在Windows的 `CMD` 窗口和Linux的 `LX终端` 中，让 `wget`  `curl` 等命令使用代理需要进行的一些配置。
 
-&lt;h1 id=&quot;windows命令行代理&quot;&gt;Windows命令行代理&lt;/h1&gt;
+# Windows命令行代理
 
-&lt;p&gt;假设你已经使用了SS客户端，本地socks5代理为127.0.0.1:1080&lt;/p&gt;
+假设你已经使用了SS客户端，本地socks5代理为127.0.0.1:1080
 
-&lt;p&gt;在CMD窗口输入如下指令设置代理：&lt;/p&gt;
+在CMD窗口输入如下指令设置代理：
 
-&lt;pre&gt;&lt;code class=&quot;language-nohighlight&quot;&gt;set http_proxy=socks5://127.0.0.1:1080
+``` nohighlight
+set http_proxy=socks5://127.0.0.1:1080
 set https_proxy=socks5://127.0.0.1:1080
 set ftp_proxy=socks5://127.0.0.1:1080
-&lt;/code&gt;&lt;/pre&gt;
+```
 
-&lt;p&gt;测试 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;curl https://www.facebook.com&lt;/code&gt; 能得到返回结果。&lt;/p&gt;
+测试 `curl https://www.facebook.com` 能得到返回结果。
 
-&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/005MY9Xigy1fp4azce62uj30hd075t9e.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+![](http://ww1.sinaimg.cn/mw690/005MY9Xigy1fp4azce62uj30hd075t9e.jpg)
 
-&lt;p&gt;取消代理命令：&lt;/p&gt;
+取消代理命令：
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;set http_proxy=
+``` 
+set http_proxy=
 set https_proxy=
 set ftp_proxy=
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+```
 
-&lt;p&gt;*****设置代理后只对当前命令行窗口生效，重新打开CDM需要再次设置。&lt;/p&gt;
+*****设置代理后只对当前命令行窗口生效，重新打开CDM需要再次设置。
 
-&lt;h1 id=&quot;linux-lx终端代理&quot;&gt;Linux LX终端代理&lt;/h1&gt;
+# Linux LX终端代理
 
-&lt;p&gt;由于Linux下SS客户端仅代理socks5协议的流量（如果不是这个原因恳请指正）。所以想在LX终端使用代理，需要在SS的socks5流量前再接一个代理，允许http、https、ftp协议流量通过。&lt;/p&gt;
+由于Linux下SS客户端仅代理socks5协议的流量（如果不是这个原因恳请指正）。所以想在LX终端使用代理，需要在SS的socks5流量前再接一个代理，允许http、https、ftp协议流量通过。
 
-&lt;p&gt;我们也假定本地socks5代理为127.0.0.1:1080&lt;/p&gt;
+我们也假定本地socks5代理为127.0.0.1:1080
 
-&lt;h2 id=&quot;安装polipo&quot;&gt;安装polipo&lt;/h2&gt;
+## 安装polipo
 
-&lt;p&gt;Debian下直接使用apt命令安装：&lt;/p&gt;
+Debian下直接使用apt命令安装：
 
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt update
-&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;polipo
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+``` shell
+sudo apt update
+sudo apt install polipo
+```
 
-&lt;p&gt;编辑配置文件：&lt;/p&gt;
+编辑配置文件：
 
-&lt;pre&gt;&lt;code class=&quot;language-nohighlight&quot;&gt;sudo nano /etc/polipo/config
-&lt;/code&gt;&lt;/pre&gt;
+``` nohighlight
+sudo nano /etc/polipo/config
+```
 
-&lt;p&gt;配置内容如下&lt;/p&gt;
+配置内容如下
 
-&lt;pre&gt;&lt;code class=&quot;language-nohighlight&quot;&gt;# This file only needs to list configuration variables that deviate
+``` nohighlight
+# This file only needs to list configuration variables that deviate
 # from the default values.  See /usr/share/doc/polipo/examples/config.sample
 # and &quot;polipo -v&quot; for variables you can tweak and further information.
 
@@ -204,111 +218,113 @@ chunkHighMark = 50331648
 objectHighMark = 16384
 
 dnsQueryIPv6 = no
-&lt;/code&gt;&lt;/pre&gt;
+```
 
-&lt;p&gt;按&lt;kbd&gt;CTRL&lt;/kbd&gt;+&lt;kbd&gt;X&lt;/kbd&gt;，&lt;kbd&gt;Y&lt;/kbd&gt;保存退出。&lt;/p&gt;
+按&lt;kbd&gt;CTRL&lt;/kbd&gt;+&lt;kbd&gt;X&lt;/kbd&gt;，&lt;kbd&gt;Y&lt;/kbd&gt;保存退出。
 
-&lt;p&gt;重启polipo服务：&lt;/p&gt;
+重启polipo服务：
 
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;service polipo restart
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+``` shell
+sudo service polipo restart
+```
 
-&lt;h2 id=&quot;启用代理&quot;&gt;启用代理&lt;/h2&gt;
+## 启用代理
 
-&lt;p&gt;通过 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;service polipo status&lt;/code&gt; 命令，我们可以看到新的监听端口为&lt;strong&gt;8123&lt;/strong&gt;。&lt;/p&gt;
+通过 `service polipo status` 命令，我们可以看到新的监听端口为**8123**。
 
-&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/large/005MY9Xigy1fp4g22nbr8j30f905ddhd.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+![](http://ww1.sinaimg.cn/large/005MY9Xigy1fp4g22nbr8j30f905ddhd.jpg)
 
-&lt;p&gt;因此，LX终端启用代理的命令为：&lt;/p&gt;
+因此，LX终端启用代理的命令为：
 
-&lt;pre&gt;&lt;code class=&quot;language-nohighlight&quot;&gt;export http_proxy=http://127.0.0.1:8123
+``` nohighlight
+export http_proxy=http://127.0.0.1:8123
 export https_proxy=http://127.0.0.1:8123
 export ftp_proxy=http://127.0.0.1:8123
-&lt;/code&gt;&lt;/pre&gt;
+```
 
-&lt;p&gt;同样，直接输入上述命令设置的代理也是临时的。一个比较实用的方法是在~/.bashrc文件中设置环境，之后就不需要再手动设置了。&lt;/p&gt;
+同样，直接输入上述命令设置的代理也是临时的。一个比较实用的方法是在~/.bashrc文件中设置环境，之后就不需要再手动设置了。
 
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;nano ~/.bashrc
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+``` shell
+sudo nano ~/.bashrc
+```
 
-&lt;p&gt;在文件最后插入上述三条指令，保存。&lt;/p&gt;
+在文件最后插入上述三条指令，保存。
 
-&lt;p&gt;测试 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;wget&lt;/code&gt; 指令：&lt;/p&gt;
+测试 `wget` 指令：
 
-&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/large/005MY9Xigy1fp4gl2vchsj30er05a3z3.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+![](http://ww1.sinaimg.cn/large/005MY9Xigy1fp4gl2vchsj30er05a3z3.jpg)
 
-&lt;h1 id=&quot;小结&quot;&gt;小结&lt;/h1&gt;
+# 小结
 
-&lt;p&gt;我对CMD/LX终端设置代理的出发点，是为了使用Google的一个API，设置后确实能够成功使用。另外似乎对 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pip&lt;/code&gt; 等指令也有效果，安装python模块时的下载速度有比较明显的提升。不过说到底只是在总结如何使用别人做好的工具，很多原理还是没有明白，如果文中有何纰漏，恳请指正。&lt;/p&gt;
+我对CMD/LX终端设置代理的出发点，是为了使用Google的一个API，设置后确实能够成功使用。另外似乎对 `pip` 等指令也有效果，安装python模块时的下载速度有比较明显的提升。不过说到底只是在总结如何使用别人做好的工具，很多原理还是没有明白，如果文中有何纰漏，恳请指正。
 
-&lt;p&gt;感谢你阅读文章！&lt;/p&gt;</content><author><name>Qinghao Lin</name></author><summary type="html">在之前的博文中分享了如何使用Google云计算引擎搭建SS服务器，如何使用SS客户端，已经满足了科学上网的基本需求。这次将要总结在Windows的 CMD 窗口和Linux的 LX终端 中，让 wget curl 等命令使用代理需要进行的一些配置。</summary></entry><entry><title type="html">Shadowsocks客户端在不同系统下的使用方法</title><link href="https://0qinghao.github.io/inforest/2018/03/06/shadowsocks-clients/" rel="alternate" type="text/html" title="Shadowsocks客户端在不同系统下的使用方法" /><published>2018-03-06T00:00:00+08:00</published><updated>2018-03-06T00:00:00+08:00</updated><id>https://0qinghao.github.io/inforest/2018/03/06/shadowsocks-clients</id><content type="html" xml:base="https://0qinghao.github.io/inforest/2018/03/06/shadowsocks-clients/">&lt;p&gt;当我们配置好Shadowsocks服务器端，或是购买了SS账号后，就可以使用客户端开始科学上网了。下面分别介绍在Windows、安卓、Linux(Debian)系统下SS客户端的使用方法。&lt;/p&gt;
+感谢你阅读文章！</content><author><name>Qinghao Lin</name></author><summary type="html">在之前的博文中分享了如何使用Google云计算引擎搭建SS服务器，如何使用SS客户端，已经满足了科学上网的基本需求。这次将要总结在Windows的 CMD 窗口和Linux的 LX终端 中，让 wget curl 等命令使用代理需要进行的一些配置。</summary></entry><entry><title type="html">Shadowsocks客户端在不同系统下的使用方法</title><link href="https://0qinghao.github.io/inforest/2018/03/06/shadowsocks-clients/" rel="alternate" type="text/html" title="Shadowsocks客户端在不同系统下的使用方法" /><published>2018-03-06T00:00:00+08:00</published><updated>2018-03-06T00:00:00+08:00</updated><id>https://0qinghao.github.io/inforest/2018/03/06/shadowsocks-clients</id><content type="html" xml:base="https://0qinghao.github.io/inforest/2018/03/06/shadowsocks-clients/">当我们配置好Shadowsocks服务器端，或是购买了SS账号后，就可以使用客户端开始科学上网了。下面分别介绍在Windows、安卓、Linux(Debian)系统下SS客户端的使用方法。
 
-&lt;h1 id=&quot;windows系统下ss客户端的使用方法&quot;&gt;Windows系统下SS客户端的使用方法&lt;/h1&gt;
+# Windows系统下SS客户端的使用方法
 
-&lt;p&gt;Windows系统下的SS客户端使用起来最为方便。客户端自带了系统全局代理的功能，甚至可以省去配置浏览器插件的操作。&lt;/p&gt;
+Windows系统下的SS客户端使用起来最为方便。客户端自带了系统全局代理的功能，甚至可以省去配置浏览器插件的操作。
 
-&lt;h2 id=&quot;下载客户端&quot;&gt;下载客户端&lt;/h2&gt;
+## 下载客户端
 
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/shadowsocks/shadowsocks-windows/releases&quot;&gt;点击这里，跳转到GitHub下载&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://share.weiyun.com/edaa2c5f08aa5169c2be5c6a9f59662d&quot;&gt;如果你无法打开GitHub，可以点击这里，前往微云下载，但不保证是最新版本&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
+* [点击这里，跳转到GitHub下载](https://github.com/shadowsocks/shadowsocks-windows/releases)
+* [如果你无法打开GitHub，可以点击这里，前往微云下载，但不保证是最新版本](https://share.weiyun.com/edaa2c5f08aa5169c2be5c6a9f59662d)
 
-&lt;p&gt;将压缩包内的可执行程序解压，放置在合适的文件夹内，运行后会在程序同一目录下产生配置文件，如果随便放置容易显得杂乱。&lt;/p&gt;
+将压缩包内的可执行程序解压，放置在合适的文件夹内，运行后会在程序同一目录下产生配置文件，如果随便放置容易显得杂乱。
 
-&lt;h2 id=&quot;配置客户端&quot;&gt;配置客户端&lt;/h2&gt;
+## 配置客户端
 
-&lt;p&gt;第一次打开SS客户端会主动要求编辑服务器。填入你的 &lt;strong&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;服务器地址&lt;/code&gt;&lt;/strong&gt; &lt;strong&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;密码&lt;/code&gt;&lt;/strong&gt; &lt;strong&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;服务器端口号&lt;/code&gt;&lt;/strong&gt; &lt;strong&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;加密方式&lt;/code&gt;&lt;/strong&gt; ，其他设置可以保持默认。
-&lt;img src=&quot;http://ww1.sinaimg.cn/large/005MY9Xigy1fou6bi1tebj309z09l3zf.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+第一次打开SS客户端会主动要求编辑服务器。填入你的 **`服务器地址`** **`密码`** **`服务器端口号`** **`加密方式`** ，其他设置可以保持默认。
+![](http://ww1.sinaimg.cn/large/005MY9Xigy1fou6bi1tebj309z09l3zf.jpg)
 
-&lt;p&gt;最后，右击任务栏的小图标，勾选 &lt;strong&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;启用系统代理&lt;/code&gt;&lt;/strong&gt; 。系统代理模式选择 &lt;strong&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;PAC模式&lt;/code&gt;&lt;/strong&gt; ，这样SS会自动使用代理访问墙外站点，不需要另外安装浏览器的代理插件。
-&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/005MY9Xigy1fou6nucjagj3059065t8t.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+最后，右击任务栏的小图标，勾选 **`启用系统代理`** 。系统代理模式选择 **`PAC模式`** ，这样SS会自动使用代理访问墙外站点，不需要另外安装浏览器的代理插件。
+![](http://ww1.sinaimg.cn/mw690/005MY9Xigy1fou6nucjagj3059065t8t.jpg)
 
-&lt;h1 id=&quot;安卓系统下ss客户端的使用方法&quot;&gt;安卓系统下SS客户端的使用方法&lt;/h1&gt;
+# 安卓系统下SS客户端的使用方法
 
-&lt;p&gt;安卓系统下的SS客户端也很完善，配置方便，甚至还可以指定仅部分APP使用代理。&lt;/p&gt;
+安卓系统下的SS客户端也很完善，配置方便，甚至还可以指定仅部分APP使用代理。
 
-&lt;h2 id=&quot;下载客户端-1&quot;&gt;下载客户端&lt;/h2&gt;
+## 下载客户端
 
-&lt;ul&gt;
-  &lt;li&gt;如果你能使用Google Play商店，直接搜索安装&lt;a href=&quot;https://play.google.com/store/apps/details?id=com.github.shadowsocks&quot;&gt;Shadowsocks&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://share.weiyun.com/f9250253dab9ec9ba9b12e124733adcd&quot;&gt;你也可以点击这里，前往微云下载，但不保证是最新版本&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
+* 如果你能使用Google Play商店，直接搜索安装[Shadowsocks](https://play.google.com/store/apps/details?id=com.github.shadowsocks)
+* [你也可以点击这里，前往微云下载，但不保证是最新版本](https://share.weiyun.com/f9250253dab9ec9ba9b12e124733adcd)
 
-&lt;h2 id=&quot;配置客户端-1&quot;&gt;配置客户端&lt;/h2&gt;
+## 配置客户端
 
-&lt;p&gt;点击右上角的 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;+&lt;/code&gt; 选择 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;手动设置&lt;/code&gt; ，填入你的 &lt;strong&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;服务器地址&lt;/code&gt;&lt;/strong&gt; &lt;strong&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;密码&lt;/code&gt;&lt;/strong&gt; &lt;strong&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;服务器端口号&lt;/code&gt;&lt;/strong&gt; &lt;strong&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;加密方式&lt;/code&gt;&lt;/strong&gt; ，其他设置可以保持默认。&lt;/p&gt;
+点击右上角的 `+` 选择 `手动设置` ，填入你的 **`服务器地址`** **`密码`** **`服务器端口号`** **`加密方式`** ，其他设置可以保持默认。
 
-&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/large/005MY9Xigy1fp2brcto8aj307y0e3wf1.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+![](http://ww1.sinaimg.cn/large/005MY9Xigy1fp2brcto8aj307y0e3wf1.jpg)
 
-&lt;p&gt;还可以在配置中开启 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;分应用VPN&lt;/code&gt; 功能，来指定仅部分APP的流量进行代理；或者再打开 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;绕行模式&lt;/code&gt; 来指定部分APP的流量绕过代理。&lt;/p&gt;
+还可以在配置中开启 `分应用VPN` 功能，来指定仅部分APP的流量进行代理；或者再打开 `绕行模式` 来指定部分APP的流量绕过代理。
 
-&lt;h1 id=&quot;debian下ss客户端的使用方法&quot;&gt;Debian下SS客户端的使用方法&lt;/h1&gt;
+# Debian下SS客户端的使用方法
 
-&lt;p&gt;Linux下使用SS客户端要麻烦一些，一方面Linux下SS不带全局代理，需要搭配浏览器插件使用；另一方面笔者在使用中有遇到bug，不知在你阅读这篇文章时是否已经修复，总之还是会记录在下文中以供参考。&lt;/p&gt;
+Linux下使用SS客户端要麻烦一些，一方面Linux下SS不带全局代理，需要搭配浏览器插件使用；另一方面笔者在使用中有遇到bug，不知在你阅读这篇文章时是否已经修复，总之还是会记录在下文中以供参考。
 
-&lt;p&gt;另外，这部分介绍的是配合Chrome插件实现浏览器翻墙的方法。关于如何在LX终端让 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;wget&lt;/code&gt;  &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;curl&lt;/code&gt; 等命令使用代理，将在另一篇文章中再做总结。&lt;/p&gt;
+另外，这部分介绍的是配合Chrome插件实现浏览器翻墙的方法。关于如何在LX终端让 `wget`  `curl` 等命令使用代理，将在另一篇文章中再做总结。
 
-&lt;h2 id=&quot;安装客户端&quot;&gt;安装客户端&lt;/h2&gt;
+## 安装客户端
 
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt update
-&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;shadowsocks
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+``` shell
+sudo apt update
+sudo apt install shadowsocks
+```
 
-&lt;h2 id=&quot;运行sslocal&quot;&gt;运行sslocal&lt;/h2&gt;
+## 运行sslocal
 
-&lt;p&gt;不带任何参数运行 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sslocal&lt;/code&gt; 可以查看帮助。&lt;/p&gt;
+不带任何参数运行 `sslocal` 可以查看帮助。
 
-&lt;p&gt;运行SS客户端一般有两种方法。你可以参考帮助，将必要的参数填入，用一条较长的指令来运行：&lt;/p&gt;
+运行SS客户端一般有两种方法。你可以参考帮助，将必要的参数填入，用一条较长的指令来运行：
 
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;sslocal &lt;span class=&quot;nt&quot;&gt;-s&lt;/span&gt; 服务器地址 &lt;span class=&quot;nt&quot;&gt;-p&lt;/span&gt; 服务器端口 &lt;span class=&quot;nt&quot;&gt;-k&lt;/span&gt; 密码 &lt;span class=&quot;nt&quot;&gt;-m&lt;/span&gt; 加密方式 &lt;span class=&quot;nt&quot;&gt;-d&lt;/span&gt; start
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+``` shell
+sudo sslocal -s 服务器地址 -p 服务器端口 -k 密码 -m 加密方式 -d start
+```
 
-&lt;p&gt;显然上面这种方式效率太低。另一种方式就是将各项参数保存为json文件，运行时指定配置文件即可。&lt;/p&gt;
+显然上面这种方式效率太低。另一种方式就是将各项参数保存为json文件，运行时指定配置文件即可。
 
-&lt;p&gt;假设我们的配置文件是 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/etc/ss.json&lt;/code&gt; ，其内容为：&lt;/p&gt;
+假设我们的配置文件是 `/etc/ss.json` ，其内容为：
 
-&lt;pre&gt;&lt;code class=&quot;language-nohighlight&quot;&gt;{
+``` nohighlight
+{
   &quot;server&quot;:&quot;服务器地址&quot;,
   &quot;server_port&quot;:服务器端口,
   &quot;local_address&quot;:&quot;127.0.0.1&quot;,
@@ -318,204 +334,202 @@ export ftp_proxy=http://127.0.0.1:8123
   &quot;method&quot;:&quot;加密方式&quot;,
   &quot;fast_open&quot;:false
 }
-&lt;/code&gt;&lt;/pre&gt;
+```
 
-&lt;p&gt;将你的 &lt;strong&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;服务器地址&lt;/code&gt;&lt;/strong&gt; &lt;strong&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;密码&lt;/code&gt;&lt;/strong&gt; &lt;strong&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;服务器端口号&lt;/code&gt;&lt;/strong&gt; &lt;strong&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;加密方式&lt;/code&gt;&lt;/strong&gt; 替换到上述文件。（有双引号的请保留双引号，不要删除）&lt;/p&gt;
+将你的 **`服务器地址`** **`密码`** **`服务器端口号`** **`加密方式`** 替换到上述文件。（有双引号的请保留双引号，不要删除）
 
-&lt;p&gt;接下来，每次需要运行SS客户端时，我们只需要输入一条简短的指令：&lt;/p&gt;
+接下来，每次需要运行SS客户端时，我们只需要输入一条简短的指令：
 
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;sslocal &lt;span class=&quot;nt&quot;&gt;-c&lt;/span&gt; /etc/ss.json &lt;span class=&quot;nt&quot;&gt;-d&lt;/span&gt; start
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+``` shell
+sudo sslocal -c /etc/ss.json -d start
+```
 
-&lt;h3 id=&quot;运行sslocal时遇到的bug&quot;&gt;*运行sslocal时遇到的bug&lt;/h3&gt;
+### *运行sslocal时遇到的bug
 
-&lt;blockquote&gt;
-  &lt;p&gt;解决方案来自&lt;a href=&quot;http://blog.csdn.net/blackfrog_unique/article/details/60320737&quot;&gt;Kali2.0 update到最新版本后安装shadowsocks服务报错问题&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
+&gt; 解决方案来自[Kali2.0 update到最新版本后安装shadowsocks服务报错问题](http://blog.csdn.net/blackfrog_unique/article/details/60320737)
 
-&lt;p&gt;笔者在运行sslocal命令时遇到了形如 &lt;em&gt;INFO loading libcrypto from libcrypto.so.1.1&lt;/em&gt; 的报错。后在上述文章中找到解决方案。&lt;/p&gt;
+笔者在运行sslocal命令时遇到了形如 *INFO loading libcrypto from libcrypto.so.1.1* 的报错。后在上述文章中找到解决方案。
 
-&lt;p&gt;打开文件openssl.py，请参照错误提示确定是否与下述文件路径相同：&lt;/p&gt;
+打开文件openssl.py，请参照错误提示确定是否与下述文件路径相同：
 
-&lt;pre&gt;&lt;code class=&quot;language-nohighlight&quot;&gt;sudo nano /usr/local/lib/python2.7/dist-packages/shadowsocks/crypto/openssl.py
-&lt;/code&gt;&lt;/pre&gt;
+``` nohighlight
+sudo nano /usr/local/lib/python2.7/dist-packages/shadowsocks/crypto/openssl.py
+```
 
-&lt;p&gt;使用快捷键&lt;kbd&gt;CTRL&lt;/kbd&gt;+&lt;kbd&gt;_&lt;/kbd&gt;选择跳转到第52行&lt;/p&gt;
+使用快捷键&lt;kbd&gt;CTRL&lt;/kbd&gt;+&lt;kbd&gt;_&lt;/kbd&gt;选择跳转到第52行
 
-&lt;p&gt;将 &lt;em&gt;libcrypto. EVP_CIPHER_CTX_ &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cleanup&lt;/code&gt; .argtypes = (c_void_p, )&lt;/em&gt; 修改为 &lt;em&gt;libcrypto. EVP_CIPHER_CTX_ &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;reset&lt;/code&gt; .argtypes = (c_void_p, )&lt;/em&gt;&lt;/p&gt;
+将 *libcrypto. EVP_CIPHER_CTX_ `cleanup` .argtypes = (c_void_p, )* 修改为 *libcrypto. EVP_CIPHER_CTX_ `reset` .argtypes = (c_void_p, )* 
 
-&lt;p&gt;同样地，跳转到第111行&lt;/p&gt;
+同样地，跳转到第111行
 
-&lt;p&gt;将 &lt;em&gt;libcrypto. EVP_CIPHER_CTX_ &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cleanup&lt;/code&gt; (self.ctx)&lt;/em&gt; 修改为 &lt;em&gt;libcrypto. EVP_CIPHER_CTX_ &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;reset&lt;/code&gt; (self._ctx)&lt;/em&gt;&lt;/p&gt;
+将 *libcrypto. EVP_CIPHER_CTX_ `cleanup` (self.ctx)* 修改为 *libcrypto. EVP_CIPHER_CTX_ `reset` (self._ctx)*
 
-&lt;p&gt;按&lt;kbd&gt;CTRL&lt;/kbd&gt;+&lt;kbd&gt;X&lt;/kbd&gt;，&lt;kbd&gt;Y&lt;/kbd&gt;保存退出。重新执行sslocal指令运行正常。&lt;/p&gt;
+按&lt;kbd&gt;CTRL&lt;/kbd&gt;+&lt;kbd&gt;X&lt;/kbd&gt;，&lt;kbd&gt;Y&lt;/kbd&gt;保存退出。重新执行sslocal指令运行正常。
 
-&lt;h2 id=&quot;安装chrome插件&quot;&gt;安装Chrome插件&lt;/h2&gt;
+## 安装Chrome插件
 
-&lt;p&gt;由于Linux下的SS客户端不带全局代理功能，需要配合浏览器插件使用。这里只介绍Chrome插件的安装方法，火狐大体上类似。&lt;/p&gt;
+由于Linux下的SS客户端不带全局代理功能，需要配合浏览器插件使用。这里只介绍Chrome插件的安装方法，火狐大体上类似。
 
-&lt;p&gt;如果你能够使用Chrome应用商店，搜索&lt;a href=&quot;https://chrome.google.com/webstore/search/switchyomega?hl=zh-CN&quot;&gt;SwitchyOmega&lt;/a&gt;安装即可。你也可以点击&lt;a href=&quot;https://share.weiyun.com/28d769f6e52b68b894736b54b29cf9e4&quot;&gt;这里&lt;/a&gt;通过微云下载crx文件，将其拖动到&lt;a href=&quot;chrome://extensions/&quot;&gt;Chrome扩展程序页面&lt;/a&gt;完成安装。&lt;/p&gt;
+如果你能够使用Chrome应用商店，搜索[SwitchyOmega](https://chrome.google.com/webstore/search/switchyomega?hl=zh-CN)安装即可。你也可以点击[这里](https://share.weiyun.com/28d769f6e52b68b894736b54b29cf9e4)通过微云下载crx文件，将其拖动到[Chrome扩展程序页面](chrome://extensions/)完成安装。
 
-&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/large/005MY9Xigy1fp2f11yv4kj30d207y0t4.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+![](http://ww1.sinaimg.cn/large/005MY9Xigy1fp2f11yv4kj30d207y0t4.jpg)
 
-&lt;p&gt;点击选项，如下图配置SwitchyOmega。 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;代理协议&lt;/code&gt; 选择 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;SOCKS5&lt;/code&gt; ；如果你在ss.json配置文件中修改过 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;local_port&lt;/code&gt; 参数，则这里 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;代理端口&lt;/code&gt; 必须与其一致，否则保持默认值1080即可。&lt;/p&gt;
+点击选项，如下图配置SwitchyOmega。 `代理协议` 选择 `SOCKS5` ；如果你在ss.json配置文件中修改过 `local_port` 参数，则这里 `代理端口` 必须与其一致，否则保持默认值1080即可。
 
-&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/large/005MY9Xigy1fp2f9hgejzj30gl06ct9h.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+![](http://ww1.sinaimg.cn/large/005MY9Xigy1fp2f9hgejzj30gl06ct9h.jpg)
 
-&lt;p&gt;最后，保存配置，点击SwitchyOmega图标切换到刚才配置好的情景模式。&lt;/p&gt;
+最后，保存配置，点击SwitchyOmega图标切换到刚才配置好的情景模式。
 
-&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/large/005MY9Xigy1fp2f89rsqgj30hw09u404.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+![](http://ww1.sinaimg.cn/large/005MY9Xigy1fp2f89rsqgj30hw09u404.jpg)
 
-&lt;h1 id=&quot;结语&quot;&gt;结语&lt;/h1&gt;
+# 结语
 
-&lt;p&gt;由于手上设备有限，没办法总结所有系统下的SS客户端使用方法。例如iOS系统下似乎是使用&lt;a href=&quot;http://apt.thebigboss.org/onepackage.php?bundleid=com.linusyang.shadowsocks&quot;&gt;Big Boss源&lt;/a&gt;搜索ShadowSocks应用，但没法亲自尝试。有兴趣的朋友建议前往官网https://shadowsocks.org/（.com那个是出售SS服务的）进一步了解。&lt;/p&gt;
+由于手上设备有限，没办法总结所有系统下的SS客户端使用方法。例如iOS系统下似乎是使用[Big Boss源](http://apt.thebigboss.org/onepackage.php?bundleid=com.linusyang.shadowsocks)搜索ShadowSocks应用，但没法亲自尝试。有兴趣的朋友建议前往官网https://shadowsocks.org/（.com那个是出售SS服务的）进一步了解。
 
-&lt;p&gt;感谢你阅读文章！&lt;/p&gt;</content><author><name>Qinghao Lin</name></author><summary type="html">当我们配置好Shadowsocks服务器端，或是购买了SS账号后，就可以使用客户端开始科学上网了。下面分别介绍在Windows、安卓、Linux(Debian)系统下SS客户端的使用方法。</summary></entry><entry><title type="html">申请和使用Google云计算引擎配置SS Server</title><link href="https://0qinghao.github.io/inforest/2018/02/27/google-cloud-engine-ss-server/" rel="alternate" type="text/html" title="申请和使用Google云计算引擎配置SS Server" /><published>2018-02-27T00:00:00+08:00</published><updated>2018-02-27T00:00:00+08:00</updated><id>https://0qinghao.github.io/inforest/2018/02/27/google-cloud-engine-ss-server</id><content type="html" xml:base="https://0qinghao.github.io/inforest/2018/02/27/google-cloud-engine-ss-server/">&lt;p&gt;&lt;a href=&quot;https://cloud.google.com/&quot;&gt;Google Cloud Platform&lt;/a&gt;的新用户可以获得$300赠金的一年使用权，使用这笔不菲的赠金，我们可以构建应用程序、搭建网站、存储数据、体验各种强大的API。这次，我总结了使用Google云计算引擎搭建SS服务器，实现科学上网的过程，也算作为墙内使用谷歌云平台的第一步。&lt;/p&gt;
+感谢你阅读文章！</content><author><name>Qinghao Lin</name></author><summary type="html">当我们配置好Shadowsocks服务器端，或是购买了SS账号后，就可以使用客户端开始科学上网了。下面分别介绍在Windows、安卓、Linux(Debian)系统下SS客户端的使用方法。</summary></entry><entry><title type="html">申请和使用Google云计算引擎配置SS Server</title><link href="https://0qinghao.github.io/inforest/2018/02/27/google-cloud-engine-ss-server/" rel="alternate" type="text/html" title="申请和使用Google云计算引擎配置SS Server" /><published>2018-02-27T00:00:00+08:00</published><updated>2018-02-27T00:00:00+08:00</updated><id>https://0qinghao.github.io/inforest/2018/02/27/google-cloud-engine-ss-server</id><content type="html" xml:base="https://0qinghao.github.io/inforest/2018/02/27/google-cloud-engine-ss-server/">[Google Cloud Platform](https://cloud.google.com/)的新用户可以获得$300赠金的一年使用权，使用这笔不菲的赠金，我们可以构建应用程序、搭建网站、存储数据、体验各种强大的API。这次，我总结了使用Google云计算引擎搭建SS服务器，实现科学上网的过程，也算作为墙内使用谷歌云平台的第一步。
 
-&lt;h1 id=&quot;科学上网的基本原理&quot;&gt;科学上网的基本原理&lt;/h1&gt;
+# 科学上网的基本原理
 
-&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/large/005MY9Xigy1fotxvw10lnj30b908lt9s.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+![](http://ww1.sinaimg.cn/large/005MY9Xigy1fotxvw10lnj30b908lt9s.jpg)
 
-&lt;p&gt;我们只需要一个能够访问墙外目标地址的代理服务器。本地设备向服务器发送访问目标地址的请求，服务器收到请求后访问目标并将结果回传给本地设备。&lt;/p&gt;
+我们只需要一个能够访问墙外目标地址的代理服务器。本地设备向服务器发送访问目标地址的请求，服务器收到请求后访问目标并将结果回传给本地设备。
 
-&lt;p&gt;我们是使用Shadowsocks（简称SS，中文名影梭）来配置服务器的，所以一般把这个服务器称为SS服务器。谷歌云平台提供的位于国外的云计算引擎可以用来搭建SS服务器。&lt;/p&gt;
+我们是使用Shadowsocks（简称SS，中文名影梭）来配置服务器的，所以一般把这个服务器称为SS服务器。谷歌云平台提供的位于国外的云计算引擎可以用来搭建SS服务器。
 
-&lt;h1 id=&quot;申请试用谷歌云平台&quot;&gt;申请试用谷歌云平台&lt;/h1&gt;
+# 申请试用谷歌云平台
 
-&lt;p&gt;&lt;strong&gt;*重要：你需要一张外币信用卡（VISA/MasterCard/JCB）&lt;/strong&gt;&lt;/p&gt;
+***重要：你需要一张外币信用卡（VISA/MasterCard/JCB）**
 
-&lt;p&gt;首先，翻墙。突然有种鸡生蛋，蛋生鸡的矛盾，不过我相信你能找到一个免费试用的VPN。&lt;/p&gt;
+首先，翻墙。突然有种鸡生蛋，蛋生鸡的矛盾，不过我相信你能找到一个免费试用的VPN。
 
-&lt;p&gt;登录&lt;a href=&quot;https://cloud.google.com&quot;&gt;谷歌云平台&lt;/a&gt;，点击右上角的申请试用后进入申请界面。地区可以选择中国，不影响后续的申请。&lt;/p&gt;
+登录[谷歌云平台](https://cloud.google.com)，点击右上角的申请试用后进入申请界面。地区可以选择中国，不影响后续的申请。
 
-&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/large/005MY9Xigy1fotyf40bi9j30b00aymy2.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+![](http://ww1.sinaimg.cn/large/005MY9Xigy1fotyf40bi9j30b00aymy2.jpg)
 
-&lt;p&gt;账号类型选择“个人”，填写名称地址电话。&lt;/p&gt;
+账号类型选择“个人”，填写名称地址电话。
 
-&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/large/005MY9Xigy1fotyl3w3anj30dk09ujsp.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+![](http://ww1.sinaimg.cn/large/005MY9Xigy1fotyl3w3anj30dk09ujsp.jpg)
 
-&lt;p&gt;付款方式填写你的外币信用卡（单币银联卡无效）。提交后信用卡会扣除1美金进行验证，验证完成即退回。&lt;/p&gt;
+付款方式填写你的外币信用卡（单币银联卡无效）。提交后信用卡会扣除1美金进行验证，验证完成即退回。
 
-&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/large/005MY9Xigy1fotynitahxj30dt07ft9n.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+![](http://ww1.sinaimg.cn/large/005MY9Xigy1fotynitahxj30dt07ft9n.jpg)
 
-&lt;h1 id=&quot;创建计算引擎&quot;&gt;创建计算引擎&lt;/h1&gt;
+# 创建计算引擎
 
-&lt;p&gt;进入控制台，首先要求创建一个项目，尽量使用简单易记的项目名。&lt;/p&gt;
+进入控制台，首先要求创建一个项目，尽量使用简单易记的项目名。
 
-&lt;p&gt;项目创建完成后，点击控制台左上角的 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;☰&lt;/code&gt; 打开导航栏，找到 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Compute Engine&lt;/code&gt; → &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;VM实例&lt;/code&gt; ，点击 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;创建&lt;/code&gt; 开始创建一个计算引擎。&lt;/p&gt;
+项目创建完成后，点击控制台左上角的 `☰` 打开导航栏，找到 `Compute Engine` → `VM实例` ，点击 `创建` 开始创建一个计算引擎。
 
-&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/large/005MY9Xigy1fotz3od46zj30j309eabi.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+![](http://ww1.sinaimg.cn/large/005MY9Xigy1fotz3od46zj30j309eabi.jpg)
 
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;区域&lt;/code&gt; 有3个比较好的选择：&lt;/p&gt;
+`区域` 有3个比较好的选择：
 
-&lt;pre&gt;&lt;code class=&quot;language-nohighlight&quot;&gt;asia-east1：位于台湾
+``` nohighlight
+asia-east1：位于台湾
 
 asia-southeast1：位于新加坡
 
 asia-northeast1：位于东京
-&lt;/code&gt;&lt;/pre&gt;
+```
 
-&lt;p&gt;从国内ping延迟都在100ms左右，它们的流量费用和硬件费用有细微的差别，在意的朋友可以在&lt;a href=&quot;https://cloud.google.com/compute/pricing&quot;&gt;这里&lt;/a&gt;查询。&lt;/p&gt;
+从国内ping延迟都在100ms左右，它们的流量费用和硬件费用有细微的差别，在意的朋友可以在[这里](https://cloud.google.com/compute/pricing)查询。
 
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;机器类型&lt;/code&gt; 可以选择最小的微型（1个共享vCPU，0.6GB内存）以节省硬件费用，单作为SS服务器该配置已经足够。&lt;/p&gt;
+`机器类型` 可以选择最小的微型（1个共享vCPU，0.6GB内存）以节省硬件费用，单作为SS服务器该配置已经足够。
 
-&lt;p&gt;其他设置可以保持默认。点击 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;创建&lt;/code&gt; 。&lt;/p&gt;
+其他设置可以保持默认。点击 `创建` 。
 
-&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/large/005MY9Xigy1fotzuwl2gej30ep0acwgb.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+![](http://ww1.sinaimg.cn/large/005MY9Xigy1fotzuwl2gej30ep0acwgb.jpg)
 
-&lt;h1 id=&quot;配置ss服务器&quot;&gt;配置SS服务器&lt;/h1&gt;
+# 配置SS服务器
 
-&lt;p&gt;创建完成后可以看到分配给实例的 &lt;strong&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;外部IP&lt;/code&gt;&lt;/strong&gt; ，请牢记。&lt;/p&gt;
+创建完成后可以看到分配给实例的 **`外部IP`** ，请牢记。
 
-&lt;p&gt;点击云引擎后面的 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;SSH&lt;/code&gt; ，远程连接该主机，进行配置。&lt;/p&gt;
+点击云引擎后面的 `SSH` ，远程连接该主机，进行配置。
 
-&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/large/005MY9Xigy1fou05u93clj30cw04yweq.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+![](http://ww1.sinaimg.cn/large/005MY9Xigy1fou05u93clj30cw04yweq.jpg)
 
-&lt;p&gt;这里使用&lt;a href=&quot;https://teddysun.com/358.html&quot;&gt;秋水逸冰&lt;/a&gt;大大的SS服务器配置脚本。&lt;/p&gt;
+这里使用[秋水逸冰](https://teddysun.com/358.html)大大的SS服务器配置脚本。
 
-&lt;p&gt;依次输入下面三条指令：&lt;/p&gt;
+依次输入下面三条指令：
 
-&lt;pre&gt;&lt;code class=&quot;language-nohighlight&quot;&gt;wget --no-check-certificate -O shadowsocks.sh https://raw.githubusercontent.com/wjk199511140034/ss-onekeyinstall/master/shadowsocks.sh
+``` nohighlight
+wget --no-check-certificate -O shadowsocks.sh https://raw.githubusercontent.com/wjk199511140034/ss-onekeyinstall/master/shadowsocks.sh
 
 sudo chmod +x shadowsocks.sh
 
-sudo ./shadowsocks.sh 2&amp;gt;&amp;amp;1 | tee shadowsocks.log
-&lt;/code&gt;&lt;/pre&gt;
+sudo ./shadowsocks.sh 2&gt;&amp;1 | tee shadowsocks.log
+```
 
-&lt;p&gt;第三条指令运行后即进入配置过程，需要根据提示输入几项信息。&lt;/p&gt;
+第三条指令运行后即进入配置过程，需要根据提示输入几项信息。
 
-&lt;p&gt;Please input password for shadowsocks-libev：输入 &lt;strong&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;密码&lt;/code&gt;&lt;/strong&gt; ，请牢记&lt;/p&gt;
+Please input password for shadowsocks-libev：输入 **`密码`** ，请牢记
 
-&lt;p&gt;Please enter a port for shadowsocks-libev：输入SS &lt;strong&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;服务器端口号&lt;/code&gt;&lt;/strong&gt; ，请牢记&lt;/p&gt;
+Please enter a port for shadowsocks-libev：输入SS **`服务器端口号`** ，请牢记
 
-&lt;p&gt;Which cipher you’d select：选择一种 &lt;strong&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;加密方式&lt;/code&gt;&lt;/strong&gt; ，请牢记&lt;/p&gt;
+Which cipher you'd select：选择一种 **`加密方式`** ，请牢记
 
-&lt;p&gt;按任意键开始执行脚本，等待脚本运行完毕。&lt;/p&gt;
+按任意键开始执行脚本，等待脚本运行完毕。
 
-&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/large/005MY9Xigy1fou5nkwqofj30gs07d768.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+![](http://ww1.sinaimg.cn/large/005MY9Xigy1fou5nkwqofj30gs07d768.jpg)
 
-&lt;h1 id=&quot;创建防火墙规则&quot;&gt;创建防火墙规则&lt;/h1&gt;
+# 创建防火墙规则
 
-&lt;p&gt;点击控制台左上角的 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;☰&lt;/code&gt; 打开导航栏，找到 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;VPC网络&lt;/code&gt; → &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;防火墙规则&lt;/code&gt; ，点击 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;创建防火墙规则&lt;/code&gt; 创建如下2个规则。&lt;/p&gt;
+点击控制台左上角的 `☰` 打开导航栏，找到 `VPC网络` → `防火墙规则` ，点击 `创建防火墙规则` 创建如下2个规则。
 
-&lt;ol&gt;
-  &lt;li&gt;入站规则&lt;/li&gt;
-&lt;/ol&gt;
+1. 入站规则
 
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;流量方向&lt;/code&gt; ：入站&lt;/p&gt;
+`流量方向` ：入站
 
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;目标&lt;/code&gt; ：网络中的所有实例&lt;/p&gt;
+`目标` ：网络中的所有实例
 
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;来源 IP 地址范围&lt;/code&gt; ：0.0.0.0/0&lt;/p&gt;
+`来源 IP 地址范围` ：0.0.0.0/0
 
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;协议和端口&lt;/code&gt; ：全部允许&lt;/p&gt;
+`协议和端口` ：全部允许
 
-&lt;p&gt;其他部分可以保持默认，这条规则表示允许所有ip/端口的所有协议入站。&lt;/p&gt;
+   其他部分可以保持默认，这条规则表示允许所有ip/端口的所有协议入站。
 
-&lt;ol&gt;
-  &lt;li&gt;出站规则&lt;/li&gt;
-&lt;/ol&gt;
+2. 出站规则
 
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;流量方向&lt;/code&gt; ：出站&lt;/p&gt;
+`流量方向` ：出站
 
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;目标&lt;/code&gt; ：网络中的所有实例&lt;/p&gt;
+`目标` ：网络中的所有实例
 
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;来源 IP 地址范围&lt;/code&gt; ：0.0.0.0/0&lt;/p&gt;
+`来源 IP 地址范围` ：0.0.0.0/0
 
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;协议和端口&lt;/code&gt; ：全部允许&lt;/p&gt;
+`协议和端口` ：全部允许
 
-&lt;p&gt;其他部分可以保持默认，这条规则表示允许所有协议出站到所有ip/端口。&lt;/p&gt;
+   其他部分可以保持默认，这条规则表示允许所有协议出站到所有ip/端口。
 
-&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/large/005MY9Xigy1fou5nhwhkuj30hx07eq4a.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+![](http://ww1.sinaimg.cn/large/005MY9Xigy1fou5nhwhkuj30hx07eq4a.jpg)
 
-&lt;p&gt;至此，SS服务器部署完毕。你可以关闭你不稳定的试用版VPN，准备开始正确地科学上网了。&lt;/p&gt;
+至此，SS服务器部署完毕。你可以关闭你不稳定的试用版VPN，准备开始正确地科学上网了。
 
-&lt;h1 id=&quot;使用ss客户端&quot;&gt;使用SS客户端&lt;/h1&gt;
+# 使用SS客户端
 
-&lt;p&gt;这里仅以Windows客户端为例，Android端很相似。Debian平台使用SS客户端则需要进行一些配置，将另外做一次总结。&lt;/p&gt;
+这里仅以Windows客户端为例，Android端很相似。Debian平台使用SS客户端则需要进行一些配置，将另外做一次总结。
 
-&lt;p&gt;可以在GitHub下载到Windows平台的&lt;a href=&quot;https://github.com/shadowsocks/shadowsocks-windows/releases&quot;&gt;SS客户端&lt;/a&gt;。&lt;/p&gt;
+可以在GitHub下载到Windows平台的[SS客户端](https://github.com/shadowsocks/shadowsocks-windows/releases)。
 
-&lt;p&gt;如果你无法打开GitHub，可以点击&lt;a href=&quot;https://share.weiyun.com/edaa2c5f08aa5169c2be5c6a9f59662d&quot;&gt;这里&lt;/a&gt;，前往微云下载，但不保证是最新版本。&lt;/p&gt;
+如果你无法打开GitHub，可以点击[这里](https://share.weiyun.com/edaa2c5f08aa5169c2be5c6a9f59662d)，前往微云下载，但不保证是最新版本。
 
-&lt;p&gt;请将可执行程序放置在合适的文件夹内，运行后会在程序同一目录下产生配置文件，如果随便放置容易显得杂乱。&lt;/p&gt;
+请将可执行程序放置在合适的文件夹内，运行后会在程序同一目录下产生配置文件，如果随便放置容易显得杂乱。
 
-&lt;p&gt;第一次打开SS客户端会主动要求编辑服务器。填入你的 &lt;strong&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;外部IP&lt;/code&gt;&lt;/strong&gt; &lt;strong&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;密码&lt;/code&gt;&lt;/strong&gt; &lt;strong&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;服务器端口号&lt;/code&gt;&lt;/strong&gt; &lt;strong&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;加密方式&lt;/code&gt;&lt;/strong&gt; ，其他设置可以保持默认。&lt;/p&gt;
+第一次打开SS客户端会主动要求编辑服务器。填入你的 **`外部IP`** **`密码`** **`服务器端口号`** **`加密方式`** ，其他设置可以保持默认。
 
-&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/large/005MY9Xigy1fou6bi1tebj309z09l3zf.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+![](http://ww1.sinaimg.cn/large/005MY9Xigy1fou6bi1tebj309z09l3zf.jpg)
 
-&lt;p&gt;最后，右击任务栏的小图标，勾选 &lt;strong&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;启用系统代理&lt;/code&gt;&lt;/strong&gt; 。系统代理模式选择 &lt;strong&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;PAC模式&lt;/code&gt;&lt;/strong&gt; ，这样SS会自动使用代理访问墙外站点，不需要另外安装浏览器的代理插件。&lt;/p&gt;
+最后，右击任务栏的小图标，勾选 **`启用系统代理`** 。系统代理模式选择 **`PAC模式`** ，这样SS会自动使用代理访问墙外站点，不需要另外安装浏览器的代理插件。
 
-&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/005MY9Xigy1fou6nucjagj3059065t8t.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+![](http://ww1.sinaimg.cn/mw690/005MY9Xigy1fou6nucjagj3059065t8t.jpg)
 
-&lt;h1 id=&quot;参考资料&quot;&gt;参考资料&lt;/h1&gt;
+# 参考资料
 
-&lt;p&gt;&lt;a href=&quot;https://teddysun.com/358.html&quot;&gt;Debian下shadowsocks-libev一键安装脚本&lt;/a&gt;&lt;/p&gt;
+[Debian下shadowsocks-libev一键安装脚本](https://teddysun.com/358.html)
 
-&lt;p&gt;&lt;a href=&quot;https://teddysun.com/399.html&quot;&gt;Shadowsocks Troubleshooting&lt;/a&gt;&lt;/p&gt;
+[Shadowsocks Troubleshooting](https://teddysun.com/399.html)
 
-&lt;p&gt;&lt;a href=&quot;http://blog.021xt.cc/archives/98&quot;&gt;Shadowsocks原理和搭建&lt;/a&gt;&lt;/p&gt;
+[Shadowsocks原理和搭建](http://blog.021xt.cc/archives/98)
 
-&lt;p&gt;&lt;a href=&quot;https://51.ruyo.net/2144.html&quot;&gt;Google Cloud服务免费申请试用以及使用教程&lt;/a&gt;&lt;/p&gt;
+[Google Cloud服务免费申请试用以及使用教程](https://51.ruyo.net/2144.html)
 
-&lt;p&gt;感谢你阅读文章！&lt;/p&gt;</content><author><name>Qinghao Lin</name></author><summary type="html">Google Cloud Platform的新用户可以获得$300赠金的一年使用权，使用这笔不菲的赠金，我们可以构建应用程序、搭建网站、存储数据、体验各种强大的API。这次，我总结了使用Google云计算引擎搭建SS服务器，实现科学上网的过程，也算作为墙内使用谷歌云平台的第一步。</summary></entry></feed>
+感谢你阅读文章！</content><author><name>Qinghao Lin</name></author><summary type="html">Google Cloud Platform的新用户可以获得$300赠金的一年使用权，使用这笔不菲的赠金，我们可以构建应用程序、搭建网站、存储数据、体验各种强大的API。这次，我总结了使用Google云计算引擎搭建SS服务器，实现科学上网的过程，也算作为墙内使用谷歌云平台的第一步。</summary></entry></feed>
