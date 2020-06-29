@@ -7,8 +7,6 @@ keywords: 树莓派, 软件源, apt
 furigana: true
 ---
 
-# 树莓派学习手记——修改软件源
-
 ## 1. 国情，国情
 
 在Raspbian/Ubuntu系统上，升级系统或安装软件只需要一条很简单的命令：
@@ -28,7 +26,7 @@ sudo apt upgrade		# 更新软件
 
   ​
 
-##2. 配置文件在哪
+## 2. 配置文件在哪
 
 ``` nohighlight
 /etc/apt/sources.list
