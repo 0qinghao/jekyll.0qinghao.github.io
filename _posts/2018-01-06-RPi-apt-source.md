@@ -7,7 +7,7 @@ keywords: 树莓派, 软件源, apt
 furigana: true
 ---
 
-## 1. 国情，国情
+## 国情，国情
 
 在Raspbian/Ubuntu系统上，升级系统或安装软件只需要一条很简单的命令：
 
@@ -26,7 +26,7 @@ sudo apt upgrade		# 更新软件
 
   ​
 
-## 2. 配置文件在哪
+## 配置文件在哪
 
 ``` nohighlight
 /etc/apt/sources.list
@@ -44,7 +44,7 @@ sudo cp /etc/apt/sources.list.d/raspi.list /etc/apt/sources.list.d/raspi.bak
 
   ​
 
-## 3. 我的Codename是什么
+## 我的Codename是什么
 
 我们来确定自己树莓派安装的系统Codename是什么：
 
@@ -60,7 +60,7 @@ Codename: stretch
 
   ​
 
-## 4. 修改配置文件
+## 修改配置文件
 
 国内有许多高校提供了树莓派的软件源镜像。可以在这个网页查看所有的镜像网站：http://www.raspbian.org/RaspbianMirrors
 
