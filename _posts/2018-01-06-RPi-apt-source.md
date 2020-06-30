@@ -94,7 +94,7 @@ deb http://mirrors.ustc.edu.cn/archive.raspberrypi.org/ stretch main ui
 deb-src http://mirrors.ustc.edu.cn/archive.raspberrypi.org/ stretch main ui
 ```
 
-**相信细心地同学已经注意到了，修改的文件内容网址后紧接着一项"stretch"。如果你手中的树莓派安装的系统Codename并不是stretch，还请进行相应修改。**
+**相信细心的同学已经注意到了，修改的文件内容网址后紧接着一项"stretch"。如果你手中的树莓派安装的系统Codename并不是stretch，还请进行相应修改。**
 
 ----------
 

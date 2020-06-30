@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.7">Jekyll</generator><link href="https://0qinghao.github.io/inforest/feed.xml" rel="self" type="application/atom+xml" /><link href="https://0qinghao.github.io/inforest/" rel="alternate" type="text/html" /><updated>2020-06-30T05:18:06+08:00</updated><id>https://0qinghao.github.io/inforest/feed.xml</id><title type="html">林间</title><subtitle>林庆毫的个人空间</subtitle><author><name>Qinghao Lin</name></author><entry><title type="html">译 - 使用iStyle格式化Verilog代码</title><link href="https://0qinghao.github.io/inforest/2019/08/09/translate-use-istyle-to-format-verilog-code/" rel="alternate" type="text/html" title="译 - 使用iStyle格式化Verilog代码" /><published>2019-08-09T00:00:00+08:00</published><updated>2019-08-09T00:00:00+08:00</updated><id>https://0qinghao.github.io/inforest/2019/08/09/translate-use-istyle-to-format-verilog-code</id><content type="html" xml:base="https://0qinghao.github.io/inforest/2019/08/09/translate-use-istyle-to-format-verilog-code/">&lt;blockquote&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.7">Jekyll</generator><link href="https://0qinghao.github.io/inforest/feed.xml" rel="self" type="application/atom+xml" /><link href="https://0qinghao.github.io/inforest/" rel="alternate" type="text/html" /><updated>2020-06-30T12:41:21+08:00</updated><id>https://0qinghao.github.io/inforest/feed.xml</id><title type="html">林间</title><subtitle>林庆毫的个人空间</subtitle><author><name>Qinghao Lin</name></author><entry><title type="html">译 - 使用iStyle格式化Verilog代码</title><link href="https://0qinghao.github.io/inforest/2019/08/09/translate-use-istyle-to-format-verilog-code/" rel="alternate" type="text/html" title="译 - 使用iStyle格式化Verilog代码" /><published>2019-08-09T00:00:00+08:00</published><updated>2019-08-09T00:00:00+08:00</updated><id>https://0qinghao.github.io/inforest/2019/08/09/translate-use-istyle-to-format-verilog-code</id><content type="html" xml:base="https://0qinghao.github.io/inforest/2019/08/09/translate-use-istyle-to-format-verilog-code/">&lt;blockquote&gt;
   &lt;p&gt;原文：&lt;a href=&quot;https://qiita.com/kkumt93/items/70766645c07c298d19c3&quot;&gt;Verilogでコード整形&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
@@ -241,7 +241,52 @@ export ftp_proxy=http://127.0.0.1:8123
 
 &lt;p&gt;我对CMD/LX终端设置代理的出发点，是为了使用Google的一个API，设置后确实能够成功使用。另外似乎对 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pip&lt;/code&gt; 等指令也有效果，安装python模块时的下载速度有比较明显的提升。不过说到底只是在总结如何使用别人做好的工具，很多原理还是没有明白，如果文中有何纰漏，恳请指正。&lt;/p&gt;
 
-&lt;p&gt;感谢你阅读文章！&lt;/p&gt;</content><author><name>Qinghao Lin</name></author><summary type="html">在之前的博文中分享了如何使用Google云计算引擎搭建SS服务器，如何使用SS客户端，已经满足了科学上网的基本需求。这次将要总结在Windows的 CMD 窗口和Linux的 LX终端 中，让 wget curl 等命令使用代理需要进行的一些配置。</summary></entry><entry><title type="html">在Python中使用谷歌Cloud Speech API将语音转换为文字</title><link href="https://0qinghao.github.io/inforest/2018/03/08/google-cloud-speech-api-voice2text-python/" rel="alternate" type="text/html" title="在Python中使用谷歌Cloud Speech API将语音转换为文字" /><published>2018-03-08T00:00:00+08:00</published><updated>2018-03-08T00:00:00+08:00</updated><id>https://0qinghao.github.io/inforest/2018/03/08/google-cloud-speech-api-voice2text-python</id><content type="html" xml:base="https://0qinghao.github.io/inforest/2018/03/08/google-cloud-speech-api-voice2text-python/">&lt;p&gt;之前我们总结了&lt;a href=&quot;https://segmentfault.com/a/1190000013591768&quot;&gt;使用谷歌Cloud Speech API将语音转换为文字&lt;/a&gt;的基本流程，然而那只是在命令行中使用curl实现的。这次我们将总结在Python中使用Cloud Speech API的方法。&lt;/p&gt;
+&lt;p&gt;感谢你阅读文章！&lt;/p&gt;</content><author><name>Qinghao Lin</name></author><summary type="html">在之前的博文中分享了如何使用Google云计算引擎搭建SS服务器，如何使用SS客户端，已经满足了科学上网的基本需求。这次将要总结在Windows的 CMD 窗口和Linux的 LX终端 中，让 wget curl 等命令使用代理需要进行的一些配置。</summary></entry><entry><title type="html">常见内网网段</title><link href="https://0qinghao.github.io/inforest/2018/04/05/common-local-ip/" rel="alternate" type="text/html" title="常见内网网段" /><published>2018-04-05T00:00:00+08:00</published><updated>2018-04-05T00:00:00+08:00</updated><id>https://0qinghao.github.io/inforest/2018/04/05/common-local-ip</id><content type="html" xml:base="https://0qinghao.github.io/inforest/2018/04/05/common-local-ip/">&lt;blockquote&gt;
+  &lt;p&gt;&lt;a href=&quot;http://blog.kankanan.com/article/51857f51-ip-6bb5670954ea4e9b.html&quot;&gt;内网IP段有哪些&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;常见的内网IP段有：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-nohighlight&quot;&gt;10.0.0.0/8
+10.0.0.0 - 10.255.255.255
+
+172.16.0.0/12
+172.16.0.0 - 172.31.255.255
+
+192.168.0.0/16
+192.168.0.0 - 192.168.255.255
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;以上三个网段分别属于A、B、C三类IP地址，来自 《RFC 1918》。&lt;/p&gt;
+
+&lt;p&gt;但是根据 《Reserved IP addresses - Wikipedia, the free encyclopedia》 及《RFC 6890 - Special-Purpose IP Address Registries》的描述， 还有很多其它的内网IP段（包括IPv6），以及其它用途的保留IP地址。&lt;/p&gt;
+
+&lt;p&gt;其它IPv4内网段罗列如下：&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;0.0.0.0/8
+0.0.0.0 - 0.255.255.255
+用于当前网络内的广播消息。
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;100.64.0.0/10
+100.64.0.0 - 100.127.255.255
+由运营商使用的私网IP段，随着IPv4地址池的耗光，会有更多用户被分配到这个网段。
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;127.0.0.0/8
+127.0.0.0 - 127.255.255.255
+本机回环地址。
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;169.254.0.0/16
+169.254.0.0 - 169.254.255.255
+获取不到IP地址时使用，通常因为从DHCP服务器获取不到IP。
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;255.255.255.255/32
+255.255.255.255
+本网段的广播地址。
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Qinghao Lin</name></author><summary type="html">内网IP段有哪些</summary></entry><entry><title type="html">在Python中使用谷歌Cloud Speech API将语音转换为文字</title><link href="https://0qinghao.github.io/inforest/2018/03/08/google-cloud-speech-api-voice2text-python/" rel="alternate" type="text/html" title="在Python中使用谷歌Cloud Speech API将语音转换为文字" /><published>2018-03-08T00:00:00+08:00</published><updated>2018-03-08T00:00:00+08:00</updated><id>https://0qinghao.github.io/inforest/2018/03/08/google-cloud-speech-api-voice2text-python</id><content type="html" xml:base="https://0qinghao.github.io/inforest/2018/03/08/google-cloud-speech-api-voice2text-python/">&lt;p&gt;之前我们总结了&lt;a href=&quot;https://segmentfault.com/a/1190000013591768&quot;&gt;使用谷歌Cloud Speech API将语音转换为文字&lt;/a&gt;的基本流程，然而那只是在命令行中使用curl实现的。这次我们将总结在Python中使用Cloud Speech API的方法。&lt;/p&gt;
 
 &lt;h1 id=&quot;配置python开发环境&quot;&gt;配置Python开发环境&lt;/h1&gt;
 
@@ -906,7 +951,7 @@ deb-src http://mirrors.ustc.edu.cn/raspbian/raspbian/ stretch main contrib non-f
 deb-src http://mirrors.ustc.edu.cn/archive.raspberrypi.org/ stretch main ui
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;strong&gt;相信细心地同学已经注意到了，修改的文件内容网址后紧接着一项”stretch”。如果你手中的树莓派安装的系统Codename并不是stretch，还请进行相应修改。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;相信细心的同学已经注意到了，修改的文件内容网址后紧接着一项”stretch”。如果你手中的树莓派安装的系统Codename并不是stretch，还请进行相应修改。&lt;/strong&gt;&lt;/p&gt;
 
 &lt;hr /&gt;
 
