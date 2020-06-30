@@ -44,7 +44,7 @@ furigana: true
 
 虽然有些麻烦，但是接下来我们要准备声音文件。Cloud Speech API没办法直接识别mp3、mp4中的声音，我们需要准备FLAC、WAV格式的音频。而且**仅支持单声道音频**，所以一般都需要转码之类的工作。
 
-详细的声音文件要求参见：[AudioEncoding | Google Cloud Speech API](https://cloud.google.com/speech/reference/rest/v1/RecognitionConfig#AudioEncoding)
+详细的声音文件要求参见：[AudioEncoding - Google Cloud Speech API](https://cloud.google.com/speech/reference/rest/v1/RecognitionConfig#AudioEncoding)
 
 基于上述情况，我读了下面这段文稿，并制成了FLAC格式（单声道）的声音文件。是用手机麦克风进行录音的，质量一般(´・ω・｀) 是否可以正确识别呢？
 
@@ -57,7 +57,7 @@ furigana: true
 
 # 将声音文件上传到Cloud Storage
 
-如果要使用Cloud Speech API识别本地声音文件，必须将音频文件编码为base64，然后嵌入到稍后将创建的json请求文件中，这虽然可行但并不方便。如果你想使用这种方法，请参考：[Embedding Base64 encoded audio | Google Cloud Speech API](https://cloud.google.com/speech/docs/base64-encoding#embedding_base64_encoded_audio)
+如果要使用Cloud Speech API识别本地声音文件，必须将音频文件编码为base64，然后嵌入到稍后将创建的json请求文件中，这虽然可行但并不方便。如果你想使用这种方法，请参考：[Embedding Base64 encoded audio - Google Cloud Speech API](https://cloud.google.com/speech/docs/base64-encoding#embedding_base64_encoded_audio)
 
 我们将使用另一种方案，将声音文件上传到Google Cloud Storage。
 
@@ -106,7 +106,7 @@ furigana: true
 
 注意3个地方：
 
-**`cmn-Hans-CN`** ：表示识别语言为中文普通话。常用的还有American English ( `en-US` )、British English ( `en-GB` )、日本語( `ja-JP` )、廣東話( `yue-Hant-HK` )。更多语言支持可以在[Language Support | Google Cloud Speech API](https://cloud.google.com/speech/docs/languages)查询。
+**`cmn-Hans-CN`** ：表示识别语言为中文普通话。常用的还有American English ( `en-US` )、British English ( `en-GB` )、日本語( `ja-JP` )、廣東話( `yue-Hant-HK` )。更多语言支持可以在[Language Support - Google Cloud Speech API](https://cloud.google.com/speech/docs/languages)查询。
 
 **`存储分区名称`** ：刚才是否有记录下来呢？如果没有记住可以点击控制台左上角的 `☰` 打开导航栏，找到 `存储` → `浏览器` 查看。
 

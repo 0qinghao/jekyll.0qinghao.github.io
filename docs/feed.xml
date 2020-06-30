@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.7">Jekyll</generator><link href="https://0qinghao.github.io/inforest/feed.xml" rel="self" type="application/atom+xml" /><link href="https://0qinghao.github.io/inforest/" rel="alternate" type="text/html" /><updated>2020-06-30T12:41:21+08:00</updated><id>https://0qinghao.github.io/inforest/feed.xml</id><title type="html">林间</title><subtitle>林庆毫的个人空间</subtitle><author><name>Qinghao Lin</name></author><entry><title type="html">译 - 使用iStyle格式化Verilog代码</title><link href="https://0qinghao.github.io/inforest/2019/08/09/translate-use-istyle-to-format-verilog-code/" rel="alternate" type="text/html" title="译 - 使用iStyle格式化Verilog代码" /><published>2019-08-09T00:00:00+08:00</published><updated>2019-08-09T00:00:00+08:00</updated><id>https://0qinghao.github.io/inforest/2019/08/09/translate-use-istyle-to-format-verilog-code</id><content type="html" xml:base="https://0qinghao.github.io/inforest/2019/08/09/translate-use-istyle-to-format-verilog-code/">&lt;blockquote&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.7">Jekyll</generator><link href="https://0qinghao.github.io/inforest/feed.xml" rel="self" type="application/atom+xml" /><link href="https://0qinghao.github.io/inforest/" rel="alternate" type="text/html" /><updated>2020-06-30T15:07:03+08:00</updated><id>https://0qinghao.github.io/inforest/feed.xml</id><title type="html">林间</title><subtitle>林庆毫的个人空间</subtitle><author><name>Qinghao Lin</name></author><entry><title type="html">译 - 使用iStyle格式化Verilog代码</title><link href="https://0qinghao.github.io/inforest/2019/08/09/translate-use-istyle-to-format-verilog-code/" rel="alternate" type="text/html" title="译 - 使用iStyle格式化Verilog代码" /><published>2019-08-09T00:00:00+08:00</published><updated>2019-08-09T00:00:00+08:00</updated><id>https://0qinghao.github.io/inforest/2019/08/09/translate-use-istyle-to-format-verilog-code</id><content type="html" xml:base="https://0qinghao.github.io/inforest/2019/08/09/translate-use-istyle-to-format-verilog-code/">&lt;blockquote&gt;
   &lt;p&gt;原文：&lt;a href=&quot;https://qiita.com/kkumt93/items/70766645c07c298d19c3&quot;&gt;Verilogでコード整形&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
@@ -165,7 +165,7 @@ set https_proxy=
 set ftp_proxy=
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;*****设置代理后只对当前命令行窗口生效，重新打开CDM需要再次设置。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;设置代理后只对当前命令行窗口生效，重新打开CDM需要再次设置。&lt;/strong&gt;&lt;/p&gt;
 
 &lt;h1 id=&quot;linux-lx终端代理&quot;&gt;Linux LX终端代理&lt;/h1&gt;
 
@@ -286,7 +286,93 @@ export ftp_proxy=http://127.0.0.1:8123
 &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;255.255.255.255/32
 255.255.255.255
 本网段的广播地址。
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Qinghao Lin</name></author><summary type="html">内网IP段有哪些</summary></entry><entry><title type="html">在Python中使用谷歌Cloud Speech API将语音转换为文字</title><link href="https://0qinghao.github.io/inforest/2018/03/08/google-cloud-speech-api-voice2text-python/" rel="alternate" type="text/html" title="在Python中使用谷歌Cloud Speech API将语音转换为文字" /><published>2018-03-08T00:00:00+08:00</published><updated>2018-03-08T00:00:00+08:00</updated><id>https://0qinghao.github.io/inforest/2018/03/08/google-cloud-speech-api-voice2text-python</id><content type="html" xml:base="https://0qinghao.github.io/inforest/2018/03/08/google-cloud-speech-api-voice2text-python/">&lt;p&gt;之前我们总结了&lt;a href=&quot;https://segmentfault.com/a/1190000013591768&quot;&gt;使用谷歌Cloud Speech API将语音转换为文字&lt;/a&gt;的基本流程，然而那只是在命令行中使用curl实现的。这次我们将总结在Python中使用Cloud Speech API的方法。&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Qinghao Lin</name></author><summary type="html">内网IP段有哪些</summary></entry><entry><title type="html">在Python中使用谷歌Cloud Speech API将语音转换为文字（另一种方案）</title><link href="https://0qinghao.github.io/inforest/2018/03/08/google-cloud-speech-api-voice2text-python-another-way/" rel="alternate" type="text/html" title="在Python中使用谷歌Cloud Speech API将语音转换为文字（另一种方案）" /><published>2018-03-08T00:00:00+08:00</published><updated>2018-03-08T00:00:00+08:00</updated><id>https://0qinghao.github.io/inforest/2018/03/08/google-cloud-speech-api-voice2text-python-another-way</id><content type="html" xml:base="https://0qinghao.github.io/inforest/2018/03/08/google-cloud-speech-api-voice2text-python-another-way/">&lt;p&gt;在之前发布的&lt;a href=&quot;https://segmentfault.com/a/1190000013591768&quot;&gt;使用谷歌Cloud Speech API将语音转换为文字&lt;/a&gt;一文中，我们实现了在控制台使用curl发送post请求，得到语音转文字的结果；而&lt;a href=&quot;https://segmentfault.com/a/1190000013600141&quot;&gt;在Python中使用谷歌Cloud Speech API将语音转换为文字&lt;/a&gt;一文中，我们实现了安装Cloud Speech API客户端库，通过调用库函数得到语音转文字的结果。&lt;/p&gt;
+
+&lt;p&gt;如果你尝试过这两种方法，就会发现其实后者得到结果需要的时间要长一些（笔者使用这两种方法得到结果的耗时分别大约是5秒、7秒）。那么，有没有办法在python中像第一种方法那样，使用curl命令发送post请求呢。当然是可行的，所以今天我们将介绍在Python中使用Cloud Speech API将语音转换为文字的另一种方案，另外这次我们将把音频文件编码为base64嵌入到json请求文件中，省去了上传声音文件到Cloud Storage的步骤。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;相关说明之类的在上面两篇文章里已经写了很多，这边就直接贴代码。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;*使用python3&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;json&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;urllib.request&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;base64&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;# ①
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;api_url&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;https://speech.googleapis.com/v1beta1/speech:syncrecognize?key=你的API密钥&quot;&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;audio_file&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;open&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'/home/pi/chat/test-speech/output.wav'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'rb'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;audio_b64&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;base64&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;b64encode&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;audio_file&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;read&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;())&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;audio_b64str&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;audio_b64&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;decode&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;	&lt;span class=&quot;c1&quot;&gt;# ②
+# print(type(audio_b64))
+# print(type(audio_b64str))
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;audio_file&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;close&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;# ③
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;voice&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;s&quot;&gt;&quot;config&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;#&quot;encoding&quot;: &quot;WAV&quot;,
+&lt;/span&gt;    &lt;span class=&quot;s&quot;&gt;&quot;languageCode&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;cmn-Hans-CN&quot;&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+
+  &lt;span class=&quot;s&quot;&gt;&quot;audio&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;s&quot;&gt;&quot;content&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;audio_b64str&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;# 将字典格式的voice编码为utf8
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;voice&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;json&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dumps&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;voice&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;encode&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'utf8'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;req&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;urllib&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;request&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Request&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;api_url&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;voice&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;headers&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'content-type'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'application/json'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;})&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;response&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;urllib&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;request&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;urlopen&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;req&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;response_str&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;response&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;read&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;().&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;decode&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'utf8'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;# ④
+# print(response_str)
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;response_dic&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;json&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;loads&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;response_str&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;transcript&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;response_dic&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'results'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;][&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;][&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'alternatives'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;][&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;][&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'transcript'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;confidence&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;response_dic&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'results'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;][&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;][&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'alternatives'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;][&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;][&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'confidence'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;transcript&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;confidence&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;几点说明：&lt;/p&gt;
+
+&lt;p&gt;注释 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;①&lt;/code&gt; ：请求API的链接，请替换 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;你的API密钥&lt;/code&gt; 。如果你有疑问，或许可以参考 &lt;a href=&quot;https://segmentfault.com/a/1190000013591768#articleHeader2&quot;&gt;创建API密钥 - 使用谷歌Cloud Speech API将语音转换为文字&lt;/a&gt; 。
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;audio_file&lt;/code&gt; 路径替换为你的本地声音文件路径。&lt;/p&gt;
+
+&lt;p&gt;注释 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;②&lt;/code&gt; ：这次上传音频的方式是，将声音文件编码为base64，把对应的整个字符串放进json请求中。如果你执行 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;print(type(audio_b64))&lt;/code&gt; 就会发现编码后的audio_b64是 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;bytes&lt;/code&gt; 类型，所以还需要做一次decode()，转成字符串。&lt;/p&gt;
+
+&lt;p&gt;注释 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;③&lt;/code&gt; ：先以字典格式保存json请求内容，代表声音文件的字符串就在这里放入。&lt;/p&gt;
+
+&lt;p&gt;注释 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;④&lt;/code&gt; ：API返回的结果保存在 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;response_str&lt;/code&gt; ，如果你直接运行 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;print(response_str)&lt;/code&gt; 就会发现这个字符串可以看做一个有很多“层”的字典，要提取出识别结果，需要搞清楚这个字典到底是怎么组成的：&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/large/005MY9Xigy1fpijie8o5dj30fj09it8v.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;第 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;1&lt;/code&gt; 层：花括号{}说明字符串 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;response_str&lt;/code&gt; 在执行 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;json.loads&lt;/code&gt; 后变成一个”字典”。得到”字典” &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;response_dic&lt;/code&gt; 。&lt;/p&gt;
+
+&lt;p&gt;第 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;2&lt;/code&gt; 层：字典中只有一组键-值， &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;response_dic['results']&lt;/code&gt; 取出唯一的键”results”对应的值。观察这个值，发现中括号[]，说明这个值的类型是”列表“。&lt;/p&gt;
+
+&lt;p&gt;第 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;3&lt;/code&gt; 层：观察列表 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;response_dic['results']&lt;/code&gt; ，发现列表中只有一项数据，但这项数据又是”字典”类型。将其取出，得到”字典” &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;response_dic['results'][0]&lt;/code&gt; 。&lt;/p&gt;
+
+&lt;p&gt;第 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;4&lt;/code&gt; 层：字典中又是只有一组键-值， &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;response_dic['results'][0]['alternatives']&lt;/code&gt; 取出唯一的键”alternatives”对应的值。观察这个值，[]说明我们得到的结果又是一个”列表”。&lt;/p&gt;
+
+&lt;p&gt;第 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;5&lt;/code&gt; 层：观察列表 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;response_dic['results'][0]['alternatives']&lt;/code&gt; ，列表中只有一项数据， &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;response_dic['results'][0]['alternatives'][0]&lt;/code&gt; 再将这唯一一项数据取出，发现得到的是一个”字典”，而这次得到的字典中有两组键-值，分别取出就是我们要的结果和置信度了。&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;transcript&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;response_dic&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'results'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;][&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;][&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'alternatives'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;][&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;][&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'transcript'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;confidence&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;response_dic&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'results'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;][&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;][&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'alternatives'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;][&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;][&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'confidence'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;strong&gt;小结：&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;今天介绍的这种方案，获取结果需要的时间比用API客户端库要快一些，另外应用了把本地语音编码后放入json请求的方式，也能方便后期和录音程序结合在一起使用。但稍有一点缺点是API密钥直接暴露在代码中，对实际应用可能会有一些影响。&lt;/p&gt;
+
+&lt;p&gt;下一步的目标是和录音功能结合起来，实现自动识别当前录制的语音。&lt;/p&gt;
+
+&lt;p&gt;感谢你阅读文章！&lt;/p&gt;</content><author><name>Qinghao Lin</name></author><summary type="html">在之前发布的使用谷歌Cloud Speech API将语音转换为文字一文中，我们实现了在控制台使用curl发送post请求，得到语音转文字的结果；而在Python中使用谷歌Cloud Speech API将语音转换为文字一文中，我们实现了安装Cloud Speech API客户端库，通过调用库函数得到语音转文字的结果。</summary></entry><entry><title type="html">在Python中使用谷歌Cloud Speech API将语音转换为文字</title><link href="https://0qinghao.github.io/inforest/2018/03/08/google-cloud-speech-api-voice2text-python/" rel="alternate" type="text/html" title="在Python中使用谷歌Cloud Speech API将语音转换为文字" /><published>2018-03-08T00:00:00+08:00</published><updated>2018-03-08T00:00:00+08:00</updated><id>https://0qinghao.github.io/inforest/2018/03/08/google-cloud-speech-api-voice2text-python</id><content type="html" xml:base="https://0qinghao.github.io/inforest/2018/03/08/google-cloud-speech-api-voice2text-python/">&lt;p&gt;之前我们总结了&lt;a href=&quot;https://segmentfault.com/a/1190000013591768&quot;&gt;使用谷歌Cloud Speech API将语音转换为文字&lt;/a&gt;的基本流程，然而那只是在命令行中使用curl实现的。这次我们将总结在Python中使用Cloud Speech API的方法。&lt;/p&gt;
 
 &lt;h1 id=&quot;配置python开发环境&quot;&gt;配置Python开发环境&lt;/h1&gt;
 
@@ -408,23 +494,9 @@ virtualenv &lt;span class=&quot;nt&quot;&gt;--python&lt;/span&gt; python3 &lt;sp
 
 &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;file_name&lt;/code&gt; 给出了声音文件的路径。其中 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;os.path.dirname(__file__)&lt;/code&gt; 表示py代码所在文件夹的路径。故上例中声音文件是py代码相同目录下的 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;voice.wav&lt;/code&gt; 。&lt;/p&gt;
 
-&lt;table&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;config&lt;/code&gt; 给出了声音文件的编码信息，Cloud Speech API并不支持任意格式的声音文件，详细要求参见：[AudioEncoding&lt;/td&gt;
-      &lt;td&gt;Google Cloud Speech API](https://cloud.google.com/speech/reference/rest/v1/RecognitionConfig#AudioEncoding) 。&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;config&lt;/code&gt; 给出了声音文件的编码信息，Cloud Speech API并不支持任意格式的声音文件，详细要求参见：&lt;a href=&quot;https://cloud.google.com/speech/reference/rest/v1/RecognitionConfig#AudioEncoding&quot;&gt;AudioEncoding - Google Cloud Speech API&lt;/a&gt; 。&lt;/p&gt;
 
-&lt;table&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;language_code='cmn-Hans-CN'&lt;/code&gt; 表示识别语言为中文普通话。常用的还有American English ( &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;en-US&lt;/code&gt; )、British English ( &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;en-GB&lt;/code&gt; )、日本語( &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ja-JP&lt;/code&gt; )、廣東話( &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;yue-Hant-HK&lt;/code&gt; )。更多语言支持可以在[Language Support&lt;/td&gt;
-      &lt;td&gt;Google Cloud Speech API](https://cloud.google.com/speech/docs/languages)查询。&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;language_code='cmn-Hans-CN'&lt;/code&gt; 表示识别语言为中文普通话。常用的还有American English ( &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;en-US&lt;/code&gt; )、British English ( &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;en-GB&lt;/code&gt; )、日本語( &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ja-JP&lt;/code&gt; )、廣東話( &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;yue-Hant-HK&lt;/code&gt; )。更多语言支持可以在&lt;a href=&quot;https://cloud.google.com/speech/docs/languages&quot;&gt;Language Support - Google Cloud Speech API&lt;/a&gt;查询。&lt;/p&gt;
 
 &lt;p&gt;运行结果：&lt;/p&gt;
 
@@ -474,14 +546,7 @@ virtualenv &lt;span class=&quot;nt&quot;&gt;--python&lt;/span&gt; python3 &lt;sp
 
 &lt;p&gt;虽然有些麻烦，但是接下来我们要准备声音文件。Cloud Speech API没办法直接识别mp3、mp4中的声音，我们需要准备FLAC、WAV格式的音频。而且&lt;strong&gt;仅支持单声道音频&lt;/strong&gt;，所以一般都需要转码之类的工作。&lt;/p&gt;
 
-&lt;table&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;详细的声音文件要求参见：[AudioEncoding&lt;/td&gt;
-      &lt;td&gt;Google Cloud Speech API](https://cloud.google.com/speech/reference/rest/v1/RecognitionConfig#AudioEncoding)&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
+&lt;p&gt;详细的声音文件要求参见：&lt;a href=&quot;https://cloud.google.com/speech/reference/rest/v1/RecognitionConfig#AudioEncoding&quot;&gt;AudioEncoding - Google Cloud Speech API&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;基于上述情况，我读了下面这段文稿，并制成了FLAC格式（单声道）的声音文件。是用手机麦克风进行录音的，质量一般(´・ω・｀) 是否可以正确识别呢？&lt;/p&gt;
 
@@ -495,14 +560,7 @@ virtualenv &lt;span class=&quot;nt&quot;&gt;--python&lt;/span&gt; python3 &lt;sp
 
 &lt;h1 id=&quot;将声音文件上传到cloud-storage&quot;&gt;将声音文件上传到Cloud Storage&lt;/h1&gt;
 
-&lt;table&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;如果要使用Cloud Speech API识别本地声音文件，必须将音频文件编码为base64，然后嵌入到稍后将创建的json请求文件中，这虽然可行但并不方便。如果你想使用这种方法，请参考：[Embedding Base64 encoded audio&lt;/td&gt;
-      &lt;td&gt;Google Cloud Speech API](https://cloud.google.com/speech/docs/base64-encoding#embedding_base64_encoded_audio)&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
+&lt;p&gt;如果要使用Cloud Speech API识别本地声音文件，必须将音频文件编码为base64，然后嵌入到稍后将创建的json请求文件中，这虽然可行但并不方便。如果你想使用这种方法，请参考：&lt;a href=&quot;https://cloud.google.com/speech/docs/base64-encoding#embedding_base64_encoded_audio&quot;&gt;Embedding Base64 encoded audio - Google Cloud Speech API&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;我们将使用另一种方案，将声音文件上传到Google Cloud Storage。&lt;/p&gt;
 
@@ -552,14 +610,7 @@ virtualenv &lt;span class=&quot;nt&quot;&gt;--python&lt;/span&gt; python3 &lt;sp
 
 &lt;p&gt;注意3个地方：&lt;/p&gt;
 
-&lt;table&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;strong&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cmn-Hans-CN&lt;/code&gt;&lt;/strong&gt; ：表示识别语言为中文普通话。常用的还有American English ( &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;en-US&lt;/code&gt; )、British English ( &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;en-GB&lt;/code&gt; )、日本語( &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ja-JP&lt;/code&gt; )、廣東話( &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;yue-Hant-HK&lt;/code&gt; )。更多语言支持可以在[Language Support&lt;/td&gt;
-      &lt;td&gt;Google Cloud Speech API](https://cloud.google.com/speech/docs/languages)查询。&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
+&lt;p&gt;&lt;strong&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cmn-Hans-CN&lt;/code&gt;&lt;/strong&gt; ：表示识别语言为中文普通话。常用的还有American English ( &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;en-US&lt;/code&gt; )、British English ( &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;en-GB&lt;/code&gt; )、日本語( &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ja-JP&lt;/code&gt; )、廣東話( &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;yue-Hant-HK&lt;/code&gt; )。更多语言支持可以在&lt;a href=&quot;https://cloud.google.com/speech/docs/languages&quot;&gt;Language Support - Google Cloud Speech API&lt;/a&gt;查询。&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;存储分区名称&lt;/code&gt;&lt;/strong&gt; ：刚才是否有记录下来呢？如果没有记住可以点击控制台左上角的 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;☰&lt;/code&gt; 打开导航栏，找到 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;存储&lt;/code&gt; → &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;浏览器&lt;/code&gt; 查看。&lt;/p&gt;
 
@@ -608,11 +659,13 @@ virtualenv &lt;span class=&quot;nt&quot;&gt;--python&lt;/span&gt; python3 &lt;sp
 
 &lt;h2 id=&quot;配置客户端&quot;&gt;配置客户端&lt;/h2&gt;
 
-&lt;p&gt;第一次打开SS客户端会主动要求编辑服务器。填入你的 &lt;strong&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;服务器地址&lt;/code&gt;&lt;/strong&gt; &lt;strong&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;密码&lt;/code&gt;&lt;/strong&gt; &lt;strong&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;服务器端口号&lt;/code&gt;&lt;/strong&gt; &lt;strong&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;加密方式&lt;/code&gt;&lt;/strong&gt; ，其他设置可以保持默认。
-&lt;img src=&quot;http://ww1.sinaimg.cn/large/005MY9Xigy1fou6bi1tebj309z09l3zf.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;第一次打开SS客户端会主动要求编辑服务器。填入你的 &lt;strong&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;服务器地址&lt;/code&gt;&lt;/strong&gt; &lt;strong&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;密码&lt;/code&gt;&lt;/strong&gt; &lt;strong&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;服务器端口号&lt;/code&gt;&lt;/strong&gt; &lt;strong&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;加密方式&lt;/code&gt;&lt;/strong&gt; ，其他设置可以保持默认。&lt;/p&gt;
 
-&lt;p&gt;最后，右击任务栏的小图标，勾选 &lt;strong&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;启用系统代理&lt;/code&gt;&lt;/strong&gt; 。系统代理模式选择 &lt;strong&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;PAC模式&lt;/code&gt;&lt;/strong&gt; ，这样SS会自动使用代理访问墙外站点，不需要另外安装浏览器的代理插件。
-&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/005MY9Xigy1fou6nucjagj3059065t8t.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/large/005MY9Xigy1fou6bi1tebj309z09l3zf.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;最后，右击任务栏的小图标，勾选 &lt;strong&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;启用系统代理&lt;/code&gt;&lt;/strong&gt; 。系统代理模式选择 &lt;strong&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;PAC模式&lt;/code&gt;&lt;/strong&gt; ，这样SS会自动使用代理访问墙外站点，不需要另外安装浏览器的代理插件。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/005MY9Xigy1fou6nucjagj3059065t8t.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;h1 id=&quot;安卓系统下ss客户端的使用方法&quot;&gt;安卓系统下SS客户端的使用方法&lt;/h1&gt;
 
@@ -808,9 +861,9 @@ sudo ./shadowsocks.sh 2&amp;gt;&amp;amp;1 | tee shadowsocks.log
 
 &lt;p&gt;点击控制台左上角的 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;☰&lt;/code&gt; 打开导航栏，找到 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;VPC网络&lt;/code&gt; → &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;防火墙规则&lt;/code&gt; ，点击 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;创建防火墙规则&lt;/code&gt; 创建如下2个规则。&lt;/p&gt;
 
-&lt;ol&gt;
+&lt;ul&gt;
   &lt;li&gt;入站规则&lt;/li&gt;
-&lt;/ol&gt;
+&lt;/ul&gt;
 
 &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;流量方向&lt;/code&gt; ：入站&lt;/p&gt;
 
@@ -822,9 +875,9 @@ sudo ./shadowsocks.sh 2&amp;gt;&amp;amp;1 | tee shadowsocks.log
 
 &lt;p&gt;其他部分可以保持默认，这条规则表示允许所有ip/端口的所有协议入站。&lt;/p&gt;
 
-&lt;ol&gt;
+&lt;ul&gt;
   &lt;li&gt;出站规则&lt;/li&gt;
-&lt;/ol&gt;
+&lt;/ul&gt;
 
 &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;流量方向&lt;/code&gt; ：出站&lt;/p&gt;
 

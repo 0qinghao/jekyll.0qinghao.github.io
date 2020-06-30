@@ -138,9 +138,9 @@ for result in response.results:
 
 `file_name` 给出了声音文件的路径。其中 `os.path.dirname(__file__)` 表示py代码所在文件夹的路径。故上例中声音文件是py代码相同目录下的 `voice.wav` 。
 
-`config` 给出了声音文件的编码信息，Cloud Speech API并不支持任意格式的声音文件，详细要求参见：[AudioEncoding | Google Cloud Speech API](https://cloud.google.com/speech/reference/rest/v1/RecognitionConfig#AudioEncoding) 。
+`config` 给出了声音文件的编码信息，Cloud Speech API并不支持任意格式的声音文件，详细要求参见：[AudioEncoding - Google Cloud Speech API](https://cloud.google.com/speech/reference/rest/v1/RecognitionConfig#AudioEncoding) 。
 
-`language_code='cmn-Hans-CN'` 表示识别语言为中文普通话。常用的还有American English ( `en-US` )、British English ( `en-GB` )、日本語( `ja-JP` )、廣東話( `yue-Hant-HK` )。更多语言支持可以在[Language Support | Google Cloud Speech API](https://cloud.google.com/speech/docs/languages)查询。
+`language_code='cmn-Hans-CN'` 表示识别语言为中文普通话。常用的还有American English ( `en-US` )、British English ( `en-GB` )、日本語( `ja-JP` )、廣東話( `yue-Hant-HK` )。更多语言支持可以在[Language Support - Google Cloud Speech API](https://cloud.google.com/speech/docs/languages)查询。
 
 运行结果：
 
