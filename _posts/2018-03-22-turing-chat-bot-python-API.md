@@ -1,3 +1,11 @@
+---
+layout: post
+title: 使用Python与图灵机器人聊天
+categories: [python]
+description: 图灵机器人API使用例
+keywords: 图灵机器人, python
+furigana: false
+---
 图灵机器人对中文的识别准确率高达90%，是目前中文语境下智能度最高的机器人。有很多在Python中使用图灵机器人API的博客，但都是1.0版本。所以今天简单地总结一下在Python中使用图灵机器人API v2.0的方法。
 
 # 获取API KEY
@@ -12,15 +20,13 @@
 
 ![](http://ww1.sinaimg.cn/large/005MY9Xigy1fpkv7b8850j30br0av74t.jpg)
 
-
-
 # 在Python中使用图灵机器人API v2.0
 
 基本原理就是使用urllib.request模块，向接口地址发送HTTP POST请求，请求中加入了聊天内容。
 
 ***使用python3执行**
 
-```python
+``` python
 import json
 import urllib.request
 
@@ -73,11 +79,11 @@ print('text：' + results_text)
 
 ![](http://ww1.sinaimg.cn/large/005MY9Xigy1fpkw2kerdsj30fl03ejrd.jpg)
 
-*** 几点说明：**
+**几点说明：**
 
 1、字典 `req` 包含了向图灵机器人发出请求所需的各项信息。其中 `req['perception']['selfInfo']['location']` 包含了地理位置信息，向图灵机器人发送与位置有关的请求时，如果没有另外指定位置，则会默认使用这个位置。例如询问"明天会下雨吗"，图灵机器人会回答我"上海"明天是否下雨。
 
-2、`req['userInfo'] ` 包含了API KEY，请替换成你的API KEY（双引号不要删除）。另外 `userId` 是用户参数，暂时不明白用途，如果你有什么想法恳请留言。
+2、 `req['userInfo'] ` 包含了API KEY，请替换成你的API KEY（双引号不要删除）。另外 `userId` 是用户参数，暂时不明白用途，如果你有什么想法恳请留言。
 
 3、图灵机器人的回答可以转换为python的字典格式。其中有一项 `response_dic['intent']['code']` 官方称为"输出功能code"，表示这个回答是什么"类型"的。例如10004代表普通的聊天回复，10008代表与天气相关的回复。然而奇怪的是，目前API v2.0的官方文档并没有给出code和类型的对照表。目前自己总结了一些如下，欢迎补充：
 

@@ -1,8 +1,16 @@
+---
+layout: post
+title: 在Python中使用科大讯飞Web API进行语音合成
+categories: [python, 讯飞, TTS]
+description: 科大讯飞的TTS web API使用
+keywords: 讯飞, TTS, python
+furigana: false
+---
 前几日讯飞开放平台推出了WebAPI接口，恰好最近需要实现一个文字转语音的功能，于是就尝试着用了起来。但不知什么原因，官方文档的[调用示例](http://doc.xfyun.cn/rest_api/%E8%AF%AD%E9%9F%B3%E5%90%88%E6%88%90.html#%E8%B0%83%E7%94%A8%E7%A4%BA%E4%BE%8B)一直报错，最后自己照着示例的思路用python3重写了一遍。所以这次总结一下在Python中使用讯飞Web API进行语音合成的过程。
 
 # 注册讯飞开放平台
 
-首先注册讯飞开放平台：http://passport.xfyun.cn/register
+首先注册讯飞开放平台：[http://passport.xfyun.cn/register](http://passport.xfyun.cn/register)
 
 注册完成后进入控制台，在控制台[创建一个新应用](http://console.xfyun.cn/app/create?source=WebAPI) ，填写一些基本信息，注意 `应用平台` 选择 `WebAPI` 。
 
@@ -20,9 +28,9 @@
 
 可能提示缺库：pip3 install requests
 
-*** 使用python3执行**
+***使用python3执行**
 
-```python
+``` python
 import base64
 import json
 import time
@@ -99,11 +107,11 @@ TEXT是将要输出为语音的文本。
 
 最后需要将配置参数编码为Base64字符串：字典类型→明文字符串→utf8编码→Base64(bytes)→Base64字符串，具体实现可以参考代码。
 
-音频配置参数的详细说明可以参考[请求参数 | 语音合成](http://doc.xfyun.cn/rest_api/%E8%AF%AD%E9%9F%B3%E5%90%88%E6%88%90.html#%E8%AF%B7%E6%B1%82%E5%8F%82%E6%95%B0) 。
+音频配置参数的详细说明可以参考[请求参数 - 语音合成](http://doc.xfyun.cn/rest_api/%E8%AF%AD%E9%9F%B3%E5%90%88%E6%88%90.html#%E8%AF%B7%E6%B1%82%E5%8F%82%E6%95%B0) 。
 
 ## HTTP请求头部
 
-根据 [授权认证 | 科大讯飞RESET_API开发指南](http://doc.xfyun.cn/rest_api/%E6%8E%A5%E5%8F%A3%E6%A6%82%E8%BF%B0.html#%E6%8E%88%E6%9D%83%E8%AE%A4%E8%AF%81) ，在调用所有业务接口时，都需要在HTTP请求头部中配置以下参数用于授权认证：
+根据 [授权认证 - 科大讯飞RESET_API开发指南](http://doc.xfyun.cn/rest_api/%E6%8E%A5%E5%8F%A3%E6%A6%82%E8%BF%B0.html#%E6%8E%88%E6%9D%83%E8%AE%A4%E8%AF%81) ，在调用所有业务接口时，都需要在HTTP请求头部中配置以下参数用于授权认证：
 
 | 参数       |  格式  | 说明                                                         |
 | :--------- | :----: | ------------------------------------------------------------ |
@@ -118,11 +126,11 @@ TEXT是将要输出为语音的文本。
 
 最后使用requests库发送HTTP POST请求，得到结果。根据响应的 `header` 可以判断是否合成成功。
 
-若响应头部包含**`Content-type: audio/mpeg`**，则响应Body为音频数据，可写入文件保存。
+若响应头部包含 `Content-type: audio/mpeg` ，则响应Body为音频数据，可写入文件保存。
 
-若合成出现错误，响应头部包含**`Content-type: text/plain`**，响应Body为记载了错误类型的json字符串。
+若合成出现错误，响应头部包含 `Content-type: text/plain` ，响应Body为记载了错误类型的json字符串。
 
-返回值的具体说明请参考 [返回值 | 语音合成](http://doc.xfyun.cn/rest_api/%E8%AF%AD%E9%9F%B3%E5%90%88%E6%88%90.html#%E8%BF%94%E5%9B%9E%E5%80%BC) 。
+返回值的具体说明请参考 [返回值 - 语音合成](http://doc.xfyun.cn/rest_api/%E8%AF%AD%E9%9F%B3%E5%90%88%E6%88%90.html#%E8%BF%94%E5%9B%9E%E5%80%BC) 。
 
 ## 运行结果
 

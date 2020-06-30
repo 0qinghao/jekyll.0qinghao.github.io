@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.7">Jekyll</generator><link href="https://0qinghao.github.io/inforest/feed.xml" rel="self" type="application/atom+xml" /><link href="https://0qinghao.github.io/inforest/" rel="alternate" type="text/html" /><updated>2020-06-30T17:15:44+08:00</updated><id>https://0qinghao.github.io/inforest/feed.xml</id><title type="html">林间</title><subtitle>林庆毫的个人空间</subtitle><author><name>Qinghao Lin</name></author><entry><title type="html">译 - 使用iStyle格式化Verilog代码</title><link href="https://0qinghao.github.io/inforest/2019/08/09/translate-use-istyle-to-format-verilog-code/" rel="alternate" type="text/html" title="译 - 使用iStyle格式化Verilog代码" /><published>2019-08-09T00:00:00+08:00</published><updated>2019-08-09T00:00:00+08:00</updated><id>https://0qinghao.github.io/inforest/2019/08/09/translate-use-istyle-to-format-verilog-code</id><content type="html" xml:base="https://0qinghao.github.io/inforest/2019/08/09/translate-use-istyle-to-format-verilog-code/">&lt;blockquote&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.7">Jekyll</generator><link href="https://0qinghao.github.io/inforest/feed.xml" rel="self" type="application/atom+xml" /><link href="https://0qinghao.github.io/inforest/" rel="alternate" type="text/html" /><updated>2020-06-30T23:09:10+08:00</updated><id>https://0qinghao.github.io/inforest/feed.xml</id><title type="html">林间</title><subtitle>林庆毫的个人空间</subtitle><author><name>Qinghao Lin</name></author><entry><title type="html">译 - 使用iStyle格式化Verilog代码</title><link href="https://0qinghao.github.io/inforest/2019/08/09/translate-use-istyle-to-format-verilog-code/" rel="alternate" type="text/html" title="译 - 使用iStyle格式化Verilog代码" /><published>2019-08-09T00:00:00+08:00</published><updated>2019-08-09T00:00:00+08:00</updated><id>https://0qinghao.github.io/inforest/2019/08/09/translate-use-istyle-to-format-verilog-code</id><content type="html" xml:base="https://0qinghao.github.io/inforest/2019/08/09/translate-use-istyle-to-format-verilog-code/">&lt;blockquote&gt;
   &lt;p&gt;原文：&lt;a href=&quot;https://qiita.com/kkumt93/items/70766645c07c298d19c3&quot;&gt;Verilogでコード整形&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
@@ -286,7 +286,781 @@ export ftp_proxy=http://127.0.0.1:8123
 &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;255.255.255.255/32
 255.255.255.255
 本网段的广播地址。
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Qinghao Lin</name></author><summary type="html">内网IP段有哪些</summary></entry><entry><title type="html">在Python中使用谷歌Cloud Speech API将语音转换为文字（另一种方案）</title><link href="https://0qinghao.github.io/inforest/2018/03/08/google-cloud-speech-api-voice2text-python-another-way/" rel="alternate" type="text/html" title="在Python中使用谷歌Cloud Speech API将语音转换为文字（另一种方案）" /><published>2018-03-08T00:00:00+08:00</published><updated>2018-03-08T00:00:00+08:00</updated><id>https://0qinghao.github.io/inforest/2018/03/08/google-cloud-speech-api-voice2text-python-another-way</id><content type="html" xml:base="https://0qinghao.github.io/inforest/2018/03/08/google-cloud-speech-api-voice2text-python-another-way/">&lt;p&gt;在之前发布的&lt;a href=&quot;https://segmentfault.com/a/1190000013591768&quot;&gt;使用谷歌Cloud Speech API将语音转换为文字&lt;/a&gt;一文中，我们实现了在控制台使用curl发送post请求，得到语音转文字的结果；而&lt;a href=&quot;https://segmentfault.com/a/1190000013600141&quot;&gt;在Python中使用谷歌Cloud Speech API将语音转换为文字&lt;/a&gt;一文中，我们实现了安装Cloud Speech API客户端库，通过调用库函数得到语音转文字的结果。&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Qinghao Lin</name></author><summary type="html">内网IP段有哪些</summary></entry><entry><title type="html">使用Python把树莓派改造成一个语音助手</title><link href="https://0qinghao.github.io/inforest/2018/03/26/PiDaXing/" rel="alternate" type="text/html" title="使用Python把树莓派改造成一个语音助手" /><published>2018-03-26T00:00:00+08:00</published><updated>2018-03-26T00:00:00+08:00</updated><id>https://0qinghao.github.io/inforest/2018/03/26/PiDaXing</id><content type="html" xml:base="https://0qinghao.github.io/inforest/2018/03/26/PiDaXing/">&lt;p&gt;语音助手已经不是什么新事物了。就在两三年前，语音助手的使用体验还不是那么好，尝尝鲜后也就没用过了。但最近发现不管是微软的Cortana、苹果的Siri，还是一些不怎么有名气的，例如MIUI的小爱同学等，使用体验真的改善了很多，确确实实能带来一些方便了。&lt;/p&gt;
+
+&lt;p&gt;随着各种云服务、API的面世，语音方面的云服务可以说是十分健全了。你是否也想过自己动手搭建一个语音助手系统呢？本文将总结使用Python把 &lt;strong&gt;树莓派（3代b型）&lt;/strong&gt; 改造成一个&lt;strong&gt;简易&lt;/strong&gt;语音助手的基本流程。&lt;/p&gt;
+
+&lt;h1 id=&quot;概述&quot;&gt;概述&lt;/h1&gt;
+
+&lt;p&gt;这次要做的说白了，就是把各种云服务、API串起来，并不涉及任何核心技术、算法的实现，望知悉。&lt;/p&gt;
+
+&lt;p&gt;这次将要使用到的服务包括：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://cloud.google.com/speech/&quot;&gt;谷歌Cloud Speech API&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.tuling123.com/&quot;&gt;图灵机器人&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://doc.xfyun.cn/rest_api/&quot;&gt;科大讯飞 语音合成WebAPI&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;为了实现这个语音助手系统，需要完成的工作每一个都不难，但数量稍多了些。以下是涉及到的一些博客：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://segmentfault.com/a/1190000013399064&quot;&gt;使用Google云计算引擎实现科学上网&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://segmentfault.com/a/1190000013587465&quot;&gt;在Windows命令行、Linux终端使用代理&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://segmentfault.com/a/1190000013854294&quot;&gt;树莓派学习手记——使用Python录音&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://segmentfault.com/a/1190000013844027&quot;&gt;在Python中使用谷歌Cloud Speech API将语音转换为文字（另一种方案）&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://segmentfault.com/a/1190000013900291&quot;&gt;使用Python与图灵机器人聊天&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://segmentfault.com/a/1190000013953185&quot;&gt;在Python中使用科大讯飞Web API进行语音合成&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;后文在介绍各部分的具体实现时，只附上代码和进行一些必要的说明，详细内容还需要参考相应博客。&lt;/p&gt;
+
+&lt;h1 id=&quot;各部分的实现&quot;&gt;各部分的实现&lt;/h1&gt;
+
+&lt;p&gt;由于整个项目用到的服务比较多，而且各部分的分工很明显，所以选择各部分分别用一个python程序来实现，最后再用一个程序整合在一起的方式。&lt;/p&gt;
+
+&lt;h2 id=&quot;录音&quot;&gt;录音&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;参考：&lt;/strong&gt;&lt;a href=&quot;https://segmentfault.com/a/1190000013854294&quot;&gt;树莓派学习手记——使用Python录音&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;笔者采用了“按住按钮进行录音”的操作方式，如下图所示接线。如果你手头上没有按钮或觉得这么做不方便，可以修改代码改成“按回车键开始/结束录音”之类的操作方式。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/large/005MY9Xigy1fpx6vnxgjbj30br0bamyk.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;另外，树莓派的板载3.5mm耳机接口是不带语音输入功能的，所以你需要另外购买USB声卡。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;文件 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;rec.py&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;RPi.GPIO&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;GPIO&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;pyaudio&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;wave&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;os&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;sys&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;rec_fun&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;():&lt;/span&gt;
+	&lt;span class=&quot;c1&quot;&gt;# 隐藏错误消息，因为会有一堆ALSA和JACK错误消息，但其实能正常录音
+&lt;/span&gt;	&lt;span class=&quot;n&quot;&gt;os&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;close&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sys&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;stderr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fileno&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;())&lt;/span&gt;
+	
+	&lt;span class=&quot;n&quot;&gt;BUTT&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;26&lt;/span&gt;	&lt;span class=&quot;c1&quot;&gt;# 开始录音的按钮：一边接GPIO26，一边接地
+&lt;/span&gt;	&lt;span class=&quot;n&quot;&gt;GPIO&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;setmode&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;GPIO&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;BCM&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+	&lt;span class=&quot;c1&quot;&gt;# 设GPIO26脚为输入脚，电平拉高，也就是说26脚一旦读到低电平，说明按了按钮
+&lt;/span&gt;	&lt;span class=&quot;n&quot;&gt;GPIO&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;setup&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;BUTT&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;GPIO&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;IN&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pull_up_down&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;GPIO&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;PUD_UP&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+	&lt;span class=&quot;c1&quot;&gt;# wav文件是由若干个CHUNK组成的，CHUNK我们就理解成数据包或者数据片段。
+&lt;/span&gt;	&lt;span class=&quot;n&quot;&gt;CHUNK&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;512&lt;/span&gt; 
+	&lt;span class=&quot;n&quot;&gt;FORMAT&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pyaudio&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;paInt16&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;# pyaudio.paInt16表示我们使用量化位数 16位来进行录音
+&lt;/span&gt;	&lt;span class=&quot;n&quot;&gt;RATE&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;44100&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;# 采样率 44.1k，每秒采样44100个点。
+&lt;/span&gt;	&lt;span class=&quot;n&quot;&gt;WAVE_OUTPUT_FILENAME&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;/home/pi/chat/command.wav&quot;&lt;/span&gt;
+	&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'请按住按钮开始录音...'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;GPIO&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;wait_for_edge&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;BUTT&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;GPIO&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;FALLING&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+	&lt;span class=&quot;c1&quot;&gt;# To use PyAudio, first instantiate PyAudio using pyaudio.PyAudio(), which sets up the portaudio system.
+&lt;/span&gt;	&lt;span class=&quot;n&quot;&gt;p&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pyaudio&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;PyAudio&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;stream&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;p&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;open&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;format&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;FORMAT&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+					&lt;span class=&quot;n&quot;&gt;channels&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;	&lt;span class=&quot;c1&quot;&gt;# cloud speecAPI只支持单声道
+&lt;/span&gt;					&lt;span class=&quot;n&quot;&gt;rate&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;RATE&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+					&lt;span class=&quot;nb&quot;&gt;input&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;True&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+					&lt;span class=&quot;n&quot;&gt;frames_per_buffer&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;CHUNK&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+	&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;录音中...&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+	&lt;span class=&quot;n&quot;&gt;frames&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[]&lt;/span&gt;
+	&lt;span class=&quot;c1&quot;&gt;# 按住按钮录音，放开时结束
+&lt;/span&gt;	&lt;span class=&quot;k&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;GPIO&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;BUTT&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+		&lt;span class=&quot;n&quot;&gt;data&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;stream&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;read&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;CHUNK&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+		&lt;span class=&quot;n&quot;&gt;frames&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;append&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+	&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;录音完成，输出文件：&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;WAVE_OUTPUT_FILENAME&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;stream&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;stop_stream&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;stream&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;close&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;p&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;terminate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+
+	&lt;span class=&quot;n&quot;&gt;wf&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;wave&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;open&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;WAVE_OUTPUT_FILENAME&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'wb'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;wf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;setnchannels&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;wf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;setsampwidth&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;p&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;get_sample_size&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;FORMAT&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;	&lt;span class=&quot;c1&quot;&gt;# Returns the size (in bytes) for the specified sample format.
+&lt;/span&gt;	&lt;span class=&quot;n&quot;&gt;wf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;setframerate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;RATE&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;wf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;writeframes&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;b''&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;join&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;frames&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;wf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;close&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+	
+	&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;# 可以直接运行rec.py进行测试，同时保证该文件import时不会自动运行
+&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;__name__&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'__main__'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;rec_fun&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;语音识别&quot;&gt;语音识别&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;参考：&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://segmentfault.com/a/1190000013399064&quot;&gt;使用Google云计算引擎实现科学上网&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://segmentfault.com/a/1190000013587465&quot;&gt;在Windows命令行、Linux终端使用代理&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://segmentfault.com/a/1190000013844027&quot;&gt;在Python中使用谷歌Cloud Speech API将语音转换为文字（另一种方案）&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;由于某些原因，笔者选择了使用谷歌Cloud Speech API进行语音识别。既然要用谷歌的服务，自然就涉及到了科学上网、代理、谷歌云平台的使用，如果不想这么折腾，完全可以用国内的讯飞、百度来实现。&lt;/p&gt;
+
+&lt;p&gt;另外，API KEY之类的字符串在这里删除了，还请麻烦修改代码加上你自己申请的API KEY。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;文件 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;speech_api.py&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;json&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;urllib.request&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;base64&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;wav_to_text&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;():&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;api_url&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;https://speech.googleapis.com/v1beta1/speech:syncrecognize?key=替换成你的API密钥&quot;&lt;/span&gt;
+	&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'语音文件编码中...'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;audio_file&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;open&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'/home/pi/chat/command.wav'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'rb'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;audio_b64str&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;base64&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;b64encode&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;audio_file&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;read&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;())).&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;decode&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;audio_file&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;close&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+
+	&lt;span class=&quot;n&quot;&gt;voice&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+	  &lt;span class=&quot;s&quot;&gt;&quot;config&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+	  &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+		&lt;span class=&quot;s&quot;&gt;&quot;languageCode&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;cmn-Hans-CN&quot;&lt;/span&gt;
+	  &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+
+	  &lt;span class=&quot;s&quot;&gt;&quot;audio&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+	  &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+		&lt;span class=&quot;s&quot;&gt;&quot;content&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;audio_b64str&lt;/span&gt;
+	  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+	&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;voice&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;json&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dumps&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;voice&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;encode&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'utf8'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+	&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'编码完成。正在上传语音...'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;req&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;urllib&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;request&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Request&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;api_url&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;voice&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;headers&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'content-type'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'application/json'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;})&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;response&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;urllib&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;request&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;urlopen&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;req&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;response_str&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;response&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;read&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;().&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;decode&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'utf8'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;response_dic&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;json&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;loads&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;response_str&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+	&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'results'&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;not&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;response_dic&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;keys&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()):&lt;/span&gt;
+		&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'您录制的文件似乎没有声音，请检查麦克风。'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+		&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt;
+	
+	&lt;span class=&quot;n&quot;&gt;transcript&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;response_dic&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'results'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;][&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;][&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'alternatives'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;][&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;][&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'transcript'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;confidence&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;response_dic&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'results'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;][&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;][&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'alternatives'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;][&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;][&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'confidence'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;result_dic&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'text'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;transcript&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'confidence'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;confidence&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+	&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'识别完成。以字典格式输出：'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+	&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;result_dic&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+	
+	&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;result_dic&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;__name__&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'__main__'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;wav_to_text&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;获取文字回答&quot;&gt;获取文字回答&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;参考：&lt;/strong&gt;&lt;a href=&quot;https://segmentfault.com/a/1190000013900291&quot;&gt;使用Python与图灵机器人聊天&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;这个获取回答的程序有些粗糙，只能获得普通的文字回答。实际上图灵机器人回复的内容中包括了文字、问题类型甚至情感等信息，还有很多修改的空间。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;文件 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;turing.py&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;json&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;urllib.request&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;chat&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;question&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;api_url&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;http://openapi.tuling123.com/openapi/api/v2&quot;&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;text_input&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;question&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'text'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;req&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+		&lt;span class=&quot;s&quot;&gt;&quot;perception&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+		&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+			&lt;span class=&quot;s&quot;&gt;&quot;inputText&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+			&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+				&lt;span class=&quot;s&quot;&gt;&quot;text&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;text_input&lt;/span&gt;
+			&lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+
+			&lt;span class=&quot;s&quot;&gt;&quot;selfInfo&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+			&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+				&lt;span class=&quot;s&quot;&gt;&quot;location&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+				&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+					&lt;span class=&quot;s&quot;&gt;&quot;city&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;上海&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+					&lt;span class=&quot;s&quot;&gt;&quot;province&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;上海&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+					&lt;span class=&quot;s&quot;&gt;&quot;street&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;文汇路&quot;&lt;/span&gt;
+				&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+			&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+		&lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+
+		&lt;span class=&quot;s&quot;&gt;&quot;userInfo&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; 
+		&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+			&lt;span class=&quot;s&quot;&gt;&quot;apiKey&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;替换成你的APIKEY&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+			&lt;span class=&quot;s&quot;&gt;&quot;userId&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;用户参数&quot;&lt;/span&gt;
+		&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+	&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+	&lt;span class=&quot;c1&quot;&gt;# 将字典格式的req转为utf8编码的字符串
+&lt;/span&gt;	&lt;span class=&quot;n&quot;&gt;req&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;json&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dumps&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;req&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;encode&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'utf8'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+	
+	&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'正在调用图灵机器人API...'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;http_post&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;urllib&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;request&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Request&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;api_url&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;req&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;headers&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'content-type'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'application/json'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;})&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;response&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;urllib&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;request&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;urlopen&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;http_post&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+	
+	&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'得到回答，输出为字典格式：'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;response_str&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;response&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;read&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;().&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;decode&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'utf8'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;response_dic&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;json&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;loads&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;response_str&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;intent_code&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;response_dic&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'intent'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;][&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'code'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+	
+	&lt;span class=&quot;c1&quot;&gt;# 返回网页类的输出方式
+&lt;/span&gt;	&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;intent_code&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10023&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+		&lt;span class=&quot;n&quot;&gt;results_url&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;response_dic&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'results'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;][&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;][&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'values'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;][&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'url'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+		&lt;span class=&quot;n&quot;&gt;results_text&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;response_dic&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'results'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;][&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;][&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'values'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;][&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'text'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+		&lt;span class=&quot;n&quot;&gt;answer&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;code&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;intent_code&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;text&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;results_text&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;url&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;results_url&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+		&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;answer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+		&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;answer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+	&lt;span class=&quot;c1&quot;&gt;# 一般的输出方式
+&lt;/span&gt;	&lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+		&lt;span class=&quot;n&quot;&gt;results_text&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;response_dic&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'results'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;][&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;][&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'values'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;][&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'text'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+		&lt;span class=&quot;n&quot;&gt;answer&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;code&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;intent_code&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;text&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;results_text&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+		&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;answer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+		&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;answer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+	
+&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;__name__&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'__main__'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;eg_question&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'text'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'今天是几号'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'confidence'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;0.9&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;chat&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;eg_question&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;读出回答语音合成&quot;&gt;读出回答（语音合成）&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;参考：&lt;/strong&gt;&lt;a href=&quot;https://segmentfault.com/a/1190000013953185&quot;&gt;在Python中使用科大讯飞Web API进行语音合成&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;笔者在使用讯飞Web API时，该服务才开放不到一周，难免以后该API会有所变动，如有问题建议查阅官方文档。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;文件 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;tts.py&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;base64&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;json&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;time&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;hashlib&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;urllib.request&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;urllib.parse&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;os&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;speak&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;text_content&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+	&lt;span class=&quot;c1&quot;&gt;# API请求地址、API KEY、APP ID等参数，提前填好备用
+&lt;/span&gt;	&lt;span class=&quot;n&quot;&gt;api_url&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;http://api.xfyun.cn/v1/service/v1/tts&quot;&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;API_KEY&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;替换成你的APIKEY&quot;&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;APP_ID&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;替换成你的APPID&quot;&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;AUE&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;lame&quot;&lt;/span&gt;
+
+	&lt;span class=&quot;c1&quot;&gt;# 构造输出音频配置参数
+&lt;/span&gt;	&lt;span class=&quot;n&quot;&gt;Param&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+		&lt;span class=&quot;s&quot;&gt;&quot;auf&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;audio/L16;rate=16000&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;	&lt;span class=&quot;c1&quot;&gt;#音频采样率
+&lt;/span&gt;		&lt;span class=&quot;s&quot;&gt;&quot;aue&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;AUE&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;	&lt;span class=&quot;c1&quot;&gt;#音频编码，raw(生成wav)或lame(生成mp3)
+&lt;/span&gt;		&lt;span class=&quot;s&quot;&gt;&quot;voice_name&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;xiaoyan&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+		&lt;span class=&quot;s&quot;&gt;&quot;speed&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;50&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;	&lt;span class=&quot;c1&quot;&gt;#语速[0,100]
+&lt;/span&gt;		&lt;span class=&quot;s&quot;&gt;&quot;volume&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;10&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;	&lt;span class=&quot;c1&quot;&gt;#音量[0,100]
+&lt;/span&gt;		&lt;span class=&quot;s&quot;&gt;&quot;pitch&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;50&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;	&lt;span class=&quot;c1&quot;&gt;#音高[0,100]
+&lt;/span&gt;		&lt;span class=&quot;s&quot;&gt;&quot;engine_type&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;aisound&quot;&lt;/span&gt;	&lt;span class=&quot;c1&quot;&gt;#引擎类型。aisound（普通效果），intp65（中文），intp65_en（英文）
+&lt;/span&gt;	&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+	&lt;span class=&quot;c1&quot;&gt;# 配置参数编码为base64字符串，过程：字典→明文字符串→utf8编码→base64(bytes)→base64字符串
+&lt;/span&gt;	&lt;span class=&quot;n&quot;&gt;Param_str&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;json&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dumps&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Param&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;	&lt;span class=&quot;c1&quot;&gt;#得到明文字符串
+&lt;/span&gt;	&lt;span class=&quot;n&quot;&gt;Param_utf8&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Param_str&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;encode&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'utf8'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;	&lt;span class=&quot;c1&quot;&gt;#得到utf8编码(bytes类型)
+&lt;/span&gt;	&lt;span class=&quot;n&quot;&gt;Param_b64&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;base64&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;b64encode&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Param_utf8&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;	&lt;span class=&quot;c1&quot;&gt;#得到base64编码(bytes类型)
+&lt;/span&gt;	&lt;span class=&quot;n&quot;&gt;Param_b64str&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Param_b64&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;decode&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'utf8'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;	&lt;span class=&quot;c1&quot;&gt;#得到base64字符串
+&lt;/span&gt;
+	&lt;span class=&quot;c1&quot;&gt;# 构造HTTP请求的头部
+&lt;/span&gt;	&lt;span class=&quot;n&quot;&gt;time_now&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;time&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;time&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()))&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;checksum&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;API_KEY&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;time_now&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Param_b64str&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;encode&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'utf8'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;checksum_md5&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;hashlib&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;md5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;checksum&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;hexdigest&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;header&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+		&lt;span class=&quot;s&quot;&gt;&quot;X-Appid&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;APP_ID&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+		&lt;span class=&quot;s&quot;&gt;&quot;X-CurTime&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;time_now&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+		&lt;span class=&quot;s&quot;&gt;&quot;X-Param&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Param_b64str&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+		&lt;span class=&quot;s&quot;&gt;&quot;X-CheckSum&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;checksum_md5&lt;/span&gt;
+	&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+	&lt;span class=&quot;c1&quot;&gt;# 构造HTTP请求Body
+&lt;/span&gt;	&lt;span class=&quot;n&quot;&gt;body&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+		&lt;span class=&quot;s&quot;&gt;&quot;text&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;text_content&lt;/span&gt;
+	&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;body_urlencode&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;urllib&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;parse&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;urlencode&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;body&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;body_utf8&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;body_urlencode&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;encode&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'utf8'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+	&lt;span class=&quot;c1&quot;&gt;# 发送HTTP POST请求
+&lt;/span&gt;	&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;正在调用科大讯飞语音合成API...&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;req&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;urllib&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;request&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Request&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;api_url&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;body_utf8&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;headers&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;header&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;response&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;urllib&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;request&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;urlopen&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;req&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+	&lt;span class=&quot;c1&quot;&gt;# 读取结果
+&lt;/span&gt;	&lt;span class=&quot;n&quot;&gt;response_head&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;response&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;headers&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'Content-Type'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+	&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;response_head&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;audio/mpeg&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+		&lt;span class=&quot;n&quot;&gt;out_file&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;open&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'/home/pi/chat/answer.mp3'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'wb'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+		&lt;span class=&quot;n&quot;&gt;data&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;response&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;read&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# a `bytes` object
+&lt;/span&gt;		&lt;span class=&quot;n&quot;&gt;out_file&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;write&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+		&lt;span class=&quot;n&quot;&gt;out_file&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;close&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+		&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'得到结果，输出文件: /home/pi/chat/answer.mp3'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+	&lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+		&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;response&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;read&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;().&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;decode&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'utf8'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+
+	&lt;span class=&quot;c1&quot;&gt;# 播放音频
+&lt;/span&gt;	&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;播放音频中...&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+	&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;以下均为mplayer的输出内容&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;os&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;system&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;mplayer -ao alsa:device=hw=1.0 /home/pi/chat/answer.mp3&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+	
+	&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt;
+	
+&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;__name__&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'__main__'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;eg_text_content&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;苟利国家生死以，岂因祸福避趋之&quot;&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;speak&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;eg_text_content&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;整合测试&quot;&gt;整合&amp;amp;测试&lt;/h1&gt;
+
+&lt;p&gt;现在，你的项目文件夹中应该有这些python代码文件：&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/large/005MY9Xigy1fpqkfcz0erj30be02z3yh.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;接下来我们只需要将他们整合在一起运行。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;文件 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;combine.py&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;# 这些import进来的模块是同目录下的py文件
+&lt;/span&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;rec&lt;/span&gt;	&lt;span class=&quot;c1&quot;&gt;# rec.py负责录制wav音频
+&lt;/span&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;speech_api&lt;/span&gt;	&lt;span class=&quot;c1&quot;&gt;# speech_api.py负责wav转文字
+&lt;/span&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;turing&lt;/span&gt;	&lt;span class=&quot;c1&quot;&gt;# turing.py负责获得图灵机器人的文字回答
+&lt;/span&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;tts&lt;/span&gt;	&lt;span class=&quot;c1&quot;&gt;# tts.py负责读出回答
+&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;rec&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rec_fun&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;	&lt;span class=&quot;c1&quot;&gt;# 录制音频
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;recognize_result&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;speech_api&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;wav_to_text&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;	&lt;span class=&quot;c1&quot;&gt;# 识别语音，返回值是字典格式，包含文字结果和信心
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;turing_answer&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;turing&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;chat&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;recognize_result&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;	&lt;span class=&quot;c1&quot;&gt;# 得到图灵的回答，返回值仍是字典格式
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;tts&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;speak&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;turing_answer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'text'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;如果一切顺利的话，实际运行效果如下：
+&lt;a href=&quot;http://v.youku.com/v_show/id_XMzQ4OTg3MjYzNg==.html&quot;&gt;树莓派_语音助手_youku&lt;/a&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;小结&quot;&gt;小结&lt;/h1&gt;
+
+&lt;p&gt;语音助手这边的工作算是告一段落了，结果小结却不知道怎么写了。不管怎么说，很开心最后能得到实际的结果，做的过程中也有一些脑洞想要继续扩展，过段时间应该还会继续！&lt;/p&gt;
+
+&lt;p&gt;做这个项目的过程中，项目外的收获或许比这个项目本身还要多。这段时间从很多博客、论坛得到了数不尽的帮助，国内的、国外的、中文的、英文的、日文的都有，深深地感受到了互联网共享精神的力量，这也是促使我开始写这些文章的原因。那么，最后还是说一句：感谢你阅读文章！&lt;/p&gt;</content><author><name>Qinghao Lin</name></author><summary type="html">语音助手已经不是什么新事物了。就在两三年前，语音助手的使用体验还不是那么好，尝尝鲜后也就没用过了。但最近发现不管是微软的Cortana、苹果的Siri，还是一些不怎么有名气的，例如MIUI的小爱同学等，使用体验真的改善了很多，确确实实能带来一些方便了。</summary></entry><entry><title type="html">在Python中使用科大讯飞Web API进行语音合成</title><link href="https://0qinghao.github.io/inforest/2018/03/24/xunfei-tts-web-api-python/" rel="alternate" type="text/html" title="在Python中使用科大讯飞Web API进行语音合成" /><published>2018-03-24T00:00:00+08:00</published><updated>2018-03-24T00:00:00+08:00</updated><id>https://0qinghao.github.io/inforest/2018/03/24/xunfei-tts-web-api-python</id><content type="html" xml:base="https://0qinghao.github.io/inforest/2018/03/24/xunfei-tts-web-api-python/">&lt;p&gt;前几日讯飞开放平台推出了WebAPI接口，恰好最近需要实现一个文字转语音的功能，于是就尝试着用了起来。但不知什么原因，官方文档的&lt;a href=&quot;http://doc.xfyun.cn/rest_api/%E8%AF%AD%E9%9F%B3%E5%90%88%E6%88%90.html#%E8%B0%83%E7%94%A8%E7%A4%BA%E4%BE%8B&quot;&gt;调用示例&lt;/a&gt;一直报错，最后自己照着示例的思路用python3重写了一遍。所以这次总结一下在Python中使用讯飞Web API进行语音合成的过程。&lt;/p&gt;
+
+&lt;h1 id=&quot;注册讯飞开放平台&quot;&gt;注册讯飞开放平台&lt;/h1&gt;
+
+&lt;p&gt;首先注册讯飞开放平台：&lt;a href=&quot;http://passport.xfyun.cn/register&quot;&gt;http://passport.xfyun.cn/register&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;注册完成后进入控制台，在控制台&lt;a href=&quot;http://console.xfyun.cn/app/create?source=WebAPI&quot;&gt;创建一个新应用&lt;/a&gt; ，填写一些基本信息，注意 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;应用平台&lt;/code&gt; 选择 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;WebAPI&lt;/code&gt; 。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/large/005MY9Xigy1fpn63fdqkej30du0am3z2.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;创建完成后，记录下 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;APPID&lt;/code&gt; 和 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;APIKey&lt;/code&gt; ，将在程序中用到。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/large/005MY9Xigy1fpn67r2lmdj30ct0bg766.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;另外，请在 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;IP白名单&lt;/code&gt; 中添加自己的外网IP，可以在http://www.ip138.com/ 查看。（一般来说外网IP会常常发生变化，请注意）&lt;/p&gt;
+
+&lt;h1 id=&quot;在python3中使用讯飞web-api&quot;&gt;在Python3中使用讯飞Web API&lt;/h1&gt;
+
+&lt;p&gt;先上代码，后面进行必要的说明：&lt;/p&gt;
+
+&lt;p&gt;可能提示缺库：pip3 install requests&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;*使用python3执行&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;base64&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;json&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;time&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;hashlib&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;requests&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;# API请求地址、API KEY、APP ID等参数，提前填好备用
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;api_url&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;http://api.xfyun.cn/v1/service/v1/tts&quot;&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;API_KEY&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;替换成你的APIKEY&quot;&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;APP_ID&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;替换成你的APPID&quot;&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;OUTPUT_FILE&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;C://output.mp3&quot;&lt;/span&gt;    &lt;span class=&quot;c1&quot;&gt;# 输出音频的保存路径，请根据自己的情况替换
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;TEXT&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;苟利国家生死以，岂因祸福避趋之&quot;&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;# 构造输出音频配置参数
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Param&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;s&quot;&gt;&quot;auf&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;audio/L16;rate=16000&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;    &lt;span class=&quot;c1&quot;&gt;#音频采样率
+&lt;/span&gt;    &lt;span class=&quot;s&quot;&gt;&quot;aue&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;lame&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;    &lt;span class=&quot;c1&quot;&gt;#音频编码，raw(生成wav)或lame(生成mp3)
+&lt;/span&gt;    &lt;span class=&quot;s&quot;&gt;&quot;voice_name&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;xiaoyan&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;s&quot;&gt;&quot;speed&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;50&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;    &lt;span class=&quot;c1&quot;&gt;#语速[0,100]
+&lt;/span&gt;    &lt;span class=&quot;s&quot;&gt;&quot;volume&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;77&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;    &lt;span class=&quot;c1&quot;&gt;#音量[0,100]
+&lt;/span&gt;    &lt;span class=&quot;s&quot;&gt;&quot;pitch&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;50&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;    &lt;span class=&quot;c1&quot;&gt;#音高[0,100]
+&lt;/span&gt;    &lt;span class=&quot;s&quot;&gt;&quot;engine_type&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;aisound&quot;&lt;/span&gt;    &lt;span class=&quot;c1&quot;&gt;#引擎类型。aisound（普通效果），intp65（中文），intp65_en（英文）
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;# 配置参数编码为base64字符串，过程：字典→明文字符串→utf8编码→base64(bytes)→base64字符串
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Param_str&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;json&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dumps&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Param&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;    &lt;span class=&quot;c1&quot;&gt;#得到明文字符串
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Param_utf8&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Param_str&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;encode&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'utf8'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;    &lt;span class=&quot;c1&quot;&gt;#得到utf8编码(bytes类型)
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Param_b64&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;base64&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;b64encode&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Param_utf8&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;    &lt;span class=&quot;c1&quot;&gt;#得到base64编码(bytes类型)
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Param_b64str&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Param_b64&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;decode&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'utf8'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;    &lt;span class=&quot;c1&quot;&gt;#得到base64字符串
+&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;# 构造HTTP请求的头部
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;time_now&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;time&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;time&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()))&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;checksum&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;API_KEY&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;time_now&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Param_b64str&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;encode&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'utf8'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;checksum_md5&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;hashlib&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;md5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;checksum&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;hexdigest&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;header&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;s&quot;&gt;&quot;X-Appid&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;APP_ID&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;s&quot;&gt;&quot;X-CurTime&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;time_now&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;s&quot;&gt;&quot;X-Param&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Param_b64str&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;s&quot;&gt;&quot;X-CheckSum&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;checksum_md5&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;# 发送HTTP POST请求
+&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;getBody&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;text&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;data&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'text'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;text&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;response&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;requests&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;post&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;api_url&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;getBody&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;TEXT&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;headers&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;header&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;# 读取结果
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;response_head&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;response&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;headers&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'Content-Type'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;response_head&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;audio/mpeg&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;out_file&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;open&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;OUTPUT_FILE&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'wb'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;data&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;response&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;content&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# a 'bytes' object
+&lt;/span&gt;    &lt;span class=&quot;n&quot;&gt;out_file&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;write&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;out_file&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;close&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'输出文件: '&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;OUTPUT_FILE&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;response&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;read&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;().&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;decode&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'utf8'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;下面按照代码顺序进行各部分的说明。&lt;/p&gt;
+
+&lt;h2 id=&quot;apikey等参数&quot;&gt;APIKey等参数&lt;/h2&gt;
+
+&lt;p&gt;在代码开头填好各项参数，方面代码中使用。&lt;/p&gt;
+
+&lt;p&gt;API_KEY和APP_ID请替换为上一步创建应用后得到的内容。请&lt;strong&gt;不要删除双引号&lt;/strong&gt;。&lt;/p&gt;
+
+&lt;p&gt;OUTPUT_FILE是最终输出音频的保存路径，根据自己的情况替换。&lt;/p&gt;
+
+&lt;p&gt;TEXT是将要输出为语音的文本。&lt;/p&gt;
+
+&lt;h2 id=&quot;音频配置参数&quot;&gt;音频配置参数&lt;/h2&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Param&lt;/code&gt; 是字典格式的音频配置参数，其中 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&quot;aue&quot;&lt;/code&gt; 可选 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;raw&lt;/code&gt; (生成wav)或 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;lame&lt;/code&gt; (生成mp3)，如果修改成raw请记得同时修改输出文件的扩展名。&lt;/p&gt;
+
+&lt;p&gt;最后需要将配置参数编码为Base64字符串：字典类型→明文字符串→utf8编码→Base64(bytes)→Base64字符串，具体实现可以参考代码。&lt;/p&gt;
+
+&lt;p&gt;音频配置参数的详细说明可以参考&lt;a href=&quot;http://doc.xfyun.cn/rest_api/%E8%AF%AD%E9%9F%B3%E5%90%88%E6%88%90.html#%E8%AF%B7%E6%B1%82%E5%8F%82%E6%95%B0&quot;&gt;请求参数 - 语音合成&lt;/a&gt; 。&lt;/p&gt;
+
+&lt;h2 id=&quot;http请求头部&quot;&gt;HTTP请求头部&lt;/h2&gt;
+
+&lt;p&gt;根据 &lt;a href=&quot;http://doc.xfyun.cn/rest_api/%E6%8E%A5%E5%8F%A3%E6%A6%82%E8%BF%B0.html#%E6%8E%88%E6%9D%83%E8%AE%A4%E8%AF%81&quot;&gt;授权认证 - 科大讯飞RESET_API开发指南&lt;/a&gt; ，在调用所有业务接口时，都需要在HTTP请求头部中配置以下参数用于授权认证：&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;参数&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;格式&lt;/th&gt;
+      &lt;th&gt;说明&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;X-Appid&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;string&lt;/td&gt;
+      &lt;td&gt;讯飞开放平台注册申请应用的应用ID(appid)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;X-CurTime&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;string&lt;/td&gt;
+      &lt;td&gt;当前UTC时间戳，从1970年1月1日0点0 分0 秒开始到现在的秒数&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;X-Param&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;string&lt;/td&gt;
+      &lt;td&gt;音频配置参数JSON串经Base64编码后的字符串&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;X-CheckSum&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;string&lt;/td&gt;
+      &lt;td&gt;令牌，计算方法：MD5(apiKey + curTime + param)。三个值拼接的字符串，进行MD5哈希计算（32位小写）。&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;具体实现参考代码中字典 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;header&lt;/code&gt; 。&lt;/p&gt;
+
+&lt;h2 id=&quot;发送请求读取结果&quot;&gt;发送请求&amp;amp;读取结果&lt;/h2&gt;
+
+&lt;p&gt;最后使用requests库发送HTTP POST请求，得到结果。根据响应的 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;header&lt;/code&gt; 可以判断是否合成成功。&lt;/p&gt;
+
+&lt;p&gt;若响应头部包含 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Content-type: audio/mpeg&lt;/code&gt; ，则响应Body为音频数据，可写入文件保存。&lt;/p&gt;
+
+&lt;p&gt;若合成出现错误，响应头部包含 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Content-type: text/plain&lt;/code&gt; ，响应Body为记载了错误类型的json字符串。&lt;/p&gt;
+
+&lt;p&gt;返回值的具体说明请参考 &lt;a href=&quot;http://doc.xfyun.cn/rest_api/%E8%AF%AD%E9%9F%B3%E5%90%88%E6%88%90.html#%E8%BF%94%E5%9B%9E%E5%80%BC&quot;&gt;返回值 - 语音合成&lt;/a&gt; 。&lt;/p&gt;
+
+&lt;h2 id=&quot;运行结果&quot;&gt;运行结果&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/large/005MY9Xigy1fpn7johr0kj30dc03dt8p.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;使用几次后，感觉合成语音的断句做得不是很优秀，但响应速度很快，还是比较满意的。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://share.weiyun.com/528R8xM&quot;&gt;output.mp3&lt;/a&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;小结&quot;&gt;小结&lt;/h1&gt;
+
+&lt;p&gt;最近使用了几种Web API，对这类API的使用方法也算是有些经验了。最后，现在语音识别、图灵机器人、语音合成都试着做了一遍，下一篇博客将把他们组合起来，实现一个简单的语音助手。&lt;/p&gt;
+
+&lt;p&gt;感谢你阅读文章！&lt;/p&gt;</content><author><name>Qinghao Lin</name></author><summary type="html">前几日讯飞开放平台推出了WebAPI接口，恰好最近需要实现一个文字转语音的功能，于是就尝试着用了起来。但不知什么原因，官方文档的调用示例一直报错，最后自己照着示例的思路用python3重写了一遍。所以这次总结一下在Python中使用讯飞Web API进行语音合成的过程。</summary></entry><entry><title type="html">使用Python与图灵机器人聊天</title><link href="https://0qinghao.github.io/inforest/2018/03/22/turing-chat-bot-python-API/" rel="alternate" type="text/html" title="使用Python与图灵机器人聊天" /><published>2018-03-22T00:00:00+08:00</published><updated>2018-03-22T00:00:00+08:00</updated><id>https://0qinghao.github.io/inforest/2018/03/22/turing-chat-bot-python-API</id><content type="html" xml:base="https://0qinghao.github.io/inforest/2018/03/22/turing-chat-bot-python-API/">&lt;p&gt;图灵机器人对中文的识别准确率高达90%，是目前中文语境下智能度最高的机器人。有很多在Python中使用图灵机器人API的博客，但都是1.0版本。所以今天简单地总结一下在Python中使用图灵机器人API v2.0的方法。&lt;/p&gt;
+
+&lt;h1 id=&quot;获取api-key&quot;&gt;获取API KEY&lt;/h1&gt;
+
+&lt;p&gt;首先，前往图灵机器人官方网站 http://www.tuling123.com/ 注册账号。&lt;/p&gt;
+
+&lt;p&gt;登录后点击 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;创建机器人&lt;/code&gt; ，填写一些简单的基本信息之后即可创建。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/large/005MY9Xigy1fpkway3el3j30jp0743yv.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;在机器人设置界面找到你的 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;API KEY&lt;/code&gt; ，记录下来。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/large/005MY9Xigy1fpkv7b8850j30br0av74t.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;在python中使用图灵机器人api-v20&quot;&gt;在Python中使用图灵机器人API v2.0&lt;/h1&gt;
+
+&lt;p&gt;基本原理就是使用urllib.request模块，向接口地址发送HTTP POST请求，请求中加入了聊天内容。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;*使用python3执行&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;json&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;urllib.request&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;api_url&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;http://openapi.tuling123.com/openapi/api/v2&quot;&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;text_input&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'我：'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;req&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+	&lt;span class=&quot;s&quot;&gt;&quot;perception&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+	&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+		&lt;span class=&quot;s&quot;&gt;&quot;inputText&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+		&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+			&lt;span class=&quot;s&quot;&gt;&quot;text&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;text_input&lt;/span&gt;
+		&lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+
+		&lt;span class=&quot;s&quot;&gt;&quot;selfInfo&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+		&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+			&lt;span class=&quot;s&quot;&gt;&quot;location&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+			&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+				&lt;span class=&quot;s&quot;&gt;&quot;city&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;上海&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+				&lt;span class=&quot;s&quot;&gt;&quot;province&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;上海&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+				&lt;span class=&quot;s&quot;&gt;&quot;street&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;文汇路&quot;&lt;/span&gt;
+			&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+		&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+	&lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+
+	&lt;span class=&quot;s&quot;&gt;&quot;userInfo&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; 
+	&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+		&lt;span class=&quot;s&quot;&gt;&quot;apiKey&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;请替换为你的API KEY&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+		&lt;span class=&quot;s&quot;&gt;&quot;userId&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;OnlyUseAlphabet&quot;&lt;/span&gt;
+	&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;# print(req)
+# 将字典格式的req编码为utf8
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;req&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;json&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dumps&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;req&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;encode&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'utf8'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;# print(req)
+&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;http_post&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;urllib&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;request&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Request&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;api_url&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;req&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;headers&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'content-type'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'application/json'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;})&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;response&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;urllib&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;request&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;urlopen&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;http_post&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;response_str&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;response&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;read&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;().&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;decode&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'utf8'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;# print(response_str)
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;response_dic&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;json&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;loads&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;response_str&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;# print(response_dic)
+&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;intent_code&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;response_dic&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'intent'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;][&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'code'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;results_text&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;response_dic&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'results'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;][&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;][&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'values'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;][&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'text'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'Turing的回答：'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'code：'&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;intent_code&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'text：'&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;results_text&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/large/005MY9Xigy1fpkw2kerdsj30fl03ejrd.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;几点说明：&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;1、字典 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;req&lt;/code&gt; 包含了向图灵机器人发出请求所需的各项信息。其中 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;req['perception']['selfInfo']['location']&lt;/code&gt; 包含了地理位置信息，向图灵机器人发送与位置有关的请求时，如果没有另外指定位置，则会默认使用这个位置。例如询问”明天会下雨吗”，图灵机器人会回答我”上海”明天是否下雨。&lt;/p&gt;
+
+&lt;p&gt;2、 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;req['userInfo'] &lt;/code&gt; 包含了API KEY，请替换成你的API KEY（双引号不要删除）。另外 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;userId&lt;/code&gt; 是用户参数，暂时不明白用途，如果你有什么想法恳请留言。&lt;/p&gt;
+
+&lt;p&gt;3、图灵机器人的回答可以转换为python的字典格式。其中有一项 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;response_dic['intent']['code']&lt;/code&gt; 官方称为”输出功能code”，表示这个回答是什么”类型”的。例如10004代表普通的聊天回复，10008代表与天气相关的回复。然而奇怪的是，目前API v2.0的官方文档并没有给出code和类型的对照表。目前自己总结了一些如下，欢迎补充：&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;code&lt;/th&gt;
+      &lt;th&gt;类型&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;10004&lt;/td&gt;
+      &lt;td&gt;聊天&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;10008&lt;/td&gt;
+      &lt;td&gt;天气&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;10013&lt;/td&gt;
+      &lt;td&gt;科普类，例如”班戟是什么”&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;10015&lt;/td&gt;
+      &lt;td&gt;菜谱类，例如”剁椒鱼头怎么做”&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;10019&lt;/td&gt;
+      &lt;td&gt;日期类，例如”愚人节是几号”、”明天是星期几”&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;10020&lt;/td&gt;
+      &lt;td&gt;中英翻译&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;10023&lt;/td&gt;
+      &lt;td&gt;一般返回网页会是这个code，例如”iphone多少钱”&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;10034&lt;/td&gt;
+      &lt;td&gt;语料库中自己设定的回答&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h1 id=&quot;小结&quot;&gt;小结&lt;/h1&gt;
+
+&lt;p&gt;到现在为止，已经快把每个独立的模块完成了，接下来该准备考虑如何把它们整合在一起了。希望能帮到你。&lt;/p&gt;
+
+&lt;p&gt;感谢你阅读文章！&lt;/p&gt;</content><author><name>Qinghao Lin</name></author><summary type="html">图灵机器人对中文的识别准确率高达90%，是目前中文语境下智能度最高的机器人。有很多在Python中使用图灵机器人API的博客，但都是1.0版本。所以今天简单地总结一下在Python中使用图灵机器人API v2.0的方法。</summary></entry><entry><title type="html">树莓派学习手记——使用Python录音</title><link href="https://0qinghao.github.io/inforest/2018/03/20/RPi-recorder-python/" rel="alternate" type="text/html" title="树莓派学习手记——使用Python录音" /><published>2018-03-20T00:00:00+08:00</published><updated>2018-03-20T00:00:00+08:00</updated><id>https://0qinghao.github.io/inforest/2018/03/20/RPi-recorder-python</id><content type="html" xml:base="https://0qinghao.github.io/inforest/2018/03/20/RPi-recorder-python/">&lt;p&gt;有的时候我们想让树莓派能够录音，以实现语音控制等功能。所以今天我们总结一下用在树莓派上使用Python录音的过程。&lt;/p&gt;
+
+&lt;h1 id=&quot;准备硬件&quot;&gt;准备硬件&lt;/h1&gt;
+
+&lt;p&gt;树莓派上自带的3.5mm接口只能作为语音输出口，&lt;strong&gt;不能&lt;/strong&gt;接麦克风。所以我们需要另外购买USB声卡，某宝上5元左右就能买到，当然你还需要一个麦克风。总费用应该在20元以内。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/large/005MY9Xily1fpj5o9hqaqj30ct078jsj.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;检查硬件是否正常&quot;&gt;检查硬件是否正常&lt;/h1&gt;
+
+&lt;p&gt;使用arecord -l可以列出所有录音设备，一般输出如下：&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;arecord &lt;span class=&quot;nt&quot;&gt;-l&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;List of CAPTURE Hardware Devices&lt;/p&gt;
+
+  &lt;p&gt;card 1: Device [USB Audio Device], device 0: USB Audio [USB Audio]&lt;/p&gt;
+
+  &lt;p&gt;Subdevices: 1/1&lt;/p&gt;
+
+  &lt;p&gt;Subdevice #0: subdevice #0&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;同样地，aplay -l可以列出所有播放设备，输出中也能找到形如 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Device [USB Audio Device]&lt;/code&gt; 的设备。&lt;/p&gt;
+
+&lt;p&gt;我们可以直接在命令行执行Linux自带的录音/播放命令，测试硬件是否正常：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-nohighlight&quot;&gt;arecord -D hw:1,0 -t wav -c 1 -r 44100 -f S16_LE test.wav
+aplay -D hw:0,0 test.wav
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;arecord&lt;/code&gt; 是录音命令，其中 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;hw:1,0&lt;/code&gt; 表示 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;card 1: Device [USB Audio Device], device 0: USB Audio [USB Audio]&lt;/code&gt; 的 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;card 1 , device 0&lt;/code&gt; ，如果你的USB声卡录音设备不是 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;card 1 , device 0&lt;/code&gt; ，还请进行相应修改。另外，录音过程需要手动按&lt;kbd&gt;CTRL&lt;/kbd&gt; + &lt;kbd&gt;C&lt;/kbd&gt;结束。&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;aplay&lt;/code&gt; 是播放命令，其中 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;hw:0,0&lt;/code&gt; 表示树莓派&lt;strong&gt;板载&lt;/strong&gt;音频接口，如果你把耳机插在USB声卡接口，还请进行相应修改，如改成 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;hw:1,0&lt;/code&gt; 。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;如果你发现录制的音频内没有声音，只有细微的杂音，但 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;arecord -l&lt;/code&gt; 和 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;aplay -l&lt;/code&gt; 列出的设备中确实有USB声卡。那么你可以尝试着把麦克风接口拔出来一些，只插进去2/3，或许能够解决你的问题。笔者不是很明白其中的缘由，如果你有什么想法恳请留言告知。&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;安装pyaudio&quot;&gt;安装pyaudio&lt;/h1&gt;
+
+&lt;p&gt;在Python中执行录音命令需要pyaudio模块，直接用pip命令安装：&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;pip &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;pyaudio
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;如果你使用pip命令下载速度很慢，或许&lt;a href=&quot;https://segmentfault.com/n/1330000013787318&quot;&gt;修改pip源&lt;/a&gt;可以帮到你。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;如果你使用了virtualenv，一般会发现pyaudio安装失败。这种情况下你需要安装APT中的PortAudio开发头文件，然后安装PyAudio：&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt-get install portaudio19-dev
+pip install pyaudio
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;使用python录音&quot;&gt;使用Python录音&lt;/h1&gt;
+
+&lt;p&gt;该例程修改自官方主页例程&lt;a href=&quot;http://people.csail.mit.edu/hubert/pyaudio/&quot;&gt;PyAudio&lt;/a&gt;。&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;pyaudio&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;wave&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;os&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;sys&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;CHUNK&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;512&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;FORMAT&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pyaudio&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;paInt16&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;CHANNELS&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;RATE&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;44100&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;RECORD_SECONDS&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;WAVE_OUTPUT_FILENAME&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;output.wav&quot;&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;p&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pyaudio&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;PyAudio&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;stream&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;p&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;open&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;format&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;FORMAT&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+                &lt;span class=&quot;n&quot;&gt;channels&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;CHANNELS&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+                &lt;span class=&quot;n&quot;&gt;rate&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;RATE&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+                &lt;span class=&quot;nb&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;True&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+                &lt;span class=&quot;n&quot;&gt;frames_per_buffer&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;CHUNK&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;recording...&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;frames&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[]&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;RATE&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;CHUNK&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;RECORD_SECONDS&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)):&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;data&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;stream&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;read&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;CHUNK&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;frames&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;append&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;done&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;stream&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;stop_stream&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;stream&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;close&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;p&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;terminate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;wf&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;wave&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;open&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;WAVE_OUTPUT_FILENAME&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'wb'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;wf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;setnchannels&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;CHANNELS&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;wf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;setsampwidth&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;p&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;get_sample_size&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;FORMAT&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;wf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;setframerate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;RATE&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;wf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;writeframes&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;b''&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;join&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;frames&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;wf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;close&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;执行后会录制一段5秒的音频，输出为同目录下的output.wav文件。&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;python3 rec.py
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;-隐藏错误消息&quot;&gt;* 隐藏错误消息&lt;/h2&gt;
+
+&lt;p&gt;一般情况下，在树莓派上执行上述Python代码后，你会看到非常多的ALSA报错和JACK报错：&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;ALSA lib confmisc.c:1281:(snd_func_refer) Unable to find definition ‘cards.bcm2835.pcm.front.0: CARD=0’&lt;/p&gt;
+
+  &lt;p&gt;……&lt;/p&gt;
+
+  &lt;p&gt;……&lt;/p&gt;
+
+  &lt;p&gt;connect(2) call to /tmp/jack-1000/default/jack_0 failed (err=No such file or directory)
+attempt to connect to server failed&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;但你会发现其实能够正常地录音。如果你不想看到这些错误消息，可以在代码中加入下述命令隐藏错误：&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;os&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;close&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sys&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;stderr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fileno&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;())&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;小结&quot;&gt;小结&lt;/h1&gt;
+
+&lt;p&gt;使用Python录音很简单，你还可以在GPIO口上接入一个按钮，修改例程，实现按下按钮自动开始录音的功能。下一步的目标是把Python录音和&lt;a href=&quot;https://segmentfault.com/a/1190000013844027&quot;&gt;Cloud Speech API语音识别&lt;/a&gt;结合起来。&lt;/p&gt;
+
+&lt;p&gt;感谢你阅读文章！&lt;/p&gt;</content><author><name>Qinghao Lin</name></author><summary type="html">有的时候我们想让树莓派能够录音，以实现语音控制等功能。所以今天我们总结一下用在树莓派上使用Python录音的过程。</summary></entry><entry><title type="html">在Python中使用谷歌Cloud Speech API将语音转换为文字（另一种方案）</title><link href="https://0qinghao.github.io/inforest/2018/03/08/google-cloud-speech-api-voice2text-python-another-way/" rel="alternate" type="text/html" title="在Python中使用谷歌Cloud Speech API将语音转换为文字（另一种方案）" /><published>2018-03-08T00:00:00+08:00</published><updated>2018-03-08T00:00:00+08:00</updated><id>https://0qinghao.github.io/inforest/2018/03/08/google-cloud-speech-api-voice2text-python-another-way</id><content type="html" xml:base="https://0qinghao.github.io/inforest/2018/03/08/google-cloud-speech-api-voice2text-python-another-way/">&lt;p&gt;在之前发布的&lt;a href=&quot;https://segmentfault.com/a/1190000013591768&quot;&gt;使用谷歌Cloud Speech API将语音转换为文字&lt;/a&gt;一文中，我们实现了在控制台使用curl发送post请求，得到语音转文字的结果；而&lt;a href=&quot;https://segmentfault.com/a/1190000013600141&quot;&gt;在Python中使用谷歌Cloud Speech API将语音转换为文字&lt;/a&gt;一文中，我们实现了安装Cloud Speech API客户端库，通过调用库函数得到语音转文字的结果。&lt;/p&gt;
 
 &lt;p&gt;如果你尝试过这两种方法，就会发现其实后者得到结果需要的时间要长一些（笔者使用这两种方法得到结果的耗时分别大约是5秒、7秒）。那么，有没有办法在python中像第一种方法那样，使用curl命令发送post请求呢。当然是可行的，所以今天我们将介绍在Python中使用Cloud Speech API将语音转换为文字的另一种方案，另外这次我们将把音频文件编码为base64嵌入到json请求文件中，省去了上传声音文件到Cloud Storage的步骤。&lt;/p&gt;
 
@@ -642,375 +1416,4 @@ virtualenv &lt;span class=&quot;nt&quot;&gt;--python&lt;/span&gt; python3 &lt;sp
 
 &lt;p&gt;最后，这次只是使用curl命令在LX终端获得了识别结果，下次将会总结如何在编程语言中使用Cloud Speech API。&lt;/p&gt;
 
-&lt;p&gt;感谢你阅读文章！&lt;/p&gt;</content><author><name>Qinghao Lin</name></author><summary type="html">Google Cloud Speech API是由谷歌云平台提供的，利用机器学习技术将语音转换为文字的服务。这个API能识别超过80种语言和语言变体，包括中文、日语、英语甚至广东话。这次，我总结了使用Google Cloud Speech API的基本流程。</summary></entry><entry><title type="html">Shadowsocks客户端在不同系统下的使用方法</title><link href="https://0qinghao.github.io/inforest/2018/03/06/shadowsocks-clients/" rel="alternate" type="text/html" title="Shadowsocks客户端在不同系统下的使用方法" /><published>2018-03-06T00:00:00+08:00</published><updated>2018-03-06T00:00:00+08:00</updated><id>https://0qinghao.github.io/inforest/2018/03/06/shadowsocks-clients</id><content type="html" xml:base="https://0qinghao.github.io/inforest/2018/03/06/shadowsocks-clients/">&lt;p&gt;当我们配置好Shadowsocks服务器端，或是购买了SS账号后，就可以使用客户端开始科学上网了。下面分别介绍在Windows、安卓、Linux(Debian)系统下SS客户端的使用方法。&lt;/p&gt;
-
-&lt;h1 id=&quot;windows系统下ss客户端的使用方法&quot;&gt;Windows系统下SS客户端的使用方法&lt;/h1&gt;
-
-&lt;p&gt;Windows系统下的SS客户端使用起来最为方便。客户端自带了系统全局代理的功能，甚至可以省去配置浏览器插件的操作。&lt;/p&gt;
-
-&lt;h2 id=&quot;下载客户端&quot;&gt;下载客户端&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/shadowsocks/shadowsocks-windows/releases&quot;&gt;点击这里，跳转到GitHub下载&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://share.weiyun.com/edaa2c5f08aa5169c2be5c6a9f59662d&quot;&gt;如果你无法打开GitHub，可以点击这里，前往微云下载，但不保证是最新版本&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;将压缩包内的可执行程序解压，放置在合适的文件夹内，运行后会在程序同一目录下产生配置文件，如果随便放置容易显得杂乱。&lt;/p&gt;
-
-&lt;h2 id=&quot;配置客户端&quot;&gt;配置客户端&lt;/h2&gt;
-
-&lt;p&gt;第一次打开SS客户端会主动要求编辑服务器。填入你的 &lt;strong&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;服务器地址&lt;/code&gt;&lt;/strong&gt; &lt;strong&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;密码&lt;/code&gt;&lt;/strong&gt; &lt;strong&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;服务器端口号&lt;/code&gt;&lt;/strong&gt; &lt;strong&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;加密方式&lt;/code&gt;&lt;/strong&gt; ，其他设置可以保持默认。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/large/005MY9Xigy1fou6bi1tebj309z09l3zf.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;最后，右击任务栏的小图标，勾选 &lt;strong&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;启用系统代理&lt;/code&gt;&lt;/strong&gt; 。系统代理模式选择 &lt;strong&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;PAC模式&lt;/code&gt;&lt;/strong&gt; ，这样SS会自动使用代理访问墙外站点，不需要另外安装浏览器的代理插件。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/005MY9Xigy1fou6nucjagj3059065t8t.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;h1 id=&quot;安卓系统下ss客户端的使用方法&quot;&gt;安卓系统下SS客户端的使用方法&lt;/h1&gt;
-
-&lt;p&gt;安卓系统下的SS客户端也很完善，配置方便，甚至还可以指定仅部分APP使用代理。&lt;/p&gt;
-
-&lt;h2 id=&quot;下载客户端-1&quot;&gt;下载客户端&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;如果你能使用Google Play商店，直接搜索安装&lt;a href=&quot;https://play.google.com/store/apps/details?id=com.github.shadowsocks&quot;&gt;Shadowsocks&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://share.weiyun.com/f9250253dab9ec9ba9b12e124733adcd&quot;&gt;你也可以点击这里，前往微云下载，但不保证是最新版本&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;配置客户端-1&quot;&gt;配置客户端&lt;/h2&gt;
-
-&lt;p&gt;点击右上角的 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;+&lt;/code&gt; 选择 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;手动设置&lt;/code&gt; ，填入你的 &lt;strong&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;服务器地址&lt;/code&gt;&lt;/strong&gt; &lt;strong&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;密码&lt;/code&gt;&lt;/strong&gt; &lt;strong&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;服务器端口号&lt;/code&gt;&lt;/strong&gt; &lt;strong&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;加密方式&lt;/code&gt;&lt;/strong&gt; ，其他设置可以保持默认。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/large/005MY9Xigy1fp2brcto8aj307y0e3wf1.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;还可以在配置中开启 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;分应用VPN&lt;/code&gt; 功能，来指定仅部分APP的流量进行代理；或者再打开 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;绕行模式&lt;/code&gt; 来指定部分APP的流量绕过代理。&lt;/p&gt;
-
-&lt;h1 id=&quot;debian下ss客户端的使用方法&quot;&gt;Debian下SS客户端的使用方法&lt;/h1&gt;
-
-&lt;p&gt;Linux下使用SS客户端要麻烦一些，一方面Linux下SS不带全局代理，需要搭配浏览器插件使用；另一方面笔者在使用中有遇到bug，不知在你阅读这篇文章时是否已经修复，总之还是会记录在下文中以供参考。&lt;/p&gt;
-
-&lt;p&gt;另外，这部分介绍的是配合Chrome插件实现浏览器翻墙的方法。关于如何在LX终端让 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;wget&lt;/code&gt;  &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;curl&lt;/code&gt; 等命令使用代理，将在另一篇文章中再做总结。&lt;/p&gt;
-
-&lt;h2 id=&quot;安装客户端&quot;&gt;安装客户端&lt;/h2&gt;
-
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt update
-&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;shadowsocks
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;运行sslocal&quot;&gt;运行sslocal&lt;/h2&gt;
-
-&lt;p&gt;不带任何参数运行 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sslocal&lt;/code&gt; 可以查看帮助。&lt;/p&gt;
-
-&lt;p&gt;运行SS客户端一般有两种方法。你可以参考帮助，将必要的参数填入，用一条较长的指令来运行：&lt;/p&gt;
-
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;sslocal &lt;span class=&quot;nt&quot;&gt;-s&lt;/span&gt; 服务器地址 &lt;span class=&quot;nt&quot;&gt;-p&lt;/span&gt; 服务器端口 &lt;span class=&quot;nt&quot;&gt;-k&lt;/span&gt; 密码 &lt;span class=&quot;nt&quot;&gt;-m&lt;/span&gt; 加密方式 &lt;span class=&quot;nt&quot;&gt;-d&lt;/span&gt; start
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;显然上面这种方式效率太低。另一种方式就是将各项参数保存为json文件，运行时指定配置文件即可。&lt;/p&gt;
-
-&lt;p&gt;假设我们的配置文件是 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/etc/ss.json&lt;/code&gt; ，其内容为：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-nohighlight&quot;&gt;{
-  &quot;server&quot;:&quot;服务器地址&quot;,
-  &quot;server_port&quot;:服务器端口,
-  &quot;local_address&quot;:&quot;127.0.0.1&quot;,
-  &quot;local_port&quot;:1080,
-  &quot;password&quot;:&quot;密码&quot;,
-  &quot;timeout&quot;:600,
-  &quot;method&quot;:&quot;加密方式&quot;,
-  &quot;fast_open&quot;:false
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;将你的 &lt;strong&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;服务器地址&lt;/code&gt;&lt;/strong&gt; &lt;strong&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;密码&lt;/code&gt;&lt;/strong&gt; &lt;strong&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;服务器端口号&lt;/code&gt;&lt;/strong&gt; &lt;strong&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;加密方式&lt;/code&gt;&lt;/strong&gt; 替换到上述文件。（有双引号的请保留双引号，不要删除）&lt;/p&gt;
-
-&lt;p&gt;接下来，每次需要运行SS客户端时，我们只需要输入一条简短的指令：&lt;/p&gt;
-
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;sslocal &lt;span class=&quot;nt&quot;&gt;-c&lt;/span&gt; /etc/ss.json &lt;span class=&quot;nt&quot;&gt;-d&lt;/span&gt; start
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;运行sslocal时遇到的bug&quot;&gt;*运行sslocal时遇到的bug&lt;/h3&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;解决方案来自&lt;a href=&quot;http://blog.csdn.net/blackfrog_unique/article/details/60320737&quot;&gt;Kali2.0 update到最新版本后安装shadowsocks服务报错问题&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;笔者在运行sslocal命令时遇到了形如 &lt;em&gt;INFO loading libcrypto from libcrypto.so.1.1&lt;/em&gt; 的报错。后在上述文章中找到解决方案。&lt;/p&gt;
-
-&lt;p&gt;打开文件openssl.py，请参照错误提示确定是否与下述文件路径相同：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-nohighlight&quot;&gt;sudo nano /usr/local/lib/python2.7/dist-packages/shadowsocks/crypto/openssl.py
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;使用快捷键&lt;kbd&gt;CTRL&lt;/kbd&gt;+&lt;kbd&gt;_&lt;/kbd&gt;选择跳转到第52行&lt;/p&gt;
-
-&lt;p&gt;将 &lt;em&gt;libcrypto. EVP_CIPHER_CTX_ &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cleanup&lt;/code&gt; .argtypes = (c_void_p, )&lt;/em&gt; 修改为 &lt;em&gt;libcrypto. EVP_CIPHER_CTX_ &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;reset&lt;/code&gt; .argtypes = (c_void_p, )&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;同样地，跳转到第111行&lt;/p&gt;
-
-&lt;p&gt;将 &lt;em&gt;libcrypto. EVP_CIPHER_CTX_ &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cleanup&lt;/code&gt; (self.ctx)&lt;/em&gt; 修改为 &lt;em&gt;libcrypto. EVP_CIPHER_CTX_ &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;reset&lt;/code&gt; (self._ctx)&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;按&lt;kbd&gt;CTRL&lt;/kbd&gt;+&lt;kbd&gt;X&lt;/kbd&gt;，&lt;kbd&gt;Y&lt;/kbd&gt;保存退出。重新执行sslocal指令运行正常。&lt;/p&gt;
-
-&lt;h2 id=&quot;安装chrome插件&quot;&gt;安装Chrome插件&lt;/h2&gt;
-
-&lt;p&gt;由于Linux下的SS客户端不带全局代理功能，需要配合浏览器插件使用。这里只介绍Chrome插件的安装方法，火狐大体上类似。&lt;/p&gt;
-
-&lt;p&gt;如果你能够使用Chrome应用商店，搜索&lt;a href=&quot;https://chrome.google.com/webstore/search/switchyomega?hl=zh-CN&quot;&gt;SwitchyOmega&lt;/a&gt;安装即可。你也可以点击&lt;a href=&quot;https://share.weiyun.com/28d769f6e52b68b894736b54b29cf9e4&quot;&gt;这里&lt;/a&gt;通过微云下载crx文件，将其拖动到&lt;a href=&quot;chrome://extensions/&quot;&gt;Chrome扩展程序页面&lt;/a&gt;完成安装。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/large/005MY9Xigy1fp2f11yv4kj30d207y0t4.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;点击选项，如下图配置SwitchyOmega。 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;代理协议&lt;/code&gt; 选择 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;SOCKS5&lt;/code&gt; ；如果你在ss.json配置文件中修改过 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;local_port&lt;/code&gt; 参数，则这里 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;代理端口&lt;/code&gt; 必须与其一致，否则保持默认值1080即可。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/large/005MY9Xigy1fp2f9hgejzj30gl06ct9h.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;最后，保存配置，点击SwitchyOmega图标切换到刚才配置好的情景模式。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/large/005MY9Xigy1fp2f89rsqgj30hw09u404.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;h1 id=&quot;结语&quot;&gt;结语&lt;/h1&gt;
-
-&lt;p&gt;由于手上设备有限，没办法总结所有系统下的SS客户端使用方法。例如iOS系统下似乎是使用&lt;a href=&quot;http://apt.thebigboss.org/onepackage.php?bundleid=com.linusyang.shadowsocks&quot;&gt;Big Boss源&lt;/a&gt;搜索ShadowSocks应用，但没法亲自尝试。有兴趣的朋友建议前往官网https://shadowsocks.org/（.com那个是出售SS服务的）进一步了解。&lt;/p&gt;
-
-&lt;p&gt;感谢你阅读文章！&lt;/p&gt;</content><author><name>Qinghao Lin</name></author><summary type="html">当我们配置好Shadowsocks服务器端，或是购买了SS账号后，就可以使用客户端开始科学上网了。下面分别介绍在Windows、安卓、Linux(Debian)系统下SS客户端的使用方法。</summary></entry><entry><title type="html">申请和使用Google云计算引擎配置SS Server</title><link href="https://0qinghao.github.io/inforest/2018/02/27/google-cloud-engine-ss-server/" rel="alternate" type="text/html" title="申请和使用Google云计算引擎配置SS Server" /><published>2018-02-27T00:00:00+08:00</published><updated>2018-02-27T00:00:00+08:00</updated><id>https://0qinghao.github.io/inforest/2018/02/27/google-cloud-engine-ss-server</id><content type="html" xml:base="https://0qinghao.github.io/inforest/2018/02/27/google-cloud-engine-ss-server/">&lt;p&gt;&lt;a href=&quot;https://cloud.google.com/&quot;&gt;Google Cloud Platform&lt;/a&gt;的新用户可以获得$300赠金的一年使用权，使用这笔不菲的赠金，我们可以构建应用程序、搭建网站、存储数据、体验各种强大的API。这次，我总结了使用Google云计算引擎搭建SS服务器，实现科学上网的过程，也算作为墙内使用谷歌云平台的第一步。&lt;/p&gt;
-
-&lt;h1 id=&quot;科学上网的基本原理&quot;&gt;科学上网的基本原理&lt;/h1&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/large/005MY9Xigy1fotxvw10lnj30b908lt9s.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;我们只需要一个能够访问墙外目标地址的代理服务器。本地设备向服务器发送访问目标地址的请求，服务器收到请求后访问目标并将结果回传给本地设备。&lt;/p&gt;
-
-&lt;p&gt;我们是使用Shadowsocks（简称SS，中文名影梭）来配置服务器的，所以一般把这个服务器称为SS服务器。谷歌云平台提供的位于国外的云计算引擎可以用来搭建SS服务器。&lt;/p&gt;
-
-&lt;h1 id=&quot;申请试用谷歌云平台&quot;&gt;申请试用谷歌云平台&lt;/h1&gt;
-
-&lt;p&gt;&lt;strong&gt;*重要：你需要一张外币信用卡（VISA/MasterCard/JCB）&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;首先，翻墙。突然有种鸡生蛋，蛋生鸡的矛盾，不过我相信你能找到一个免费试用的VPN。&lt;/p&gt;
-
-&lt;p&gt;登录&lt;a href=&quot;https://cloud.google.com&quot;&gt;谷歌云平台&lt;/a&gt;，点击右上角的申请试用后进入申请界面。地区可以选择中国，不影响后续的申请。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/large/005MY9Xigy1fotyf40bi9j30b00aymy2.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;账号类型选择“个人”，填写名称地址电话。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/large/005MY9Xigy1fotyl3w3anj30dk09ujsp.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;付款方式填写你的外币信用卡（单币银联卡无效）。提交后信用卡会扣除1美金进行验证，验证完成即退回。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/large/005MY9Xigy1fotynitahxj30dt07ft9n.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;h1 id=&quot;创建计算引擎&quot;&gt;创建计算引擎&lt;/h1&gt;
-
-&lt;p&gt;进入控制台，首先要求创建一个项目，尽量使用简单易记的项目名。&lt;/p&gt;
-
-&lt;p&gt;项目创建完成后，点击控制台左上角的 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;☰&lt;/code&gt; 打开导航栏，找到 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Compute Engine&lt;/code&gt; → &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;VM实例&lt;/code&gt; ，点击 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;创建&lt;/code&gt; 开始创建一个计算引擎。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/large/005MY9Xigy1fotz3od46zj30j309eabi.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;区域&lt;/code&gt; 有3个比较好的选择：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-nohighlight&quot;&gt;asia-east1：位于台湾
-
-asia-southeast1：位于新加坡
-
-asia-northeast1：位于东京
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;从国内ping延迟都在100ms左右，它们的流量费用和硬件费用有细微的差别，在意的朋友可以在&lt;a href=&quot;https://cloud.google.com/compute/pricing&quot;&gt;这里&lt;/a&gt;查询。&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;机器类型&lt;/code&gt; 可以选择最小的微型（1个共享vCPU，0.6GB内存）以节省硬件费用，单作为SS服务器该配置已经足够。&lt;/p&gt;
-
-&lt;p&gt;其他设置可以保持默认。点击 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;创建&lt;/code&gt; 。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/large/005MY9Xigy1fotzuwl2gej30ep0acwgb.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;h1 id=&quot;配置ss服务器&quot;&gt;配置SS服务器&lt;/h1&gt;
-
-&lt;p&gt;创建完成后可以看到分配给实例的 &lt;strong&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;外部IP&lt;/code&gt;&lt;/strong&gt; ，请牢记。&lt;/p&gt;
-
-&lt;p&gt;点击云引擎后面的 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;SSH&lt;/code&gt; ，远程连接该主机，进行配置。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/large/005MY9Xigy1fou05u93clj30cw04yweq.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;这里使用&lt;a href=&quot;https://teddysun.com/358.html&quot;&gt;秋水逸冰&lt;/a&gt;大大的SS服务器配置脚本。&lt;/p&gt;
-
-&lt;p&gt;依次输入下面三条指令：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-nohighlight&quot;&gt;wget --no-check-certificate -O shadowsocks.sh https://raw.githubusercontent.com/wjk199511140034/ss-onekeyinstall/master/shadowsocks.sh
-
-sudo chmod +x shadowsocks.sh
-
-sudo ./shadowsocks.sh 2&amp;gt;&amp;amp;1 | tee shadowsocks.log
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;第三条指令运行后即进入配置过程，需要根据提示输入几项信息。&lt;/p&gt;
-
-&lt;p&gt;Please input password for shadowsocks-libev：输入 &lt;strong&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;密码&lt;/code&gt;&lt;/strong&gt; ，请牢记&lt;/p&gt;
-
-&lt;p&gt;Please enter a port for shadowsocks-libev：输入SS &lt;strong&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;服务器端口号&lt;/code&gt;&lt;/strong&gt; ，请牢记&lt;/p&gt;
-
-&lt;p&gt;Which cipher you’d select：选择一种 &lt;strong&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;加密方式&lt;/code&gt;&lt;/strong&gt; ，请牢记&lt;/p&gt;
-
-&lt;p&gt;按任意键开始执行脚本，等待脚本运行完毕。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/large/005MY9Xigy1fou5nkwqofj30gs07d768.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;h1 id=&quot;创建防火墙规则&quot;&gt;创建防火墙规则&lt;/h1&gt;
-
-&lt;p&gt;点击控制台左上角的 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;☰&lt;/code&gt; 打开导航栏，找到 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;VPC网络&lt;/code&gt; → &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;防火墙规则&lt;/code&gt; ，点击 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;创建防火墙规则&lt;/code&gt; 创建如下2个规则。&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;入站规则&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;流量方向&lt;/code&gt; ：入站&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;目标&lt;/code&gt; ：网络中的所有实例&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;来源 IP 地址范围&lt;/code&gt; ：0.0.0.0/0&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;协议和端口&lt;/code&gt; ：全部允许&lt;/p&gt;
-
-&lt;p&gt;其他部分可以保持默认，这条规则表示允许所有ip/端口的所有协议入站。&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;出站规则&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;流量方向&lt;/code&gt; ：出站&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;目标&lt;/code&gt; ：网络中的所有实例&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;来源 IP 地址范围&lt;/code&gt; ：0.0.0.0/0&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;协议和端口&lt;/code&gt; ：全部允许&lt;/p&gt;
-
-&lt;p&gt;其他部分可以保持默认，这条规则表示允许所有协议出站到所有ip/端口。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/large/005MY9Xigy1fou5nhwhkuj30hx07eq4a.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;至此，SS服务器部署完毕。你可以关闭你不稳定的试用版VPN，准备开始正确地科学上网了。&lt;/p&gt;
-
-&lt;h1 id=&quot;使用ss客户端&quot;&gt;使用SS客户端&lt;/h1&gt;
-
-&lt;p&gt;这里仅以Windows客户端为例，Android端很相似。Debian平台使用SS客户端则需要进行一些配置，将另外做一次总结。&lt;/p&gt;
-
-&lt;p&gt;可以在GitHub下载到Windows平台的&lt;a href=&quot;https://github.com/shadowsocks/shadowsocks-windows/releases&quot;&gt;SS客户端&lt;/a&gt;。&lt;/p&gt;
-
-&lt;p&gt;如果你无法打开GitHub，可以点击&lt;a href=&quot;https://share.weiyun.com/edaa2c5f08aa5169c2be5c6a9f59662d&quot;&gt;这里&lt;/a&gt;，前往微云下载，但不保证是最新版本。&lt;/p&gt;
-
-&lt;p&gt;请将可执行程序放置在合适的文件夹内，运行后会在程序同一目录下产生配置文件，如果随便放置容易显得杂乱。&lt;/p&gt;
-
-&lt;p&gt;第一次打开SS客户端会主动要求编辑服务器。填入你的 &lt;strong&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;外部IP&lt;/code&gt;&lt;/strong&gt; &lt;strong&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;密码&lt;/code&gt;&lt;/strong&gt; &lt;strong&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;服务器端口号&lt;/code&gt;&lt;/strong&gt; &lt;strong&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;加密方式&lt;/code&gt;&lt;/strong&gt; ，其他设置可以保持默认。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/large/005MY9Xigy1fou6bi1tebj309z09l3zf.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;最后，右击任务栏的小图标，勾选 &lt;strong&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;启用系统代理&lt;/code&gt;&lt;/strong&gt; 。系统代理模式选择 &lt;strong&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;PAC模式&lt;/code&gt;&lt;/strong&gt; ，这样SS会自动使用代理访问墙外站点，不需要另外安装浏览器的代理插件。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/005MY9Xigy1fou6nucjagj3059065t8t.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;h1 id=&quot;参考资料&quot;&gt;参考资料&lt;/h1&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://teddysun.com/358.html&quot;&gt;Debian下shadowsocks-libev一键安装脚本&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://teddysun.com/399.html&quot;&gt;Shadowsocks Troubleshooting&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://blog.021xt.cc/archives/98&quot;&gt;Shadowsocks原理和搭建&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://51.ruyo.net/2144.html&quot;&gt;Google Cloud服务免费申请试用以及使用教程&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;感谢你阅读文章！&lt;/p&gt;</content><author><name>Qinghao Lin</name></author><summary type="html">Google Cloud Platform的新用户可以获得$300赠金的一年使用权，使用这笔不菲的赠金，我们可以构建应用程序、搭建网站、存储数据、体验各种强大的API。这次，我总结了使用Google云计算引擎搭建SS服务器，实现科学上网的过程，也算作为墙内使用谷歌云平台的第一步。</summary></entry><entry><title type="html">树莓派学习手记——修改软件源</title><link href="https://0qinghao.github.io/inforest/2018/01/06/RPi-apt-source/" rel="alternate" type="text/html" title="树莓派学习手记——修改软件源" /><published>2018-01-06T00:00:00+08:00</published><updated>2018-01-06T00:00:00+08:00</updated><id>https://0qinghao.github.io/inforest/2018/01/06/RPi-apt-source</id><content type="html" xml:base="https://0qinghao.github.io/inforest/2018/01/06/RPi-apt-source/">&lt;h2 id=&quot;国情国情&quot;&gt;国情，国情&lt;/h2&gt;
-
-&lt;p&gt;在Raspbian/Ubuntu系统上，升级系统或安装软件只需要一条很简单的命令：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-nohighlight&quot;&gt;sudo apt install 软件包名		# 安装软件
-sudo apt upgrade		# 更新软件
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;然而在天朝的网络下，很难顺利地完成下载过程。但好在有许多高校/机构提供了及时更新的镜像网站，我们可以通过修改配置文件解决下载难的问题。&lt;/p&gt;
-
-&lt;p&gt;很多同学查找解决方法后，或许能解决一部分问题，但仍会遇到连接超时的问题。究其原因，大致有两点：&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;树莓派的软件源配置有两处，而大部分教程只指出了一处；&lt;/strong&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;没有区分系统版本（Codename），Codename目前分为jessie / wheezy / squeeze / stretch，大部分教程仍使用的是jessie或wheezy，而笔者安装的系统却是stretch。&lt;/strong&gt;&lt;/p&gt;
-
-    &lt;p&gt;​&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;配置文件在哪&quot;&gt;配置文件在哪&lt;/h2&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-nohighlight&quot;&gt;/etc/apt/sources.list
-/etc/apt/sources.list.d/raspi.list
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;很多教程只指出了第一处，如果没有修改第二个配置文件，更新系统时很容易出现连接超时的问题。&lt;/p&gt;
-
-&lt;p&gt;在修改配置文件之前，可以选择先备份一下原文件，但这个配置文件也不太重要，不想麻烦也可跳过。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-nohighlight&quot;&gt;sudo cp /etc/apt/sources.list /etc/apt/sources.bak
-sudo cp /etc/apt/sources.list.d/raspi.list /etc/apt/sources.list.d/raspi.bak
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;​&lt;/p&gt;
-
-&lt;h2 id=&quot;我的codename是什么&quot;&gt;我的Codename是什么&lt;/h2&gt;
-
-&lt;p&gt;我们来确定自己树莓派安装的系统Codename是什么：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-nohighlight&quot;&gt;lsb_release -a
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;运行这条指令之后，可以很清楚的看到Codename&lt;/p&gt;
-
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Codename: stretch
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;​&lt;/p&gt;
-
-&lt;h2 id=&quot;修改配置文件&quot;&gt;修改配置文件&lt;/h2&gt;
-
-&lt;p&gt;国内有许多高校提供了树莓派的软件源镜像。可以在这个网页查看所有的镜像网站：http://www.raspbian.org/RaspbianMirrors&lt;/p&gt;
-
-&lt;p&gt;笔者选择了中科大提供的镜像，也是大家公认的比较稳定的镜像之一。&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-nohighlight&quot;&gt;sudo nano /etc/apt/sources.list
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;将该文件的内容替换为：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-nohighlight&quot;&gt;deb http://mirrors.ustc.edu.cn/raspbian/raspbian/ stretch main contrib non-free
-deb-src http://mirrors.ustc.edu.cn/raspbian/raspbian/ stretch main contrib non-free
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;按&lt;kbd&gt;CTRL&lt;/kbd&gt;+&lt;kbd&gt;X&lt;/kbd&gt; 关闭文件，键入&lt;kbd&gt;Y&lt;/kbd&gt;（保存修改）回车。&lt;/p&gt;
-
-&lt;p&gt;修改第二个配置文件：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-nohighlight&quot;&gt;sudo nano /etc/apt/sources.list.d/raspi.list
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;类似地，内容替换为：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-nohighlight&quot;&gt;deb http://mirrors.ustc.edu.cn/archive.raspberrypi.org/ stretch main ui
-deb-src http://mirrors.ustc.edu.cn/archive.raspberrypi.org/ stretch main ui
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;strong&gt;相信细心的同学已经注意到了，修改的文件内容网址后紧接着一项”stretch”。如果你手中的树莓派安装的系统Codename并不是stretch，还请进行相应修改。&lt;/strong&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;最后，刷新软件列表：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-nohighlight&quot;&gt;sudo apt update
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;修改完成了！赶紧去体验一下高速更新系统/升级软件的快感吧。感谢你阅读文章！&lt;/p&gt;</content><author><name>Qinghao Lin</name></author><summary type="html">国情，国情</summary></entry></feed>
+&lt;p&gt;感谢你阅读文章！&lt;/p&gt;</content><author><name>Qinghao Lin</name></author><summary type="html">Google Cloud Speech API是由谷歌云平台提供的，利用机器学习技术将语音转换为文字的服务。这个API能识别超过80种语言和语言变体，包括中文、日语、英语甚至广东话。这次，我总结了使用Google Cloud Speech API的基本流程。</summary></entry></feed>

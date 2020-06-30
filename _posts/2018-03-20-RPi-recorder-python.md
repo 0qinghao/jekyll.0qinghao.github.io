@@ -1,3 +1,11 @@
+---
+layout: post
+title: 树莓派学习手记——使用Python录音
+categories: [raspberrypi, python]
+description: 树莓派录音，用到一张USB声卡
+keywords: 树莓派, python, 录音, USB声卡
+furigana: false
+---
 有的时候我们想让树莓派能够录音，以实现语音控制等功能。所以今天我们总结一下用在树莓派上使用Python录音的过程。
 
 # 准备硬件
@@ -10,20 +18,23 @@
 
 使用arecord -l可以列出所有录音设备，一般输出如下：
 
-```shell
+``` shell
 arecord -l
 ```
 
-> **** List of CAPTURE Hardware Devices ****
+> List of CAPTURE Hardware Devices
+>
 > card 1: Device [USB Audio Device], device 0: USB Audio [USB Audio]
->   Subdevices: 1/1
->   Subdevice #0: subdevice #0
+>
+> Subdevices: 1/1
+>
+> Subdevice #0: subdevice #0
 
 同样地，aplay -l可以列出所有播放设备，输出中也能找到形如 `Device [USB Audio Device]` 的设备。
 
 我们可以直接在命令行执行Linux自带的录音/播放命令，测试硬件是否正常：
 
-```nohighlight
+``` nohighlight
 arecord -D hw:1,0 -t wav -c 1 -r 44100 -f S16_LE test.wav
 aplay -D hw:0,0 test.wav
 ```
@@ -32,21 +43,21 @@ aplay -D hw:0,0 test.wav
 
 `aplay` 是播放命令，其中 `hw:0,0` 表示树莓派**板载**音频接口，如果你把耳机插在USB声卡接口，还请进行相应修改，如改成 `hw:1,0` 。
 
-*****如果你发现录制的音频内没有声音，只有细微的杂音，但 `arecord -l` 和 `aplay -l` 列出的设备中确实有USB声卡。那么你可以尝试着把麦克风接口拔出来一些，只插进去2/3，或许能够解决你的问题。笔者不是很明白其中的缘由，如果你有什么想法恳请留言告知。
+**如果你发现录制的音频内没有声音，只有细微的杂音，但 `arecord -l` 和 `aplay -l` 列出的设备中确实有USB声卡。那么你可以尝试着把麦克风接口拔出来一些，只插进去2/3，或许能够解决你的问题。笔者不是很明白其中的缘由，如果你有什么想法恳请留言告知。**
 
 # 安装pyaudio
 
 在Python中执行录音命令需要pyaudio模块，直接用pip命令安装：
 
-```shell
+``` shell
 pip install pyaudio
 ```
 
 如果你使用pip命令下载速度很慢，或许[修改pip源](https://segmentfault.com/n/1330000013787318)可以帮到你。
 
-*****如果你使用了virtualenv，一般会发现pyaudio安装失败。这种情况下你需要安装APT中的PortAudio开发头文件，然后安装PyAudio：
+**如果你使用了virtualenv，一般会发现pyaudio安装失败。这种情况下你需要安装APT中的PortAudio开发头文件，然后安装PyAudio：**
 
-```
+``` 
 sudo apt-get install portaudio19-dev
 pip install pyaudio
 ```
@@ -55,7 +66,7 @@ pip install pyaudio
 
 该例程修改自官方主页例程[PyAudio](http://people.csail.mit.edu/hubert/pyaudio/)。
 
-```python
+``` python
 import pyaudio
 import wave
 import os
@@ -100,7 +111,7 @@ wf.close()
 
 执行后会录制一段5秒的音频，输出为同目录下的output.wav文件。
 
-```shell
+``` shell
 python3 rec.py
 ```
 
@@ -108,7 +119,7 @@ python3 rec.py
 
 一般情况下，在树莓派上执行上述Python代码后，你会看到非常多的ALSA报错和JACK报错：
 
-> ALSA lib confmisc.c:1281:(snd_func_refer) Unable to find definition 'cards.bcm2835.pcm.front.0:CARD=0'
+> ALSA lib confmisc.c:1281:(snd_func_refer) Unable to find definition 'cards.bcm2835.pcm.front.0: CARD=0'
 >
 > ......
 >
@@ -119,7 +130,7 @@ python3 rec.py
 
 但你会发现其实能够正常地录音。如果你不想看到这些错误消息，可以在代码中加入下述命令隐藏错误：
 
-```python
+``` python
 os.close(sys.stderr.fileno())
 ```
 
