@@ -1,11 +1,20 @@
+---
+layout: post
+title: 树莓派学习手记——制作一个空调遥控器（红外接收、发射的实现）
+categories: [raspberrypi]
+description: 树莓派遥控器的硬件组成和红外录制的使用，前期写的比较硬的博客
+keywords: 树莓派, 遥控器, 红外
+furigana: false
+---
+
 使用树莓派搭配红外管，进行接收、发射红外信号是很方便的，同时红外信号也有很广泛的用途。这次我们将总结使用树莓派制作一个空调红外遥控器的过程。
 
 # 准备工具
 
-- 红外接收管（参考型号HS0038B）
-- 红外发射管（参考型号TSAL6200）
-- 遥控器（或能使用万能遥控器的手机）
-- *用作开关的三极管、限流电阻（非必须、参考型号S9013）*
+* 红外接收管（参考型号HS0038B）
+* 红外发射管（参考型号TSAL6200）
+* 遥控器（或能使用万能遥控器的手机）
+* *用作开关的三极管、限流电阻（非必须、参考型号S9013）*
 
 ![](http://ww1.sinaimg.cn/large/005MY9Xigy1fpx7jt8je6j30a406ldgf.jpg)
 
@@ -35,36 +44,37 @@
 
 > 解决方案来自：[LIRC: Linux Infrared Remote Control for Raspberry Pi](https://github.com/josemotta/IoT.Starter.Api/tree/master/gpio-base#lirc-linux-infrared-remote-control-for-raspberry-pi) 
 
-```nohighlight
+``` nohighlight
 sudo apt update
 sudo apt install lirc
 ```
 
-## 修改CONFIG.TXT
+## 修改CONFIG. TXT
 
 修改文件 `/boot/config.txt` ：
 
-```nohighlight
+``` nohighlight
 sudo nano /boot/config.txt
 ```
 
 找到 `lirc-rpi module` 的部分，修改为：
 
-```nohighlight
+``` nohighlight
 # Uncomment this to enable the lirc-rpi module
 dtoverlay=lirc-rpi,gpio_out_pin=17,gpio_in_pin=18,gpio_in_pull=up
 ```
 
 **！！！注意：config.txt的配置内容，似乎根据不同Linux内核版本有微妙的变化，手头上暂时没有其他平台可以测试。如果后续测试时出问题，请Google关键词“lirc lirc-rpi gpio-ir”查阅相关资料。**
+
 ## 修改驱动配置
 
 修改文件 `/etc/lirc/lirc_options.conf` ：
 
-```nohighlight
+``` nohighlight
 sudo nano /etc/lirc/lirc_options.conf
 ```
 
-```
+``` 
 # 把：
 driver = devinput
 device = auto
@@ -78,7 +88,7 @@ device = /dev/lirc0
 
 ## 简单测试是否正常
 
-```
+``` 
 # 必须停止lircd服务才能进入接收红外信号模式
 sudo service lircd stop
 mode2 -d /dev/lirc0
@@ -86,7 +96,7 @@ mode2 -d /dev/lirc0
 
 运行上述命令后，用遥控器对着接收管随便按一些按钮，如果出现形式如下的输出就表示正常：
 
-```nohighlight
+``` nohighlight
 space 16777215
 pulse 8999
 space 4457
@@ -94,8 +104,6 @@ pulse 680
 space 1627
 ......
 ```
-
-
 
 # 录入红外信号
 
@@ -121,7 +129,7 @@ lirc有一个自动录入红外信号、生成遥控器文件的功能。但此�
 
 开始自动录制：
 
-```nohighlight
+``` nohighlight
 # 请cd到有读写权限的目录下，因为需要创建一个遥控器配置文件
 # 参数-f --force 表示 Force raw mode
 irrecord -f -d /dev/lirc0 --disable-namespace
@@ -133,7 +141,7 @@ irrecord -f -d /dev/lirc0 --disable-namespace
 
 我在录制时输入的 `遥控器名称` 是aircon，录制的一个按钮是on，所以配置文件的内容形式如下：
 
-```
+``` 
 begin remote
 
   name  aircon
@@ -169,18 +177,18 @@ end remote
 
 ## 手动编辑遥控器配置文件
 
-打开刚才生成的样板文件  `遥控器名称.lircd.conf` ，很容易发现 `begin raw_codes` 和 `end raw_codes` 之间的内容就是需要我们手动修改的内容。刚才也提到过，样板中记录的信号极可能是**不正确**的，所以我们先把自动生成的 `on` 按钮下方的信号数据删除掉。
+打开刚才生成的样板文件 `遥控器名称.lircd.conf` ，很容易发现 `begin raw_codes` 和 `end raw_codes` 之间的内容就是需要我们手动修改的内容。刚才也提到过，样板中记录的信号极可能是**不正确**的，所以我们先把自动生成的 `on` 按钮下方的信号数据删除掉。
 
-还记得刚才测试时使用的mode2命令吗。我们现在需要做的就是使用mode2命令接收遥控器发出的信号，然后将其加入到文件  `遥控器名称.lircd.conf` 中。首先，我们来录入**正确**的 `on` 按钮的信号数据：
+还记得刚才测试时使用的mode2命令吗。我们现在需要做的就是使用mode2命令接收遥控器发出的信号，然后将其加入到文件 `遥控器名称.lircd.conf` 中。首先，我们来录入**正确**的 `on` 按钮的信号数据：
 
-```
+``` 
 # -m --mode 使用行列显示模式，不显示pulse、space
 mode2 -m -d /dev/lirc0
 ```
 
 按下遥控器上的“开”按钮，得到形式如下的输出：
 
-```
+``` 
  16777215
 
      9059     4432      706     1604      706      528
@@ -214,7 +222,7 @@ mode2 -m -d /dev/lirc0
 
 重复上述操作，增加更多的按钮，例如 `name off` 、 `name 26C` 等。最后我录制了3个按钮，配置文件编辑成了这样：
 
-```
+``` 
 begin remote
 
   name  aircon
@@ -316,22 +324,23 @@ end remote
 
 最后，把配置文件复制到指定目录 `/etc/lirc/lircd.conf/` 并重启lircd服务：
 
-```
+``` 
 sudo cp aircon.lircd.conf /etc/lirc/lircd.conf.d/
 sudo service lircd restart
 ```
+
 *后续步骤出现问题的同学可以使用service lircd status查看服务启动的log，帮助定位bug。
 
 # 发射信号
 
 终于，我们可以尝试着使用树莓派控制空调了。如果你没有使用开关三极管，你可能需要把树莓派拿到靠近空调的地方，并且把红外发射管对准空调。如果你使用了三极管，那么注意树莓派和空调之间不要有明显的物体阻隔即可。
 
-```
+``` 
 # 发射命令：irsend SEND_ONCE 遥控器名称 按钮名称
 irsend SEND_ONCE aircon on
 ```
 
-*如果前面的步骤一切正常，但在发射信号时报错“transmission failed”。请检查生成的遥控器配置文件，查看flags项，若是`flags RAW_CODES|CONST_LENGTH`，请尝试将其修改成`flags RAW_CODES`并重启lircd服务。再测试能否发射信号。*
+*如果前面的步骤一切正常，但在发射信号时报错“transmission failed”。请检查生成的遥控器配置文件，查看flags项，若是 `flags RAW_CODES|CONST_LENGTH` ，请尝试将其修改成 `flags RAW_CODES` 并重启lircd服务。再测试能否发射信号。*
 
 ## 按钮？不如说是情景
 
@@ -341,7 +350,7 @@ irsend SEND_ONCE aircon on
 
 此时空调屏幕上显示温度是24℃。提问：如果我运行
 
-```
+``` 
 irsend SEND_ONCE aircon add
 ```
 
@@ -360,7 +369,7 @@ irsend SEND_ONCE aircon add
 
 我录制了一个按钮 `26C` ，功能是将温度调到26℃。然后我意识到， `26C` 这个按钮同时包含了开关状态的信息。是的！在空调关闭的情况下，如果我直接发送命令：
 
-```
+``` 
 irsend SEND_ONCE aircon 26C
 ```
 
