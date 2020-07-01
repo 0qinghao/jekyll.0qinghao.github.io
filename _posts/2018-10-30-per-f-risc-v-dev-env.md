@@ -1,3 +1,11 @@
+---
+layout: post
+title: 配置澎峰Perf-V开发板RISC-V开发环境
+categories: [risc-v]
+description: RISC-V小开发板的环境配置, 研究生后写的博客
+keywords: RISC-V
+furigana: false
+---
 实验室买了一块Perf-V开发板，准备开始做RISC-V相关的工作。
 
 虽然澎峰直接给了配置好的虚拟机开发环境，不过因为Ubuntu16.03用着不顺手就想要自己把环境配出来。
@@ -12,11 +20,9 @@
 
 总之这几天为了搞定Perf-V开发板的开发环境，前前后后踩了不少坑。现在把最后结果记录如下，备忘。
 
-
-
 # 克隆freedom-e-sdk存储库
 
-```sh
+``` sh
 git clone --recursive https://github.com/sifive/freedom-e-sdk.git
 ```
 
@@ -26,13 +32,13 @@ git clone --recursive https://github.com/sifive/freedom-e-sdk.git
 
 Ubuntu需要这些packages：
 
-```sh
+``` sh
 sudo apt-get install autoconf automake libmpc-dev libmpfr-dev libgmp-dev gawk bison flex texinfo libtool libusb-1.0-0-dev make g++ pkg-config libexpat1-dev zlib1g-dev  
 ```
 
 build：
 
-```
+``` 
 cd freedom-e-sdk
 make tools [BOARD=freedom-e300-hifive1]
 ```
@@ -50,7 +56,7 @@ cp -r ~/fengniao/e200_opensource/Perf-V-e-sdk/bsp ./
 
 可以把Perf-V开发板自带的几个程序顺便复制过来，方便之后测试。
 
-```
+``` 
 mv ./software ./software_bak
 cp -r ~/fengniao/e200_opensource/Perf-V-e-sdk/software ./
 ```
@@ -65,7 +71,7 @@ cp -r ~/fengniao/e200_opensource/Perf-V-e-sdk/software ./
 
 **步骤三：使用如下命令查看USB状态**
 
-```
+``` 
 lsusb
 ```
 
@@ -75,11 +81,11 @@ lsusb
 
 **步骤四：设置udev rules，使USB能够被plugdev group访问**
 
-```
+``` 
 sudo nano /etc/udev/rules.d/99-openocd.rules
 ```
 
-```
+``` 
 # 写入以下内容，注意0403和6010，和书上不一样
 SUBSYSTEM=="usb", ATTR{idVendor}=="0403",
 ATTR{idProduct}=="6010", MODE="664", GROUP="plugdev"
@@ -91,17 +97,14 @@ ATTRS{idProduct}=="6010", MODE="664", GROUP="plugdev"
 
 **步骤六：把自己的用户添加到组中**
 
-```
+``` 
 sudo usermod -a -G plugdev 你的用户名
 ```
 
-
-
 # 编译上传裸机RISC-V程序
 
-```
+``` 
 cd freedom-e-sdk
 make software PROGRAM=demo_gpio BOARD=Perf-V-creative-board
 make upload PROGRAM=demo_gpio BOARD=Perf-V-creative-board
 ```
-

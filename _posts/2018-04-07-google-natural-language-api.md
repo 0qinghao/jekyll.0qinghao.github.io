@@ -1,10 +1,19 @@
+---
+layout: post
+title: 译 - 使用Natural Language API分析文本的实体与情感
+categories: [google cloud]
+description: 谷歌自然语言API文档翻译
+keywords: 谷歌, 自然语言, API
+furigana: false
+---
+
 > 原文：[Natural Language APIでエンティティと感情を分析する](https://codelabs.developers.google.com/codelabs/cloud-nl-intro-ja/index.html?index=..%2F..%2Fspringone#0)
 
 # 概要
 
 使用 Cloud Natural Language API ，可以从文本中提取实体、分析情感、解析文本构成。
 
-此次向导中，我们将针对 Natural Language API 的3个方法：`analyzeEntities`、`analyzeSentiment` 和 `annotateText` 进行学习。
+此次向导中，我们将针对 Natural Language API 的3个方法： `analyzeEntities` 、 `analyzeSentiment` 和 `annotateText` 进行学习。
 
 **将要学习的东西**
 
@@ -88,26 +97,27 @@ Cloud Shell 将在控制台底部的新窗口中打开，并显示命令行提�
 
 你已获得API密钥，我们将其保存在环境变量中，以便每次调用API时不需要重复插入API密钥值。你可以将密钥保存在 Cloud Shell 中，下述的 `<your_api_key>` 请替换成之前复制的内容。
 
-```
+``` 
 export API_KEY=<YOUR_API_KEY>
 ```
+
 # 构造分析文本中实体的请求
 
 第一个介绍的 Natural Language API 方法是 `analyzeEntities` 。API 使用此方法从文本中提取出实体（人物、场所、事件等）。为了试用 API 的实体分析功能，我们将引用最近新闻中的以下句子。
 
-*LONDON — J. K. Rowling always said that the seventh Harry Potter book, "Harry Potter and the Deathly Hallows," would be the last in the series, and so far she has kept to her word.*
+*LONDON — J. K. Rowling always said that the seventh Harry Potter book, "Harry Potter and the Deathly Hallows, " would be the last in the series, and so far she has kept to her word.*
 
 对  Natural Language API 发出的请求可以事先保存在 `request.json` 文件中。首先，我们在 Cloud Shell 中生成这个文件。
 
-```
+``` 
 touch request.json
 ```
 
-然后，使用任意一个文本编辑器（`nano`、`vim`、`emacs`）打开生成的文件。在文件 `request.json` 中添加如下内容。
+然后，使用任意一个文本编辑器（ `nano` 、 `vim` 、 `emacs` ）打开生成的文件。在文件 `request.json` 中添加如下内容。
 
 **request.json**
 
-```
+``` 
 {
   "document":{
     "type":"PLAIN_TEXT",
@@ -116,19 +126,19 @@ touch request.json
 }
 ```
 
-在这个请求文件中，保存了即将发送给 Natural Language API 的文本的相关信息。type 属性的值可以是 `PLAIN_TEXT` 或 `HTML` 。content 中存放了将要发送给  Natural Language API 分析的文本。Natural Language API 还支持直接发送存储在 Google Cloud Storage 中的文件。直接从 Google Cloud Storage 发送文件时，请将 `content` 替换为 `gcsContentUri`，并将其值设置为云端文件的 uri 地址。
+在这个请求文件中，保存了即将发送给 Natural Language API 的文本的相关信息。type 属性的值可以是 `PLAIN_TEXT` 或 `HTML` 。content 中存放了将要发送给  Natural Language API 分析的文本。Natural Language API 还支持直接发送存储在 Google Cloud Storage 中的文件。直接从 Google Cloud Storage 发送文件时，请将 `content` 替换为 `gcsContentUri` ，并将其值设置为云端文件的 uri 地址。
 
 # 调用 Natural Language API 
 
 现在，我们将使用 curl 命令，把请求文件和之前保存好的 API 密钥环境变量一起，发送给  Natural Language API （全放在一条命令里面）。
 
-```
+``` 
 curl "https://language.googleapis.com/v1/documents:analyzeEntities?key=${API_KEY}" -s -X POST -H "Content-Type: application/json" --data-binary @request.json
 ```
 
 你将得到形式如下的响应。
 
-```
+``` 
 {
   "entities": [
     {
@@ -156,7 +166,7 @@ curl "https://language.googleapis.com/v1/documents:analyzeEntities?key=${API_KEY
 }
 ```
 
-在响应中，我们可以看到 API 从句子里检测到了6个实体（译者：原文是4个，但实际运行时得到6个，应该是API有所改善）。对于每个实体，你将得到实体的 `type` 、关联的维基百科URL（如果存在）、`salience` （显著性）以及实体在文本中出现的位置的索引。`salience` （显著性）是一个0~1的数字，指的是该实体对于整个文本的突出性。对于上述文段，「Harry Potter and the Deathly Hallows」具有最高的显著性（译者：原文是「Rowling」，应该是API有所改善），这是因为这部作品是文段所表述内容的主题。Natural Language API 也可以识别用其他方式表述的相同的实体，比如说「Rowling」、「J.K.Rowling」和「Joanne Kathleen Rowling」都指向同一个维基百科页面。
+在响应中，我们可以看到 API 从句子里检测到了6个实体（译者：原文是4个，但实际运行时得到6个，应该是API有所改善）。对于每个实体，你将得到实体的 `type` 、关联的维基百科URL（如果存在）、 `salience` （显著性）以及实体在文本中出现的位置的索引。 `salience` （显著性）是一个0~1的数字，指的是该实体对于整个文本的突出性。对于上述文段，「Harry Potter and the Deathly Hallows」具有最高的显著性（译者：原文是「Rowling」，应该是API有所改善），这是因为这部作品是文段所表述内容的主题。Natural Language API 也可以识别用其他方式表述的相同的实体，比如说「Rowling」、「J. K. Rowling」和「Joanne Kathleen Rowling」都指向同一个维基百科页面。
 
 # 使用 Natural Language API 进行情感分析
 
@@ -164,7 +174,7 @@ curl "https://language.googleapis.com/v1/documents:analyzeEntities?key=${API_KEY
 
 **request.json**
 
-```
+``` 
 {
   "document":{
     "type":"PLAIN_TEXT",
@@ -175,13 +185,13 @@ curl "https://language.googleapis.com/v1/documents:analyzeEntities?key=${API_KEY
 
 然后把请求发送到 API 的 `analyzeSentiment` 端点。
 
-```
+``` 
 curl "https://language.googleapis.com/v1/documents:analyzeSentiment?key=${API_KEY}" -s -X POST -H "Content-Type: application/json" --data-binary @request.json
 ```
 
 你将得到形式如下的响应。
 
-```
+``` 
 {
   "documentSentiment": {
     "polarity": 1,
@@ -226,7 +236,7 @@ curl "https://language.googleapis.com/v1/documents:analyzeSentiment?key=${API_KE
 
 **request.json**
 
-```
+``` 
 {
   "document":{
     "type":"PLAIN_TEXT",
@@ -240,13 +250,13 @@ curl "https://language.googleapis.com/v1/documents:analyzeSentiment?key=${API_KE
 
 然后把请求发送到 API 的 `annotateText` 端点。
 
-```
+``` 
 curl "https://language.googleapis.com/v1/documents:annotateText?key=${API_KEY}" -s -X POST -H "Content-Type: application/json" --data-binary @request.json
 ```
 
 响应中，对于句子中的每一个标记（token），会返回以下对象。
 
-```
+``` 
 {
   "text": {
 	"content": "Joanne",
@@ -274,7 +284,7 @@ curl "https://language.googleapis.com/v1/documents:annotateText?key=${API_KEY}" 
 },
 ```
 
-让我们详细看看返回值。从 `partOfSpeech` 可以看到「Joanne」是一个名词。`dependencyEdge` 包含可用于创建[依存句法分析树](https://en.wikipedia.org/wiki/Parse_tree#Dependency-based_parse_trees)（依存構文木/Dependency-based parse trees）的数据。这个语法树是一个图表，用来显示句中各单词之间的关系。上述文段的依存句法分析树如下所示。
+让我们详细看看返回值。从 `partOfSpeech` 可以看到「Joanne」是一个名词。 `dependencyEdge` 包含可用于创建[依存句法分析树](https://en.wikipedia.org/wiki/Parse_tree#Dependency-based_parse_trees)（依存構文木/Dependency-based parse trees）的数据。这个语法树是一个图表，用来显示句中各单词之间的关系。上述文段的依存句法分析树如下所示。
 
 ![](http://ww1.sinaimg.cn/large/005MY9Xigy1fq3h4ul57oj30l605ndgg.jpg)
 
@@ -290,7 +300,7 @@ Natural Language API 还支持其他很多语言的实体分析和语法注释�
 
 **request.json**
 
-```
+``` 
 {
   "document":{
     "type":"PLAIN_TEXT",
@@ -303,13 +313,13 @@ Natural Language API 还支持其他很多语言的实体分析和语法注释�
 
 我们不必告诉 API 这个文段是什么语言，API 能够自动检测出来。我们以相同的方式发送 API 请求。
 
-```
+``` 
 curl "https://language.googleapis.com/v1/documents:analyzeEntities?key=${API_KEY}" -s -X POST -H "Content-Type: application/json" --data-binary @request.json
 ```
 
 你将得到形式如下的响应。
 
-```
+``` 
 {
   "entities": [
     {
@@ -370,4 +380,3 @@ curl "https://language.googleapis.com/v1/documents:analyzeEntities?key=${API_KEY
 
 * 浏览 Natural Language API 文档的[向导](https://cloud.google.com/natural-language/docs/tutorials)。
 * 尝试使用 [Vision API](https://cloud.google.com/vision/) 、[Speech API](https://cloud.google.com/speech/) 。
-
