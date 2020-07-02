@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 在virtualenv中安装PyAudio
-categories: [python]
+categories: [python, linux]
 description: python录音
 keywords: python, virtualenv, pyaudio, 录音
 furigana: false

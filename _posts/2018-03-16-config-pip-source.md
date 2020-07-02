@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 修改pip源
-categories: [python]
+categories: [python, linux]
 description: win和linux下修改pip软件源
 keywords: python, windows, linux, pip
 furigana: false

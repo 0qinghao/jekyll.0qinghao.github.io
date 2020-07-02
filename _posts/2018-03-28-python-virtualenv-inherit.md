@@ -1,7 +1,7 @@
 ---
 layout: post
 title: python - 创建virtualenv时选择继承系统站点程序包
-categories: [python]
+categories: [python, linux]
 description: python创建虚拟环境时继承系统程序包
 keywords: python, virtualenv, 继承
 furigana: false

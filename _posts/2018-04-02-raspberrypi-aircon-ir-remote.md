@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 树莓派学习手记——制作一个空调遥控器（红外接收、发射的实现）
-categories: [raspberrypi]
+categories: [raspberrypi, linux]
 description: 树莓派遥控器的硬件组成和红外录制的使用，前期写的比较硬的博客
 keywords: 树莓派, 遥控器, 红外
 furigana: false

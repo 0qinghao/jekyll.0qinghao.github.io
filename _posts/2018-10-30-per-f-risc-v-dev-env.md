@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 配置澎峰Perf-V开发板RISC-V开发环境
-categories: [risc-v]
+categories: [risc-v, linux]
 description: RISC-V小开发板的环境配置, 研究生后写的博客
 keywords: RISC-V
 furigana: false

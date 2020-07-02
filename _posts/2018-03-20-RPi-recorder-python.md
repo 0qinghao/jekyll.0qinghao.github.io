@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 树莓派学习手记——使用Python录音
-categories: [raspberrypi, python]
+categories: [raspberrypi, python, linux]
 description: 树莓派录音，用到一张USB声卡
 keywords: 树莓派, python, 录音, USB声卡
 furigana: false
