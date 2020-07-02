@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 在Windows命令行、Linux终端使用代理
-categories: [proxy, shadowsocks, linux]
+categories: [shadowsocks, linux]
 description: 在命令行配置代理的方法
 keywords: shadowsocks, proxy
 furigana: true
