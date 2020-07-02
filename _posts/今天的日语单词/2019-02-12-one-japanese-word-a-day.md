@@ -4,6 +4,7 @@ title: 【日更】今天的日语单词
 categories: [日语]
 description: 每天(雾)一个日语单词
 keywords: 日语, 单词
+topmost: true
 furigana: true
 ---
 
