@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 在Python中使用科大讯飞Web API进行语音合成
-categories: [python, 讯飞, TTS]
+categories: [python, TTS]
 description: 科大讯飞的TTS web API使用
 keywords: 讯飞, TTS, python
 furigana: false

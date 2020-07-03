@@ -87,8 +87,9 @@ markdown: kramdown
 kramdown:
     input: GFM
 highlighter: rouge
+math_engine: mathjax
 paginate: 10
-lsi: false
+incremental: false
 quiet: false
 excerpt_separator: "\n"
 permalink: /:year/:month/:day/:title/
