@@ -7,7 +7,7 @@ keywords: shadowsocks, proxy
 furigana: true
 ---
 
-在之前的博文中分享了如何[使用Google云计算引擎搭建SS服务器](https://segmentfault.com/a/1190000013399064)，如何[使用SS客户端](https://segmentfault.com/a/1190000013539547)，已经满足了科学上网的基本需求。这次将要总结在Windows的 `CMD` 窗口和Linux的 `LX终端` 中，让 `wget`  `curl` 等命令使用代理需要进行的一些配置。
+在之前的博文中分享了如何[使用Google云计算引擎搭建SS服务器](https://0qinghao.github.io/inforest/2018/02/27/google-cloud-engine-ss-server/)，如何[使用SS客户端](https://0qinghao.github.io/inforest/2018/03/06/shadowsocks-clients/)，已经满足了科学上网的基本需求。这次将要总结在Windows的 `CMD` 窗口和Linux的 `LX终端` 中，让 `wget`  `curl` 等命令使用代理需要进行的一些配置。
 
 # Windows命令行代理
 

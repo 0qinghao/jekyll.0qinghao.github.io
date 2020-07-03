@@ -53,7 +53,7 @@ aplay -D hw:0,0 test.wav
 pip install pyaudio
 ```
 
-如果你使用pip命令下载速度很慢，或许[修改pip源](https://segmentfault.com/n/1330000013787318)可以帮到你。
+如果你使用pip命令下载速度很慢，或许[修改pip源](https://0qinghao.github.io/inforest/2018/03/16/config-pip-source/)可以帮到你。
 
 **如果你使用了virtualenv，一般会发现pyaudio安装失败。这种情况下你需要安装APT中的PortAudio开发头文件，然后安装PyAudio：**
 
@@ -136,6 +136,6 @@ os.close(sys.stderr.fileno())
 
 # 小结
 
-使用Python录音很简单，你还可以在GPIO口上接入一个按钮，修改例程，实现按下按钮自动开始录音的功能。下一步的目标是把Python录音和[Cloud Speech API语音识别](https://segmentfault.com/a/1190000013844027)结合起来。
+使用Python录音很简单，你还可以在GPIO口上接入一个按钮，修改例程，实现按下按钮自动开始录音的功能。下一步的目标是把Python录音和[Cloud Speech API语音识别](https://0qinghao.github.io/inforest/2018/03/08/google-cloud-speech-api-voice2text-python-another-way/)结合起来。
 
 感谢你阅读文章！
