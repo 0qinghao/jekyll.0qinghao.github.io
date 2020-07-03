@@ -7,10 +7,6 @@ keywords: verilog, iStyle, 格式化代码
 furigana: false
 ---
 
-![图 1](https%3A//qhlin.coding.net/p/pic-storage/d/pic-storage/git/raw/master/a830375580_in_2019-08-09-translate-use-istyle-to-format-verilog-code_upload_at_20200704160216.jpg)
-
-  
-
 > 原文：[Verilogでコード整形](https://qiita.com/kkumt93/items/70766645c07c298d19c3)
 
 # 安装
