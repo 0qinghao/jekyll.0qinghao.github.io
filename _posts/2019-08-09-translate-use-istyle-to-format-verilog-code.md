@@ -3,9 +3,13 @@ layout: post
 title: 译 - 使用iStyle格式化Verilog代码
 categories: [verilog]
 description: 给出Windows x86_64架构下编译好的iStyle可执行程序
-keywords: iStyle, 格式化代码
-furigana: true
+keywords: verilog, iStyle, 格式化代码
+furigana: false
 ---
+
+![图 1](https%3A//qhlin.coding.net/p/pic-storage/d/pic-storage/git/raw/master/a830375580_in_2019-08-09-translate-use-istyle-to-format-verilog-code_upload_at_20200704160216.jpg)
+
+  
 
 > 原文：[Verilogでコード整形](https://qiita.com/kkumt93/items/70766645c07c298d19c3)
 
@@ -38,7 +42,7 @@ end
 end
 ```
 
-## **--style**
+## \-\-style
 
 **ANSI style**
 
@@ -104,7 +108,7 @@ always @(posedge clk or posedge rst)
   end
 ```
 
-## -s
+## \-s
 
 ``` 
 ./iStyle -s2 test.v
@@ -123,7 +127,7 @@ always @(posedge clk or posedge rst) begin
 end
 ```
 
-## -p
+## \-p
 
 -p选项指定在运算符两侧插入空格。
 
@@ -140,7 +144,7 @@ always @(posedge clk or posedge rst) begin
 end
 ```
 
-## -P
+## \-P
 
 -P选项指定在运算符和括号周围插入空格。
 
