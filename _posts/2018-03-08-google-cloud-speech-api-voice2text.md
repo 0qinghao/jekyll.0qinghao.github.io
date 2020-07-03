@@ -16,7 +16,7 @@ furigana: true
 
 # 在项目中添加API
 
-使用Cloud Speech API需要登录谷歌云平台并申请免费试用，申请试用谷歌云平台的流程可以参考[这篇文章](https://segmentfault.com/a/1190000014367501) 。
+使用Cloud Speech API需要登录谷歌云平台并申请免费试用，申请试用谷歌云平台的流程可以参考[这篇文章](https://0qinghao.github.io/inforest/2018/02/27/google-cloud-engine-ss-server/) 。
 
 我们假定你能够使用谷歌云平台，并且已经创建了一个项目，下面介绍如何把Cloud Speech API添加到项目中。
 

@@ -6,7 +6,7 @@ description: 使用python调用Speech API的另一种方法
 keywords: google cloud, 语音转文字, STT, python, Speech API
 furigana: true
 ---
-在之前发布的[使用谷歌Cloud Speech API将语音转换为文字](https://segmentfault.com/a/1190000013591768)一文中，我们实现了在控制台使用curl发送post请求，得到语音转文字的结果；而[在Python中使用谷歌Cloud Speech API将语音转换为文字](https://segmentfault.com/a/1190000013600141)一文中，我们实现了安装Cloud Speech API客户端库，通过调用库函数得到语音转文字的结果。
+在之前发布的[使用谷歌Cloud Speech API将语音转换为文字](https://0qinghao.github.io/inforest/2018/03/08/google-cloud-speech-api-voice2text/)一文中，我们实现了在控制台使用curl发送post请求，得到语音转文字的结果；而[在Python中使用谷歌Cloud Speech API将语音转换为文字](https://0qinghao.github.io/inforest/2018/03/08/google-cloud-speech-api-voice2text-python/)一文中，我们实现了安装Cloud Speech API客户端库，通过调用库函数得到语音转文字的结果。
 
 如果你尝试过这两种方法，就会发现其实后者得到结果需要的时间要长一些（笔者使用这两种方法得到结果的耗时分别大约是5秒、7秒）。那么，有没有办法在python中像第一种方法那样，使用curl命令发送post请求呢。当然是可行的，所以今天我们将介绍在Python中使用Cloud Speech API将语音转换为文字的另一种方案，另外这次我们将把音频文件编码为base64嵌入到json请求文件中，省去了上传声音文件到Cloud Storage的步骤。
 
@@ -60,7 +60,7 @@ print(confidence)
 
 几点说明：
 
-注释 `①` ：请求API的链接，请替换 `你的API密钥` 。如果你有疑问，或许可以参考 [创建API密钥 - 使用谷歌Cloud Speech API将语音转换为文字](https://segmentfault.com/a/1190000013591768#articleHeader2) 。
+注释 `①` ：请求API的链接，请替换 `你的API密钥` 。如果你有疑问，或许可以参考 [创建API密钥 - 使用谷歌Cloud Speech API将语音转换为文字](https://0qinghao.github.io/inforest/2018/03/08/google-cloud-speech-api-voice2text/#%E5%88%9B%E5%BB%BAapi%E5%AF%86%E9%92%A5) 。
 `audio_file` 路径替换为你的本地声音文件路径。
 
 注释 `②` ：这次上传音频的方式是，将声音文件编码为base64，把对应的整个字符串放进json请求中。如果你执行 `print(type(audio_b64))` 就会发现编码后的audio_b64是 `bytes` 类型，所以还需要做一次decode()，转成字符串。

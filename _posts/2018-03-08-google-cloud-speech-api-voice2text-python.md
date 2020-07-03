@@ -7,7 +7,7 @@ keywords: google cloud, 语音转文字, STT, python, Speech API
 furigana: true
 ---
 
-之前我们总结了[使用谷歌Cloud Speech API将语音转换为文字](https://segmentfault.com/a/1190000013591768)的基本流程，然而那只是在命令行中使用curl实现的。这次我们将总结在Python中使用Cloud Speech API的方法。
+之前我们总结了[使用谷歌Cloud Speech API将语音转换为文字](https://0qinghao.github.io/inforest/2018/03/08/google-cloud-speech-api-voice2text/)的基本流程，然而那只是在命令行中使用curl实现的。这次我们将总结在Python中使用Cloud Speech API的方法。
 
 # 配置Python开发环境
 
@@ -57,7 +57,7 @@ deactivate
 
 # 配置Cloud Speech API客户端库
 
-我们假定你已经有合适的代理，能够使用谷歌服务，并且已经开始使用[Google云平台](https://cloud.google.com/)。如果你有疑问，或许可以参考[这篇文章](https://segmentfault.com/a/1190000014367501)。
+我们假定你已经有合适的代理，能够使用谷歌服务，并且已经开始使用[Google云平台](https://cloud.google.com/)。如果你有疑问，或许可以参考[这篇文章](https://0qinghao.github.io/inforest/2018/02/27/google-cloud-engine-ss-server/)。
 
 ## 安装客户端库
 
