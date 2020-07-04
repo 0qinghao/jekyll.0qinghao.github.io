@@ -112,23 +112,23 @@ collections:
 #      Comments    #
 # ---------------- #
 # support provider: disqus, gitment, gitalk
-comments_provider: gitment
+comments_provider: gitalk
 # https://disqus.com
 # disqus:
 #     username: 
 # https://imsun.net/posts/gitment-introduction/
-gitment:
-    owner: 0qinghao
-    repo: blog-comments
-    oauth:
-        client_id: 52d9553406b63c5df779
-        client_secret: a226f4d14d3665a36ef4675a3422d810ec8cf1f0
-# https://github.com/gitalk/gitalk#install
-# gitalk:
+# gitment:
 #     owner: 0qinghao
 #     repo: blog-comments
-#     clientID: a1a084e09665099ebac2
-#     clientSecret: 306a10364f0c166970865fc870f5a93bfa2bca65
+#     oauth:
+#         client_id: 52d9553406b63c5df779
+#         client_secret: a226f4d14d3665a36ef4675a3422d810ec8cf1f0
+# https://github.com/gitalk/gitalk#install
+gitalk:
+    owner: 0qinghao
+    repo: blog-comments
+    clientID: 52d9553406b63c5df779
+    clientSecret: a226f4d14d3665a36ef4675a3422d810ec8cf1f0
 # 在使用其它评论组件时可点击显示 Disqus
 lazy_load_disqus : false
 
