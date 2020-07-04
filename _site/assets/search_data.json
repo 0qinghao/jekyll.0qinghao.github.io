@@ -3,7 +3,56 @@
 [
   
   
+    {
+      "title"    : "页面没有找到",
+      "url"      : "https://inforest.site/404.html"
+    } ,
   
+  
+  
+    {
+      "title"    : "About",
+      "url"      : "https://inforest.site/about/"
+    } ,
+  
+  
+  
+    {
+      "title"    : "归档",
+      "url"      : "https://inforest.site/archives/"
+    } ,
+  
+  
+  
+    {
+      "title"    : "Categories",
+      "url"      : "https://inforest.site/categories/"
+    } ,
+  
+  
+  
+  
+  
+    {
+      "title"    : "Links",
+      "url"      : "https://inforest.site/links/"
+    } ,
+  
+  
+  
+    {
+      "title"    : "Open Source Projects",
+      "url"      : "https://inforest.site/open-source/"
+    } ,
+  
+  
+  
+  
+  
+    {
+      "title"    : "Wiki",
+      "url"      : "https://inforest.site/wiki/"
+    } ,
   
   
   

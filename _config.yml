@@ -2,7 +2,7 @@
 #   Main Configs   #
 # ---------------- #
 baseurl:
-url: https://inforest.site/docs
+url: https://inforest.site
 date_format: "ordinal"
 title: 林间
 subtitle: "<a href='https://inforest.site'>InForest InfoRest</a><br/>若非琐事相牵绊 即起行 遍览天下众山河"
@@ -140,14 +140,3 @@ simple_jekyll_search:
     fulltext: true
     # 最多显示多少条搜索结果
     limit: 30
-
-# ---------------- #
-#      Google      #
-# ---------------- #
-# google:
-#     analytics_id: UA-80669434-1
-    # adsense:
-    #     footer: true
-    #     sidebar: true 
-    #     content_header: true
-    #     content_footer: false
