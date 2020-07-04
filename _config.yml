@@ -2,16 +2,16 @@
 #   Main Configs   #
 # ---------------- #
 baseurl:
-url: https://0qinghao.github.io/inforest
+url: https://inforest.site
 date_format: "ordinal"
 title: 林间
-subtitle: "<a href='https://0qinghao.github.io/inforest'>InForest InfoRest</a><br/>若非琐事相牵绊 即起行 遍览天下众山河"
+subtitle: "<a href='https://inforest.site'>InForest InfoRest</a><br/>若非琐事相牵绊 即起行 遍览天下众山河"
 description: "林庆毫的个人空间"
 keywords: 博客, 个人空间
 timezone: Asia/Shanghai
 encoding: "utf-8"
 side_bar_repo_limit: 5
-repository: 0qinghao/inforest
+repository: 0qinghao/0qinghao.github.io
 # 对 css 和 js 资源的 cdn 加速配置
 cdn:
     jsdelivr:
