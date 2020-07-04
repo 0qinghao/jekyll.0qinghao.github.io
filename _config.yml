@@ -127,8 +127,8 @@ comments_provider: gitalk
 gitalk:
     owner: 0qinghao
     repo: blog-comments
-    clientID: bc91b2b5caf9247e2f34
-    clientSecret: b460496b0de331f4b247de2b662f390893d0545b
+    clientID: 3bcb55f350492824c58a
+    clientSecret: d12a0e0203e929b19d50f682aabf3b0724bdae73
 # 在使用其它评论组件时可点击显示 Disqus
 lazy_load_disqus : false
 
