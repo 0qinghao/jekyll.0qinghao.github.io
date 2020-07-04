@@ -2,7 +2,7 @@
 #   Main Configs   #
 # ---------------- #
 baseurl:
-url: https://inforest.site
+url: https://inforest.site/docs
 date_format: "ordinal"
 title: 林间
 subtitle: "<a href='https://inforest.site'>InForest InfoRest</a><br/>若非琐事相牵绊 即起行 遍览天下众山河"
