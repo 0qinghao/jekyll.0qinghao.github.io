@@ -1,7 +1,7 @@
 #!/bin/bash
 bundle exec jekyll build --destination ./docs
 cp ./CNAME ./docs/
-cp ./.nojekyll ./docs.
+cp ./.nojekyll ./docs/
 
 # touch docs/baidu_sitemap.xml
 # sed -e 's/0qinghao.github.io\/inforest/7u7d9c.coding-pages.com/' docs/sitemap.xml> docs/baidu_sitemap.xml
