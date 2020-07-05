@@ -11,7 +11,7 @@ furigana: true
 
 # 科学上网的基本原理
 
-![](http://ww1.sinaimg.cn/large/005MY9Xigy1fotxvw10lnj30b908lt9s.jpg)
+![005MY9Xigy1fotxvw10lnj30b908lt9s in 2018-02-27-google-cloud-engine-ss-server upload at 2020-07-05-18-51-49](https://i.loli.net/2020/07/05/HWvIA4u9U2djwQ6.jpg)
 
 我们只需要一个能够访问墙外目标地址的代理服务器。本地设备向服务器发送访问目标地址的请求，服务器收到请求后访问目标并将结果回传给本地设备。
 
@@ -25,15 +25,15 @@ furigana: true
 
 登录[谷歌云平台](https://cloud.google.com)，点击右上角的申请试用后进入申请界面。地区可以选择中国，不影响后续的申请。
 
-![](http://ww1.sinaimg.cn/large/005MY9Xigy1fotyf40bi9j30b00aymy2.jpg)
+![005MY9Xigy1fotyf40bi9j30b00aymy2 in 2018-02-27-google-cloud-engine-ss-server upload at 2020-07-05-18-53-22](https://i.loli.net/2020/07/05/hbkEnNSlm1Tc3Dv.jpg)
 
 账号类型选择“个人”，填写名称地址电话。
 
-![](http://ww1.sinaimg.cn/large/005MY9Xigy1fotyl3w3anj30dk09ujsp.jpg)
+![005MY9Xigy1fotyl3w3anj30dk09ujsp in 2018-02-27-google-cloud-engine-ss-server upload at 2020-07-05-18-53-45](https://i.loli.net/2020/07/05/9V8WhfCjJMkbitR.jpg)
 
 付款方式填写你的外币信用卡（单币银联卡无效）。提交后信用卡会扣除1美金进行验证，验证完成即退回。
 
-![](http://ww1.sinaimg.cn/large/005MY9Xigy1fotynitahxj30dt07ft9n.jpg)
+![005MY9Xigy1fotynitahxj30dt07ft9n in 2018-02-27-google-cloud-engine-ss-server upload at 2020-07-05-18-53-58](https://i.loli.net/2020/07/05/4oz8GjvniPDtUh3.jpg)
 
 # 创建计算引擎
 
@@ -41,7 +41,7 @@ furigana: true
 
 项目创建完成后，点击控制台左上角的 `☰` 打开导航栏，找到 `Compute Engine` → `VM实例` ，点击 `创建` 开始创建一个计算引擎。
 
-![](http://ww1.sinaimg.cn/large/005MY9Xigy1fotz3od46zj30j309eabi.jpg)
+![005MY9Xigy1fotz3od46zj30j309eabi in 2018-02-27-google-cloud-engine-ss-server upload at 2020-07-05-18-54-29](https://i.loli.net/2020/07/05/tymBv8eCXz4G5kL.jpg)
 
 `区域` 有3个比较好的选择：
 
@@ -59,7 +59,7 @@ asia-northeast1：位于东京
 
 其他设置可以保持默认。点击 `创建` 。
 
-![](http://ww1.sinaimg.cn/large/005MY9Xigy1fotzuwl2gej30ep0acwgb.jpg)
+![005MY9Xigy1fotzuwl2gej30ep0acwgb in 2018-02-27-google-cloud-engine-ss-server upload at 2020-07-05-18-54-41](https://i.loli.net/2020/07/05/pZCV62aLxwiq9ed.jpg)
 
 # 配置SS服务器
 
@@ -67,7 +67,7 @@ asia-northeast1：位于东京
 
 点击云引擎后面的 `SSH` ，远程连接该主机，进行配置。
 
-![](http://ww1.sinaimg.cn/large/005MY9Xigy1fou05u93clj30cw04yweq.jpg)
+![005MY9Xigy1fou05u93clj30cw04yweq in 2018-02-27-google-cloud-engine-ss-server upload at 2020-07-05-18-55-24](https://i.loli.net/2020/07/05/lGr6miIDMJ1Fhop.jpg)
 
 这里使用[秋水逸冰](https://teddysun.com/358.html)大大的SS服务器配置脚本。
 
@@ -91,7 +91,7 @@ Which cipher you'd select：选择一种 **`加密方式`** ，请牢记
 
 按任意键开始执行脚本，等待脚本运行完毕。
 
-![](http://ww1.sinaimg.cn/large/005MY9Xigy1fou5nkwqofj30gs07d768.jpg)
+![005MY9Xigy1fou5nhwhkuj30hx07eq4a in 2018-02-27-google-cloud-engine-ss-server upload at 2020-07-05-18-55-58](https://i.loli.net/2020/07/05/Xafk3UhPlosSGNe.jpg)
 
 # 创建防火墙规则
 
@@ -121,7 +121,7 @@ Which cipher you'd select：选择一种 **`加密方式`** ，请牢记
 
    其他部分可以保持默认，这条规则表示允许所有协议出站到所有ip/端口。
 
-![](http://ww1.sinaimg.cn/large/005MY9Xigy1fou5nhwhkuj30hx07eq4a.jpg)
+![005MY9Xigy1fou5nkwqofj30gs07d768 in 2018-02-27-google-cloud-engine-ss-server upload at 2020-07-05-18-56-21](https://i.loli.net/2020/07/05/xBwMzdq8YsefUWG.jpg)
 
 至此，SS服务器部署完毕。你可以关闭你不稳定的试用版VPN，准备开始正确地科学上网了。
 
@@ -137,11 +137,11 @@ Which cipher you'd select：选择一种 **`加密方式`** ，请牢记
 
 第一次打开SS客户端会主动要求编辑服务器。填入你的 **`外部IP`** **`密码`** **`服务器端口号`** **`加密方式`** ，其他设置可以保持默认。
 
-![](http://ww1.sinaimg.cn/large/005MY9Xigy1fou6bi1tebj309z09l3zf.jpg)
+![005MY9Xigy1fou6bi1tebj309z09l3zf in 2018-02-27-google-cloud-engine-ss-server upload at 2020-07-05-18-56-42](https://i.loli.net/2020/07/05/oiGOJaRLYzbKTBe.jpg)
 
 最后，右击任务栏的小图标，勾选 **`启用系统代理`** 。系统代理模式选择 **`PAC模式`** ，这样SS会自动使用代理访问墙外站点，不需要另外安装浏览器的代理插件。
 
-![](http://ww1.sinaimg.cn/mw690/005MY9Xigy1fou6nucjagj3059065t8t.jpg)
+![005MY9Xigy1fou6nucjagj3059065t8t in 2018-02-27-google-cloud-engine-ss-server upload at 2020-07-05-18-57-09](https://i.loli.net/2020/07/05/owqi9BUkNzlmgRM.jpg)
 
 # 参考资料
 
