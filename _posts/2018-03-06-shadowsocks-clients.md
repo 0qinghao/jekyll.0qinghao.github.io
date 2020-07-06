@@ -24,13 +24,11 @@ Windows系统下的SS客户端使用起来最为方便。客户端自带了系�
 
 第一次打开SS客户端会主动要求编辑服务器。填入你的 **`服务器地址`** **`密码`** **`服务器端口号`** **`加密方式`** ，其他设置可以保持默认。
 
-![图 3](/assets/images/6801a5a7d3a234f4155dc191472d80cc6edcaeab6d3d360a7833610cea1397e5.jpg)
-
-  
+![](/assets/images/2020-07-06-19-29-24.png)
 
 最后，右击任务栏的小图标，勾选 **`启用系统代理`** 。系统代理模式选择 **`PAC模式`** ，这样SS会自动使用代理访问墙外站点，不需要另外安装浏览器的代理插件。
 
-![](http://ww1.sinaimg.cn/mw690/005MY9Xigy1fou6nucjagj3059065t8t.jpg)
+![](/assets/images/2020-07-06-19-29-55.png)
 
 # 安卓系统下SS客户端的使用方法
 
@@ -45,7 +43,7 @@ Windows系统下的SS客户端使用起来最为方便。客户端自带了系�
 
 点击右上角的 `+` 选择 `手动设置` ，填入你的 **`服务器地址`** **`密码`** **`服务器端口号`** **`加密方式`** ，其他设置可以保持默认。
 
-![](http://ww1.sinaimg.cn/large/005MY9Xigy1fp2brcto8aj307y0e3wf1.jpg)
+![](/assets/images/2020-07-06-19-30-11.png)
 
 还可以在配置中开启 `分应用VPN` 功能，来指定仅部分APP的流量进行代理；或者再打开 `绕行模式` 来指定部分APP的流量绕过代理。
 
@@ -125,15 +123,15 @@ sudo nano /usr/local/lib/python2.7/dist-packages/shadowsocks/crypto/openssl.py
 
 如果你能够使用Chrome应用商店，搜索[SwitchyOmega](https://chrome.google.com/webstore/search/switchyomega?hl=zh-CN)安装即可。你也可以点击[这里](https://share.weiyun.com/28d769f6e52b68b894736b54b29cf9e4)通过微云下载crx文件，将其拖动到[Chrome扩展程序页面](chrome://extensions/)完成安装。
 
-![](http://ww1.sinaimg.cn/large/005MY9Xigy1fp2f11yv4kj30d207y0t4.jpg)
+![](/assets/images/2020-07-06-19-30-31.png)
 
 点击选项，如下图配置SwitchyOmega。 `代理协议` 选择 `SOCKS5` ；如果你在ss.json配置文件中修改过 `local_port` 参数，则这里 `代理端口` 必须与其一致，否则保持默认值1080即可。
 
-![](http://ww1.sinaimg.cn/large/005MY9Xigy1fp2f9hgejzj30gl06ct9h.jpg)
+![](/assets/images/2020-07-06-19-30-42.png)
 
 最后，保存配置，点击SwitchyOmega图标切换到刚才配置好的情景模式。
 
-![](http://ww1.sinaimg.cn/large/005MY9Xigy1fp2f89rsqgj30hw09u404.jpg)
+![](/assets/images/2020-07-06-19-30-52.png)
 
 # 结语
 
