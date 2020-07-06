@@ -16,7 +16,7 @@ furigana: false
 * 遥控器（或能使用万能遥控器的手机）
 * *用作开关的三极管、限流电阻（非必须、参考型号S9013）*
 
-![](http://ww1.sinaimg.cn/large/005MY9Xigy1fpx7jt8je6j30a406ldgf.jpg)
+![](/assets/images/2020-07-06-20-09-17.png)
 
 使用开关三极管可以有效增强红外发射管的性能，但不是必须的。不使用三极管也能在三五米范围内成功遥控空调。这些材料总共费用不超过1块钱，反而是快递费比较贵了。
 
@@ -32,13 +32,13 @@ furigana: false
 
 如果你手头上没有开关三极管，直接将红外发射管正极接在GPIO17，如下所示：
 
-![](http://ww1.sinaimg.cn/mw690/005MY9Xigy1fpx8l1i0yrj31cr11xdy7.jpg)
+![](/assets/images/2020-07-06-20-09-34.png)
 
 如果接入三极管，用GPIO17连接基极，控制发射极和集电极的通断：
 
 （偷懒了没有接入限流电阻，在意的同学自行接入）
 
-![](http://ww1.sinaimg.cn/mw690/005MY9Xigy1fpxbofopfpj31cr11xasl.jpg)
+![](/assets/images/2020-07-06-20-09-49.png)
 
 # 安装lirc
 

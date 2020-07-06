@@ -23,7 +23,7 @@ set ftp_proxy=socks5://127.0.0.1:1080
 
 测试 `curl https://www.facebook.com` 能得到返回结果。
 
-![](http://ww1.sinaimg.cn/mw690/005MY9Xigy1fp4azce62uj30hd075t9e.jpg)
+![](/assets/images/2020-07-06-20-22-40.png)
 
 取消代理命令：
 
@@ -89,7 +89,7 @@ sudo service polipo restart
 
 通过 `service polipo status` 命令，我们可以看到新的监听端口为**8123**。
 
-![](http://ww1.sinaimg.cn/large/005MY9Xigy1fp4g22nbr8j30f905ddhd.jpg)
+![](/assets/images/2020-07-06-20-22-47.png)
 
 因此，LX终端启用代理的命令为：
 
@@ -109,7 +109,7 @@ sudo nano ~/.bashrc
 
 测试 `wget` 指令：
 
-![](http://ww1.sinaimg.cn/large/005MY9Xigy1fp4gl2vchsj30er05a3z3.jpg)
+![](/assets/images/2020-07-06-20-22-53.png)
 
 # 小结
 

@@ -31,9 +31,9 @@ furigana: false
 
 还未拥有Google账号（Gmail / Google Apps）的情况下，[创建账号](https://accounts.google.com/SignUp)是必须的。登录Google Cloud Platform Console（[console.cloud.google.com](http://console.cloud.google.com/)），创建一个新项目。
 
-![](http://ww1.sinaimg.cn/large/005MY9Xigy1fq1is4jamij307q04rq2v.jpg)
+![](/assets/images/2020-07-06-20-11-39.png)
 
-![](http://ww1.sinaimg.cn/large/005MY9Xigy1fq1isb2igbj30dg05waa3.jpg)
+![](/assets/images/2020-07-06-20-11-52.png)
 
 请记住项目名称。任意一个Google Cloud项目都拥有唯一的名称（上述的名称已经被使用了，所以实际上无法使用）。
 
@@ -47,37 +47,37 @@ Google Cloud Platform的新用户将赠与[相当于$ 300的试用金](https://c
 
 登录后，你将看到如下界面。
 
-![](http://ww1.sinaimg.cn/large/005MY9Xigy1fq1jc2vxn7j30wt0h4taz.jpg)
+![](/assets/images/2020-07-06-20-12-00.png)
 
 # 启用Translation API
 
 点击屏幕左上角的菜单图标。
 
-![](http://ww1.sinaimg.cn/large/005MY9Xigy1fq1jddf3k3j307n01dglk.jpg)
+![](/assets/images/2020-07-06-20-12-11.png)
 
 在下拉菜单中选择 [**API Manager**] 
 
-![](http://ww1.sinaimg.cn/large/005MY9Xigy1fq1je8vadpj308k09gq36.jpg)
+![](/assets/images/2020-07-06-20-12-17.png)
 
 点击 [**启用API**] 。
 
-![](http://ww1.sinaimg.cn/large/005MY9Xigy1fq1jfksxryj30l503kgls.jpg)
+![](/assets/images/2020-07-06-20-12-24.png)
 
 然后，在搜索框中输入「translate」。点击 [**Google Cloud Translation API**]。
 
-![](http://ww1.sinaimg.cn/large/005MY9Xigy1fq1jge0vz8j30sj07rwey.jpg)
+![](/assets/images/2020-07-06-20-12-38.png)
 
 API已经启用的情况下，只会显示 [停用] 按钮。请不要停用API。
 
-![](http://ww1.sinaimg.cn/large/005MY9Xigy1fq1jj62ajkj30dx01xwed.jpg)
+![](/assets/images/2020-07-06-20-12-50.png)
 
 API还未启用的情况下，点击[**启用**]，启用 Cloud Translation API 。
 
-![](http://ww1.sinaimg.cn/large/005MY9Xigy1fq1jkjrp5kj30ku04zglv.jpg)
+![](/assets/images/2020-07-06-20-13-01.png)
 
 等待数秒，API成功启用后，将显示如下。
 
-![](http://ww1.sinaimg.cn/large/005MY9Xigy1fq1jlh7mqoj30dx01xwed.jpg)
+![](/assets/images/2020-07-06-20-13-17.png)
 
 # 激活Cloud Shell
 
@@ -85,25 +85,25 @@ Google Cloud Shell 是在云端运行的命令行环境。这台基于 Debian �
 
 点击标题栏右侧的 [激活 Google Cloud Shell] 按钮（**>_**），启动Cloud Shell。
 
-![](http://ww1.sinaimg.cn/large/005MY9Xigy1fq1k54ijd6j318g01y3yw.jpg)
+![](/assets/images/2020-07-06-20-13-47.png)
 
 Cloud Shell 将在控制台底部的新窗口中打开，并显示命令行提示符。请等待提示符 `user@project:~$` 出现。
 
-![](http://ww1.sinaimg.cn/large/005MY9Xigy1fq1k6p9s1uj318g0a8dg7.jpg)
+![](/assets/images/2020-07-06-20-13-23.png)
 
 # 生成API Key
 
  你将通过使用curl发送一个请求来调用 Translation API 。在发送请求时，你需要在 URL 中插入一个生成的 API 密钥。为了创建 API 密钥，让我们点击侧边栏的 [API Manager] 。
 
-![](http://ww1.sinaimg.cn/large/005MY9Xigy1fq1vzcg8gfj308f09edg0.jpg)
+![](/assets/images/2020-07-06-20-14-51.png)
 
 然后，在 [**凭据**] 选项卡中点击 [**创建凭据**] 。
 
-![](http://ww1.sinaimg.cn/large/005MY9Xigy1fq1w1xzz3vj30t80fdt9v.jpg)
+![](/assets/images/2020-07-06-20-15-20.png)
 
 在下拉菜单中选择  [**API 密钥**] 。
 
-![](http://ww1.sinaimg.cn/large/005MY9Xigy1fq1w36by92j30ds08m74w.jpg)
+![](/assets/images/2020-07-06-20-15-25.png)
 
 最后，复制生成好的密钥。
 
