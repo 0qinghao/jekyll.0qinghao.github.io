@@ -69,7 +69,7 @@ print(confidence)
 
 注释 `④` ：API返回的结果保存在 `response_str` ，如果你直接运行 `print(response_str)` 就会发现这个字符串可以看做一个有很多“层”的字典，要提取出识别结果，需要搞清楚这个字典到底是怎么组成的：
 
-![](http://ww1.sinaimg.cn/large/005MY9Xigy1fpijie8o5dj30fj09it8v.jpg)
+![](/assets/images/2020-07-06-19-44-07.png)
 
 第 `1` 层：花括号{}说明字符串 `response_str` 在执行 `json.loads` 后变成一个"字典"。得到"字典" `response_dic` 。
 

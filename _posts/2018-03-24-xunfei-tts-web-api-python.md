@@ -14,11 +14,11 @@ furigana: false
 
 注册完成后进入控制台，在控制台[创建一个新应用](http://console.xfyun.cn/app/create?source=WebAPI) ，填写一些基本信息，注意 `应用平台` 选择 `WebAPI` 。
 
-![](http://ww1.sinaimg.cn/large/005MY9Xigy1fpn63fdqkej30du0am3z2.jpg)
+![](/assets/images/2020-07-06-19-47-08.png)
 
 创建完成后，记录下 `APPID` 和 `APIKey` ，将在程序中用到。
 
-![](http://ww1.sinaimg.cn/large/005MY9Xigy1fpn67r2lmdj30ct0bg766.jpg)
+![](/assets/images/2020-07-06-19-47-17.png)
 
 另外，请在 `IP白名单` 中添加自己的外网IP，可以在http://www.ip138.com/ 查看。（一般来说外网IP会常常发生变化，请注意）
 
@@ -134,7 +134,7 @@ TEXT是将要输出为语音的文本。
 
 ## 运行结果
 
-![](http://ww1.sinaimg.cn/large/005MY9Xigy1fpn7johr0kj30dc03dt8p.jpg)
+![](/assets/images/2020-07-06-19-47-27.png)
 
 使用几次后，感觉合成语音的断句做得不是很优秀，但响应速度很快，还是比较满意的。
 

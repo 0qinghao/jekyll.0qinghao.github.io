@@ -14,11 +14,11 @@ furigana: false
 
 登录后点击 `创建机器人` ，填写一些简单的基本信息之后即可创建。
 
-![](http://ww1.sinaimg.cn/large/005MY9Xigy1fpkway3el3j30jp0743yv.jpg)
+![](/assets/images/2020-07-06-19-46-01.png)
 
 在机器人设置界面找到你的 `API KEY` ，记录下来。
 
-![](http://ww1.sinaimg.cn/large/005MY9Xigy1fpkv7b8850j30br0av74t.jpg)
+![](/assets/images/2020-07-06-19-46-09.png)
 
 # 在Python中使用图灵机器人API v2.0
 
@@ -77,7 +77,7 @@ print('code：' + str(intent_code))
 print('text：' + results_text)
 ```
 
-![](http://ww1.sinaimg.cn/large/005MY9Xigy1fpkw2kerdsj30fl03ejrd.jpg)
+![](/assets/images/2020-07-06-19-46-20.png)
 
 **几点说明：**
 

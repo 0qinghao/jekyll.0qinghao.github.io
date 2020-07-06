@@ -12,7 +12,7 @@ furigana: true
 
 在[Cloud Speech API概览页](https://cloud.google.com/speech/)，我们可以体验将语音转换为文字的效果。只需要选择一种语言即可开始使用，甚至不需要登录谷歌账号。（加载出来需要一些时间）
 
-![](http://ww1.sinaimg.cn/large/005MY9Xigy1fp4mcon6f5j30bp09bq3e.jpg)
+![](/assets/images/2020-07-06-19-40-10.png)
 
 # 在项目中添加API
 
@@ -22,11 +22,11 @@ furigana: true
 
 点击[控制台](https://console.cloud.google.com/)左上角的 `☰` 打开导航栏，找到 `API和服务` → `库` 。
 
-![](http://ww1.sinaimg.cn/large/005MY9Xigy1fp4mu6nvprj308409lwew.jpg)
+![](/assets/images/2020-07-06-19-40-18.png)
 
 在搜索框中键入 `Speech` 即可找到 `Cloud Speech API` 。
 
-![](http://ww1.sinaimg.cn/large/005MY9Xigy1fp4mxyxamzj30bb08kgm9.jpg)
+![](/assets/images/2020-07-06-19-40-25.png)
 
 打开API页面，点击 `启用` 。
 
@@ -34,7 +34,7 @@ furigana: true
 
 回到之前的页面，选择 `凭据` → `创建凭据` → `API密钥` 。
 
-![](http://ww1.sinaimg.cn/large/005MY9Xigy1fp4n6pogcbj30mf0av0tr.jpg)
+![](/assets/images/2020-07-06-19-40-31.png)
 
 马上 **`API密钥`** 就创建好了，虽然随时都能在这个页面查询，但为了方便起见，将其记录下来备用吧，很快就要用到它。
 
@@ -63,13 +63,13 @@ furigana: true
 
 点击控制台左上角的 `☰` 打开导航栏，找到 `存储` → `浏览器` 。
 
-![](http://ww1.sinaimg.cn/large/005MY9Xigy1fp4pij2z5oj30a50bg74m.jpg)
+![](/assets/images/2020-07-06-19-40-38.png)
 
 点击 `创建存储分区` 。
 
 输入合适的 **`存储分区名称`**，后文将要用到。默认存储类别选择"Multi-Regional"，Multi-Regional位置选择"亚洲"。点击 `创建` 。
 
-![](http://ww1.sinaimg.cn/large/005MY9Xigy1fp4pmpmgznj30fx0dimyk.jpg)
+![](/assets/images/2020-07-06-19-40-44.png)
 
 点击 `上传文件` ，上传声音文件，勾选 `公开链接` 。**（该音频将能被任何人访问，请注意）**
 
@@ -81,7 +81,7 @@ furigana: true
 
 另外，请记住上传文件的 **`文件名`** ，后文将用到。
 
-![](http://ww1.sinaimg.cn/large/005MY9Xigy1fp4pti0glej30rt0b8gmz.jpg)
+![](/assets/images/2020-07-06-19-41-28.png)
 
 # 将语音转换为文字
 
@@ -126,7 +126,7 @@ cd到json请求文件所在目录。
 
 得到结果：
 
-![](http://ww1.sinaimg.cn/large/005MY9Xigy1fp4qzhv94pj30i508rgng.jpg)
+![](/assets/images/2020-07-06-19-41-40.png)
 
 可以看到返回结果也是json格式的数据。"confidence"是置信度，越接近1准确性越高。
 

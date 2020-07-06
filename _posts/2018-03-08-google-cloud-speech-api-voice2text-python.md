@@ -47,7 +47,7 @@ source env/bin/activate
 
 看到激活虚拟环境后，你就可以放心地安装软件包，并确信它们不会影响其他项目。
 
-![](http://ww1.sinaimg.cn/large/005MY9Xigy1fp57zv7hgqj30cw01gq31.jpg)
+![](/assets/images/2020-07-06-19-43-09.png)
 
 如果你想停止使用virtualenv并返回到全局Python环境，你可以关闭它：
 
@@ -75,7 +75,7 @@ pip install --upgrade google-cloud-speech
 
 从 `服务帐户` 下拉列表中选择 `新建服务帐户` 。输入合适的 `服务帐号名称` ， `角色` 选择 `Project` → `所有者` 。 `密钥类型` 选择 `JSON` 。
 
-![](http://ww1.sinaimg.cn/large/005MY9Xigy1fp58mxkpqwj30g40a4t9y.jpg)
+![](/assets/images/2020-07-06-19-43-17.png)
 
 点击 `创建` 后，会开始下载包含密钥的JSON文件，请**妥善保存** 。
 
@@ -144,7 +144,7 @@ for result in response.results:
 
 运行结果：
 
-![](http://ww1.sinaimg.cn/large/005MY9Xigy1fp59zy561bj30e802p749.jpg)
+![](/assets/images/2020-07-06-19-43-23.png)
 
 "Confidence"是置信度，越接近1准确性越高。
 

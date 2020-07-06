@@ -8,12 +8,12 @@ furigana: false
 ---
 Roll: 横滚
 
-![1 in 2018-03-28-eular-angle-anime-show upload at 2020-07-02-12-52-16](https://i.loli.net/2020/07/02/r3a4DhSVEotmfj9.gif)
+![](/assets/images/roll.gif)
 
 Pitch: 俯仰
 
-![2 in 2018-03-28-eular-angle-anime-show upload at 2020-07-02-12-53-22](https://i.loli.net/2020/07/02/3tPLwvG62Q1k8Nf.gif)
+![](/assets/images/pitch.gif)
 
 Yaw: 偏航（航向）
 
-![3 in 2018-03-28-eular-angle-anime-show upload at 2020-07-02-12-54-06](https://i.loli.net/2020/07/02/eIwC13MBgHEJ87S.gif)
+![](/assets/images/yaw.gif)

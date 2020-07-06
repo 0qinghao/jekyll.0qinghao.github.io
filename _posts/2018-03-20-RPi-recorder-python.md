@@ -12,7 +12,7 @@ furigana: false
 
 树莓派上自带的3.5mm接口只能作为语音输出口，**不能**接麦克风。所以我们需要另外购买USB声卡，某宝上5元左右就能买到，当然你还需要一个麦克风。总费用应该在20元以内。
 
-![](http://ww1.sinaimg.cn/large/005MY9Xily1fpj5o9hqaqj30ct078jsj.jpg)
+![](/assets/images/2020-07-06-19-45-13.png)
 
 # 检查硬件是否正常
 
