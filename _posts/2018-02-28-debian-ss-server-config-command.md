@@ -1,9 +1,9 @@
 ---
 layout: post
-title: SS Debian服务器端配置指令
+title: SS Debian 服务器端配置指令
 categories: [shadowsocks, linux]
-description: Debian下配置SS服务器的命令笔记
-keywords: shadowsocks, debian, linux, ss服务器
+description: Debian 下配置 SS 服务器的命令笔记
+keywords: shadowsocks, debian, linux, ss 服务器
 furigana: false
 ---
 

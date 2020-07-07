@@ -2,27 +2,27 @@
 layout: post
 title: 树莓派学习手记——修改软件源
 categories: [raspberrypi, linux]
-description: 可以说是我的第一篇博客，当时试水用的，简单描述了树莓派apt软件源的问题
+description: 可以说是我的第一篇博客，当时试水用的，简单描述了树莓派 apt 软件源的问题
 keywords: 树莓派, 软件源, apt
 furigana: true
 ---
 
 ## 国情，国情
 
-在Raspbian/Ubuntu系统上，升级系统或安装软件只需要一条很简单的命令：
+在 Raspbian/Ubuntu 系统上，升级系统或安装软件只需要一条很简单的命令：
 
 ``` nohighlight
 sudo apt install 软件包名		# 安装软件
 sudo apt upgrade		# 更新软件
 ```
 
-然而在天朝的网络下，很难顺利地完成下载过程。但好在有许多高校/机构提供了及时更新的镜像网站，我们可以通过修改配置文件解决下载难的问题。
+然而在天朝的网络下，很难顺利地完成下载过程。但好在有许多高校 / 机构提供了及时更新的镜像网站，我们可以通过修改配置文件解决下载难的问题。
 
 很多同学查找解决方法后，或许能解决一部分问题，但仍会遇到连接超时的问题。究其原因，大致有两点：
 
 * **树莓派的软件源配置有两处，而大部分教程只指出了一处；**
 
-* **没有区分系统版本（Codename），Codename目前分为jessie / wheezy / squeeze / stretch，大部分教程仍使用的是jessie或wheezy，而笔者安装的系统却是stretch。**
+* **没有区分系统版本（Codename），Codename 目前分为 jessie / wheezy / squeeze / stretch，大部分教程仍使用的是 jessie 或 wheezy，而笔者安装的系统却是 stretch。**
 
   ​
 
@@ -44,15 +44,15 @@ sudo cp /etc/apt/sources.list.d/raspi.list /etc/apt/sources.list.d/raspi.bak
 
   ​
 
-## 我的Codename是什么
+## 我的 Codename 是什么
 
-我们来确定自己树莓派安装的系统Codename是什么：
+我们来确定自己树莓派安装的系统 Codename 是什么：
 
 ``` nohighlight
 lsb_release -a
 ```
 
-运行这条指令之后，可以很清楚的看到Codename
+运行这条指令之后，可以很清楚的看到 Codename
 
 ``` shell
 Codename: stretch
@@ -79,7 +79,7 @@ deb http://mirrors.ustc.edu.cn/raspbian/raspbian/ stretch main contrib non-free
 deb-src http://mirrors.ustc.edu.cn/raspbian/raspbian/ stretch main contrib non-free
 ```
 
-按<kbd>CTRL</kbd>+<kbd>X</kbd> 关闭文件，键入<kbd>Y</kbd>（保存修改）回车。
+按 <kbd>CTRL</kbd>+<kbd>X</kbd> 关闭文件，键入 < kbd>Y</kbd>（保存修改）回车。
 
 修改第二个配置文件：
 
@@ -94,7 +94,7 @@ deb http://mirrors.ustc.edu.cn/archive.raspberrypi.org/ stretch main ui
 deb-src http://mirrors.ustc.edu.cn/archive.raspberrypi.org/ stretch main ui
 ```
 
-**相信细心的同学已经注意到了，修改的文件内容网址后紧接着一项"stretch"。如果你手中的树莓派安装的系统Codename并不是stretch，还请进行相应修改。**
+**相信细心的同学已经注意到了，修改的文件内容网址后紧接着一项 "stretch"。如果你手中的树莓派安装的系统 Codename 并不是 stretch，还请进行相应修改。**
 
 ----------
 
@@ -104,4 +104,4 @@ deb-src http://mirrors.ustc.edu.cn/archive.raspberrypi.org/ stretch main ui
 sudo apt update
 ```
 
-修改完成了！赶紧去体验一下高速更新系统/升级软件的快感吧。感谢你阅读文章！
+修改完成了！赶紧去体验一下高速更新系统 / 升级软件的快感吧。感谢你阅读文章！

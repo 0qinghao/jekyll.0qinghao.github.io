@@ -2,7 +2,7 @@
 layout: post
 title: インスタグラム爬图
 categories: [python, linux]
-description: ins自动爬图工具
+description: ins 自动爬图工具
 keywords: ins, 爬图, python, 爬虫
 furigana: false
 ---

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 欧拉角R、P、Y的直观说明
+title: 欧拉角 R、P、Y 的直观说明
 categories: [数学]
 description: 欧拉角的动画演示, 本科毕设里面重要的一个内容
 keywords: 欧拉角

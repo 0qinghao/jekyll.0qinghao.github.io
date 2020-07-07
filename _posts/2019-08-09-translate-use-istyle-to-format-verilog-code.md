@@ -1,17 +1,17 @@
 ---
 layout: post
-title: 译 - 使用iStyle格式化Verilog代码
+title: 译 - 使用 iStyle 格式化 Verilog 代码
 categories: [verilog]
-description: 给出Windows x86_64架构下编译好的iStyle可执行程序
+description: 给出 Windows x86_64 架构下编译好的 iStyle 可执行程序
 keywords: verilog, iStyle, 格式化代码
 furigana: false
 ---
 
-> 原文：[Verilogでコード整形](https://qiita.com/kkumt93/items/70766645c07c298d19c3)
+> 原文：[Verilog でコード整形](https://qiita.com/kkumt93/items/70766645c07c298d19c3)
 
 # 安装
 
-iStyle可以从GitHub上clone、make自行编译出可执行文件，也可以直接下载已编译好的可执行文件。这里都给出来。
+iStyle 可以从 GitHub 上 clone、make 自行编译出可执行文件，也可以直接下载已编译好的可执行文件。这里都给出来。
 
 **Github**
 
@@ -110,7 +110,7 @@ always @(posedge clk or posedge rst)
 ./iStyle -s2 test.v
 ```
 
-该选项指定缩进时的空格数量，-s2表示每次缩进使用2个空格（如果是-s4则表示每次用4个空格缩进）。
+该选项指定缩进时的空格数量，-s2 表示每次缩进使用 2 个空格（如果是 - s4 则表示每次用 4 个空格缩进）。
 
 ``` verilog
 reg [3:0] cnt;
@@ -125,7 +125,7 @@ end
 
 ## \-p
 
--p选项指定在运算符两侧插入空格。
+-p 选项指定在运算符两侧插入空格。
 
 ``` verilog
 reg [3: 0] cnt;
@@ -142,12 +142,12 @@ end
 
 ## \-P
 
--P选项指定在运算符和括号周围插入空格。
+-P 选项指定在运算符和括号周围插入空格。
 
 ``` verilog
-reg [ 3: 0 ] cnt;
-always @( posedge clk or posedge rst ) begin
-    if ( rst )
+reg [3: 0] cnt;
+always @(posedge clk or posedge rst) begin
+    if (rst)
     begin
         cnt <= 4'h0;
     end else
@@ -159,4 +159,4 @@ end
 
 # 小结
 
-虽然文中没有写，**module**声明的缩进感觉并不是很好。verilog有各种各样的代码风格，因此有一个强大的格式化程序是很有用的。
+虽然文中没有写，**module** 声明的缩进感觉并不是很好。verilog 有各种各样的代码风格，因此有一个强大的格式化程序是很有用的。

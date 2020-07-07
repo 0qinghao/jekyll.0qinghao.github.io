@@ -7,9 +7,9 @@ keywords: 内网网段, 局域网网段, IP
 furigana: true
 ---
 
-> [内网IP段有哪些](http://blog.kankanan.com/article/51857f51-ip-6bb5670954ea4e9b.html)
+> [内网 IP 段有哪些](http://blog.kankanan.com/article/51857f51-ip-6bb5670954ea4e9b.html)
 
-常见的内网IP段有：
+常见的内网 IP 段有：
 
 ``` nohighlight
 10.0.0.0/8
@@ -22,11 +22,11 @@ furigana: true
 192.168.0.0 - 192.168.255.255
 ```
 
-以上三个网段分别属于A、B、C三类IP地址，来自 《RFC 1918》。
+以上三个网段分别属于 A、B、C 三类 IP 地址，来自 《RFC 1918》。
 
-但是根据 《Reserved IP addresses - Wikipedia, the free encyclopedia》 及《RFC 6890 - Special-Purpose IP Address Registries》的描述， 还有很多其它的内网IP段（包括IPv6），以及其它用途的保留IP地址。
+但是根据 《Reserved IP addresses - Wikipedia, the free encyclopedia》 及《RFC 6890 - Special-Purpose IP Address Registries》的描述， 还有很多其它的内网 IP 段（包括 IPv6），以及其它用途的保留 IP 地址。
 
-其它IPv4内网段罗列如下：
+其它 IPv4 内网段罗列如下：
 
 ``` 
 0.0.0.0/8
@@ -37,7 +37,7 @@ furigana: true
 ``` 
 100.64.0.0/10
 100.64.0.0 - 100.127.255.255
-由运营商使用的私网IP段，随着IPv4地址池的耗光，会有更多用户被分配到这个网段。
+由运营商使用的私网 IP 段，随着 IPv4 地址池的耗光，会有更多用户被分配到这个网段。
 ```
 
 ``` 
@@ -49,7 +49,7 @@ furigana: true
 ``` 
 169.254.0.0/16
 169.254.0.0 - 169.254.255.255
-获取不到IP地址时使用，通常因为从DHCP服务器获取不到IP。
+获取不到 IP 地址时使用，通常因为从 DHCP 服务器获取不到 IP。
 ```
 
 ``` 
