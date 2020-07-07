@@ -39,7 +39,7 @@ furigana: false
 
 请记住项目名称。任意一个 Google Cloud 项目都拥有唯一的名称（上述的名称已经被使用了，所以实际上无法使用）。
 
-Google Cloud Platform 的新用户将赠与 [相当于 $ 300 的试用金](https://console.developers.google.com/billing/freetrial)。
+Google Cloud Platform 的新用户将赠与 [相当于 $300 的试用金](https://console.developers.google.com/billing/freetrial)。
 
 # 启用 Cloud Natural Language API
 
