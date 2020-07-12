@@ -1,15 +1,17 @@
 ---
 layout: default
 title: Open Source Projects
-keywords: 开源,open-source,GitHub,开源项目
+keywords: 开源, open-source, GitHub, 开源项目
 description: 开源改变世界。
 permalink: /open-source/
+menu: 开源
 ---
 
 {% if site.github.public_repositories != false %}
 {% assign sorted_repos = site.github.public_repositories | sort: 'stargazers_count' | reverse %}
 
 <section class="container">
+
     <header class="text-center">
         <h1>Open Source Projects</h1>
         <p class="lead">I have <span class="repo-count">{{ sorted_repos.size }}</span> projects on Github</p>
@@ -48,5 +50,6 @@ permalink: /open-source/
         </a>
         {% endfor %}
     </div>
+
 </section>
 {% endif %}
