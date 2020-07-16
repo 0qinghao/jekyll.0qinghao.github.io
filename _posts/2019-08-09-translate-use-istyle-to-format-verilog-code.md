@@ -19,7 +19,7 @@ https://github.com/thomasrussellmurphy/istyle-verilog-formatter
 
 **可执行文件**
 
-https://github.com/HayasiKei/istyle-verilog-formatter/releases/tag/v1.21_x86_64
+https://github.com/0qinghao/istyle-verilog-formatter/releases/tag/v1.21_x86_64
 
 # 格式化选项
 
