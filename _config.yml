@@ -93,7 +93,7 @@ paginate: 10
 incremental: false
 quiet: false
 excerpt_separator: "\n"
-permalink: /:year/:month/:day/:title/
+permalink: /:year:month:day-:title/
 plugins:
     - jekyll-github-metadata
     - rouge
