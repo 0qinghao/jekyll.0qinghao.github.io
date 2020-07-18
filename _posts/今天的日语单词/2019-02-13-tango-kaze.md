@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 【単語】逸れる
+title: 【単語】風邪
 categories: [日语]
 description: 每天( 雾 )一个日语单词
 keywords: 日语, 单词
