@@ -1,13 +1,13 @@
 ---
-layout: post
+layout: ja_page
 title: 【日更】今天的日语单词
 categories: [日语]
 description: 每天( 雾 )一个日语单词
 keywords: 日语, 单词
 furigana: true
-topmost: false
-ja_page: true
 ---
+
+**本贴不再单独更新，今后以一个单词一个新帖的形式分享每天学习的日语单词，单独放置在[日语专栏](/ja_page)内。**
 
 每天( 雾 )一个日语单词 😂
 

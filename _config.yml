@@ -53,7 +53,7 @@ navs:
     label: 首页
 
   -
-    href: /ja/
+    href: /ja_page/
     label: 日语
 
   -
@@ -98,16 +98,17 @@ plugins:
     - jekyll-github-metadata
     - rouge
 #     - jekyll-html-pipeline
-    # - jekyll-paginate
+    - jekyll-paginate
     - jekyll-sitemap
     - jekyll-feed
     - jemoji
     - jekyll-furigana
 #     - jekyll-mentions
 collections:
-    wiki:
+    ja_page:
         output: true
-        permalink: /wiki/:path/
+        permalink: /:year:month:day-:title/
+        # permalink: /:path/
 
 # ---------------- #
 #      Comments    #
