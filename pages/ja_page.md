@@ -10,7 +10,7 @@ permalink: /ja_page/
 
 <section class="container posts-content">
 {% assign count = 1 %}
-{% for ja_page in site.ja_page reversed %}
+{% for ja_page in site.ja_page %}
 
     {% assign year = ja_page.date | date: '%Y' %}
     {% assign nyear = ja_page.next.date | date: '%Y' %}
@@ -38,8 +38,8 @@ permalink: /ja_page/
             </ol>
         {% endif %}
 
-        <!-- <h3>{{ ja_page.date | date: '%Y' }} ({{ counts[i] }})</h3> -->
-        <h3>{{ ja_page.date | date: '%Y' }}</h3>
+        <h3>{{ ja_page.date | date: '%Y' }} ({{ counts[i] }})</h3>
+        <!-- <h3>{{ ja_page.date | date: '%Y' }}</h3> -->
 
         {% if thisyear != 0 %}
             {% assign thisyear = 0 %}
