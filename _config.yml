@@ -98,7 +98,7 @@ plugins:
     - jekyll-github-metadata
     - rouge
 #     - jekyll-html-pipeline
-    - jekyll-paginate
+    # - jekyll-paginate
     - jekyll-sitemap
     - jekyll-feed
     - jemoji
