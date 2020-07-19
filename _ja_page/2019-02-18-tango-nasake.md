@@ -1,3 +1,11 @@
+---
+layout: ja_page
+title: 【単語】情け
+categories: [日语]
+description: 每天( 雾 )一个日语单词
+keywords: 日语, 单词
+furigana: true
+---
 **なさけ【情け】**
 
 慈悲；同情；人情.

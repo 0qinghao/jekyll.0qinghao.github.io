@@ -1,3 +1,11 @@
+---
+layout: ja_page
+title: 【単語】研究生
+categories: [日语]
+description: 每天( 雾 )一个日语单词
+keywords: 日语, 单词
+furigana: true
+---
 **けんきゅうせい【研究生】**
 
 无中文释义，类似考研预科班.
