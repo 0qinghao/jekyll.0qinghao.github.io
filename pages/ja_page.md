@@ -38,7 +38,8 @@ permalink: /ja_page/
             </ol>
         {% endif %}
 
-        <h3>{{ ja_page.date | date: '%Y' }} ({{ counts[i] }})</h3>
+        <!-- <h3>{{ ja_page.date | date: '%Y' }} ({{ counts[i] }})</h3> -->
+        <h3>{{ ja_page.date | date: '%Y' }}</h3>
 
         {% if thisyear != 0 %}
             {% assign thisyear = 0 %}
