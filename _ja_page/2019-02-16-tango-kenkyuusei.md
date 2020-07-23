@@ -1,6 +1,6 @@
 ---
 layout: ja_page
-title: 【単語】研究生
+title: 【每日一词】研究生
 categories: [日语]
 description: 每天( 雾 )一个日语单词
 keywords: 日语, 单词

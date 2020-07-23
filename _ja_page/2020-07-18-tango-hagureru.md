@@ -1,6 +1,6 @@
 ---
 layout: ja_page
-title: 【単語】逸れる
+title: 【每日一词】逸れる
 categories: [日语]
 description: 每天( 雾 )一个日语单词
 keywords: 日语, 单词

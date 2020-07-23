@@ -50,7 +50,37 @@ comments: false
     <div class="columns">
         <div class="column two-thirds">
             <ol class="repo-list">
-                {% for post in site.posts %}
+                {% assign ja_page_cnt = 0 %}
+                {% for ja_page in site.ja_page reversed %}
+                    {% if paginator.page == 1 %}
+                        {% assign ja_page_cnt = ja_page_cnt | plus: 1 %}
+                        {% if ja_page_cnt == 1 %}
+                            <li class="repo-list-item">
+                                <h3 class="repo-list-name">
+                                    <a href="{{ site.url }}{{ ja_page.url }}">
+                                        <span class="top-most-flag">[置顶]</span>
+                                        {{ ja_page.title }}</a>
+                                </h3>
+                                <p class="repo-list-description">
+                                    {{ ja_page.excerpt | strip_html | strip }}
+                                </p>
+                                <p class="repo-list-meta">
+                                    <span class="meta-info">
+                                        <span class="octicon octicon-calendar"></span>
+                                        {{ ja_page.date | date: "%Y/%m/%d" }}
+                                    </span>
+                                    {% for cat in ja_page.categories %}
+                                        <span class="meta-info">
+                                            <span class="octicon octicon-file-directory"></span>
+                                            <a href="{{ site.url }}/categories/#{{ cat }}" title="{{ cat }}">{{ cat }}</a>
+                                        </span>
+                                    {% endfor %}
+                                </p>
+                            </li>
+                        {% endif %}
+                    {% endif %}
+                {% endfor %}
+                <!-- {% for post in site.posts %}
                     {% if paginator.page == 1 %}
                         {% if post.topmost == true %}
                             <li class="repo-list-item">
@@ -77,7 +107,7 @@ comments: false
                             </li>
                         {% endif %}
                     {% endif %}
-                {% endfor %}
+                {% endfor %} -->
 
                 {% for post in paginator.posts %}
                     {% if post.topmost != true %}
