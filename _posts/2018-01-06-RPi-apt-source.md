@@ -79,7 +79,7 @@ deb http://mirrors.ustc.edu.cn/raspbian/raspbian/ stretch main contrib non-free
 deb-src http://mirrors.ustc.edu.cn/raspbian/raspbian/ stretch main contrib non-free
 ```
 
-按 <kbd>CTRL</kbd>+<kbd>X</kbd> 关闭文件，键入 < kbd>Y</kbd>（保存修改）回车。
+按 <kbd>CTRL</kbd>+<kbd>X</kbd> 关闭文件，键入 <kbd>Y</kbd>（保存修改）回车。
 
 修改第二个配置文件：
 

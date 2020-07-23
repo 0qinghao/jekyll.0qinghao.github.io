@@ -39,7 +39,7 @@ arecord -D hw:1,0 -t wav -c 1 -r 44100 -f S16_LE test.wav
 aplay -D hw:0,0 test.wav
 ```
 
-`arecord` 是录音命令，其中 `hw:1,0` 表示 `card 1: Device [USB Audio Device], device 0: USB Audio [USB Audio]` 的 `card 1 , device 0` ，如果你的 USB 声卡录音设备不是 `card 1 , device 0` ，还请进行相应修改。另外，录音过程需要手动按 < kbd>CTRL</kbd> + <kbd>C</kbd > 结束。
+`arecord` 是录音命令，其中 `hw:1,0` 表示 `card 1: Device [USB Audio Device], device 0: USB Audio [USB Audio]` 的 `card 1 , device 0` ，如果你的 USB 声卡录音设备不是 `card 1 , device 0` ，还请进行相应修改。另外，录音过程需要手动按 <kbd>CTRL</kbd> + <kbd>C</kbd> 结束。
 
 `aplay` 是播放命令，其中 `hw:0,0` 表示树莓派**板载**音频接口，如果你把耳机插在 USB 声卡接口，还请进行相应修改，如改成 `hw:1,0` 。
 
