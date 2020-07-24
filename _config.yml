@@ -97,12 +97,12 @@ permalink: /:year:month:day-:title/
 plugins:
     - jekyll-github-metadata
     - rouge
-#     - jekyll-html-pipeline
     - jekyll-paginate
     - jekyll-sitemap
     - jekyll-feed
     - jemoji
     - jekyll-furigana
+#     - jekyll-html-pipeline
 #     - jekyll-mentions
 collections:
     ja_page:
