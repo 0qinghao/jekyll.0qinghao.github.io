@@ -1,6 +1,6 @@
 ---
 layout: ja_page
-title: 【每日一词】
+title: 【每日一词】振り払う
 categories: [日语]
 description: 每天( 雾 )一个日语单词
 keywords: 日语, 单词
