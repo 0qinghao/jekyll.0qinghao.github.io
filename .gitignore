@@ -1,4 +1,6 @@
 _site/
+docs/
+docs.
 *.sw[po]
 *.~vsd
 \#*\#
