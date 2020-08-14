@@ -1,6 +1,6 @@
 ---
 layout: ja_page
-title: 【每日一词】雲隠れ
+title: 【每日一词】狭間
 categories: [日语]
 description: 每天( 雾 )一个日语单词
 keywords: 日语, 单词
