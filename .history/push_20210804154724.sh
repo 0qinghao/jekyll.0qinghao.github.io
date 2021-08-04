@@ -16,5 +16,4 @@ git add -A
 git commit -m "$*"
 cd ../jekyll.0qinghao.github.io
 
-# ./push_expect.sh $githubpw $codingpw
-./push_expect.sh $githubpw
+./push_expect.sh $githubpw $codingpw

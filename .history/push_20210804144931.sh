@@ -6,15 +6,12 @@ touch ../0qinghao.github.io/.nojekyll
 
 read -s -p 'github password:' githubpw
 echo
-# read -s -p 'coding password:' codingpw
-# echo
+read -s -p 'coding password:' codingpw
+echo
 
-git add -A
-git commit -m "$*"
+git add -A;git commit -m "$*";
 cd ../0qinghao.github.io
-git add -A
-git commit -m "$*"
+git add -A;git commit -m "$*";
 cd ../jekyll.0qinghao.github.io
 
-# ./push_expect.sh $githubpw $codingpw
-./push_expect.sh $githubpw
+./push_expect.sh $githubpw $codingpw
