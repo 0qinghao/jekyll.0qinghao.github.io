@@ -1,5 +1,6 @@
 - name: 软件
   keywords:
+      - H.264/265/266 编解码算法
       - C/C++
       - Python
 
@@ -12,6 +13,7 @@
   keywords:
       - 日语
       - 服务器运维
+      - matlab/bash shell 等脚本
 
 # - name: Windows Developer Keywords
 #   keywords:
